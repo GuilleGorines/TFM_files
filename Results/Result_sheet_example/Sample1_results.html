@@ -1,0 +1,669 @@
+<html>
+<head>
+                    <title>Pikavirus</title>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <!--Bootstrap 5.0.1 css-->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+                    <!--Bootstrap-tables css-->
+                    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+                    <!--Font Awesome-->
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+                    <!--Jquery & Popper-->
+                    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+                    <!--Bootstrap-tables js-->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+                    <!--Export-->
+                    <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+                    <!--Bootstrap-tables js-->
+                    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+                    <!--Bootstrap-tables js-->
+                    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
+                    <style>
+                    @media all and (min-width: 992px) {.dropdown-menu li { position: relative;}
+                    .nav-item .submenu {display: none; position: absolute; left: 100%; top: -9px;}
+                    .nav-item .submenu-left{right: 100%;left: auto;}
+                    .dropdown-menu-parent{max-height: 700px; overflow-y: auto;}
+                    .dropdown-menu>li:hover {background-color: #f1f1f1}
+                    .dropdown-menu>li:hover>.submenu {display: block;} }
+                    .informative_iframe {width:90%; height:90%; padding: 1%; border:none;}
+                    th.coverage_table_header {border: none; text-align: center; font-size: 16px; vertical-align: middle;}
+                    .virus_button:hover,.all_genomes_button_virus:hover  {background-color: #C8E7EE}
+                    .bacteria_button:hover {background-color: #D9F1D3}
+                    .fungi_button:hover {background-color: #EED5C8}
+                    .samplesheet_title:hover {font-weight: bolder}
+                    #toolbar {margin: 0;}
+                    a {text-decoration: none;}
+                    .all_genomes_button_virus{color:#0d6efd !important; background-color:#E8F5F8;text-align: center; font-weight: bold;}
+                    </style>
+                    </head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+                     <div class="container-fluid">
+                     <a class="navbar-brand" class="samplesheet_title" href="#">nf-core-pikavirus: result for sample Sample1</a>
+                     <div class="collapse navbar-collapse" id="navbar_buttons">
+                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                     <li class="nav-item" style="padding: 8px;">
+                     <a class="nav-link active" href="#quality_results">Quality control results</a>
+                     </li>
+<li style="padding: 8px;"><a class="nav-link active" href="#scouting_results">Kraken scouting results</a></li>
+<li class="nav-item dropdown" style="padding: 8px;"> 
+                        <a class="nav-link dropdown-toggle" href="#coverage_results" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">Coverage results</a>
+                        <ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#virus_coverage_results">Virus &raquo;</a>
+                            <ul class="submenu dropdown-menu dropdown-menu-parent">
+                            <li><a class="dropdown-item" href="#general_virus_results">General results</a></li>
+<div class="dropdown-divider"></div>
+<li><a class="dropdown-item" href="#GCA_008766915.1">Phocid_alphaherpesvirus_1</a></li>
+<li><a class="dropdown-item" href="#GCF_000845685.2">Human_betaherpesvirus_6A</a></li>
+<li><a class="dropdown-item" href="#GCF_000860865.1">Equine arteritis virus strain=Bucyrus</a></li>
+<li><a class="dropdown-item" href="#GCF_002985885.1">Phocid alphaherpesvirus 1 strain=PB84</a></li>
+</ul>
+                            </li>
+</ul>
+                        </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+                     <div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn" href="pikavirus_index.html" target="_blank">Back to index</a>
+                     </ul>
+</div>
+                    </div>
+                    </nav>
+<div class="container-fluid" style="background-color: #003B6F; color: white;">
+                     <h1 style="padding: 60px; color:white; margin-top: 2%;">Sample1</h1>
+                     </div>
+<div class="card-fluid" id="quality_results" style="padding: 3%">
+                    <h2 class="card-header">Quality control results</h2>
+                    <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+<button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="display_corresponding_quality('Multiqc')">MultiQC</button>
+<button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" onclick="display_corresponding_quality('R1_pre')">R1 pre trimming FastQC</button>
+<button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="display_corresponding_quality('R2_pre')">R2 pre trimming FastQC</button>
+<button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="display_corresponding_quality('R1_post')">R1 post trimming FastQC</button>
+<button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="display_corresponding_quality('R2_post')">R2 post trimming FastQC</button>
+<button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" onclick="display_corresponding_quality('Fastp')">FastP report</button>
+<button class="nav-link" data-bs-toggle="tab" type="button" role="tab" aria-controls="nav-home" aria-selected="true" onclick="display_corresponding_quality('Sequencing_control')">Sequencing control</button>
+</div>
+                    </nav>
+<div class="card-body" name="quality_control_section" id="Sequencing_control"style="display:none">
+<table class="table">
+                         <thead style="background-color: #D4B4E9;">
+                         <tr>
+                         <th class="coverage_table_header" colspan="2" title="Name of the sequence inside the sequence control genome">Name</th>
+                         <th class="coverage_table_header" title="% of reads out of the total that matched to the sequence">% of reads</th>
+                         <th class="coverage_table_header" title="Mean coverage depth for the whole sequence of the genome &#177; deviation">Mean depth</th>
+                         <th class="coverage_table_header" title="Minimal coverage depth for the genome">Min depth</th>
+                         <th class="coverage_table_header" title="Maximum coverage depth for the genome">Max depth</th>
+                         <th class="coverage_table_header" title="Median of the coverage depth for the genome">Depth median</th>
+                         <th class="coverage_table_header" title="% of bases in the genome in coverage depth 1 or superior">Sequence %<br>>=1 Depth</th>
+                         <th class="coverage_table_header" title="% of bases in the genome in coverage depth 10 or superior">Sequence %<br>>=10 Depth </th>
+                         <th class="coverage_table_header" title="% of bases in the genome in coverage depth 25 or superior">Sequence %<br>>=25 Depth </th>
+                         <th class="coverage_table_header" title="% of bases in the genome in coverage depth 50 or superior">Sequence %<br>>=50 Depth </th>
+                         <th class="coverage_table_header" title="% of bases in the genome in coverage depth 75 or superior">Sequence %<br>>=75 Depth </th>
+                         <th class="coverage_table_header" title="% of bases in the genome in coverage depth 100 or superior">Sequence %<br>>=100 Depth</th>
+                         </tr> 
+                         </thead>
+<tbody>
+<tr>
+                             <td style="text-align: center; vertical-align: middle;" colspan="2">Control sequence: J02482.1</td>
+                             <td style="text-align: center; vertical-align: middle;" title="Out of 114184 in the trimmed reads, 0 matched to this sequence, 0.0% exactly">0.0 %</td>
+                             <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Control sequence: J02482.1 is 0.0 &#177; 0.0">0.0 &#177; 0.0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 0">0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 1">0.0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                             <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                             </tr>
+</tbody>
+                         </table>
+</div>
+<div class="card-body" name="quality_control_section" id="Multiqc">
+                     <iframe class="informative_iframe" src="Sample1/multiqc_report.html"></iframe>
+                     </div>
+<div class="card-body" name="quality_control_section" id="R1_pre" style="display:none">
+                     <iframe class="informative_iframe" src="Sample1/raw_fastqc/Sample1_1.merged_fastqc.html"></iframe>
+                     </div>
+<div class="card-body" name="quality_control_section" id="R2_pre" style="display:none">
+                        <iframe class="informative_iframe" src="Sample1/raw_fastqc/Sample1_2.merged_fastqc.html"></iframe>
+                        </div>
+<div class="card-body" name="quality_control_section" id="R1_post" style="display:none">
+                         <iframe class="informative_iframe" src="Sample1/trimmed_fastqc/Sample1_1_trim_fastqc.html"></iframe>
+                         </div>
+<div class="card-body" name="quality_control_section" id="R2_post" style="display:none">
+                             <iframe class="informative_iframe" src="Sample1/trimmed_fastqc/Sample1_2_trim_fastqc.html"></iframe>
+                             </div>
+<div class="card-body" name="quality_control_section" id="Fastp" style="display:none"> 
+                         <iframe class="informative_iframe" src="Sample1/fastp.html"></iframe>
+                         </div>
+</div>
+<div class="card-fluid" id="scouting_results" style="padding: 3%;">
+                         <h2 class="card-header">Scouting results</h2>
+                         <div class="card-body">
+                         <iframe class="informative_iframe" src="Sample1/kraken2_krona_results/Sample1_kraken.krona.html"></iframe>
+                         </div>
+                         </div>
+<div class="card-fluid" id="coverage_results" style="padding: 3%;">
+                        <h2 class="card-header">Coverage results</h2>
+<div class="card-fluid" id="virus_coverage_results" style="padding: 1%;">
+                            <h2>Virus coverage results</h2>
+                            <div class="card-body" id="virus_coverage_group">
+                            <div class="card-fluid" id="general_virus_results" style="padding: 1%">
+                            <h4>General results</h4>
+                            <div class="card-body">
+ <a href="Sample1/virus_coverage/plots/Sample1_all_genomes_full_boxplot.html" target="_blank" class="list-group-item list-group-item-action all_genomes_button_virus">All organism genomes: depth distribution comparison</a>
+<div id="toolbar" class="select">
+                                <select class="form-control">
+                                <option value="all">Export All</option>
+                                <option value="selected">Export Selected</option>
+                                </select>
+                                </div>
+<table class="table" id="table" data-toggle="table" data-show-export="true" data-click-to-select="true" data-search="true" data-toolbar="#toolbar" data-show-export="true" data-show-columns="true">
+                                <thead style="background-color: #A7D5FF; font-size: small;">
+                                <tr>
+                                <th data-checkbox="true"></th>
+                                <th data-field="assembly" data-sortable="false" class="coverage_table_header" title="Name of the assembly">Assembly</th>
+                                <th data-field="name" data-sortable="true" class="coverage_table_header" title="Assembly organism according to the provided reference">Name</th>
+                                <th data-field="mean" data-sortable="true" class="coverage_table_header" title="Mean coverage depth for the whole sequence of the genome">Mean<br>depth</th>
+                                <th data-field="standard_deviation" data-sortable="true" class="coverage_table_header" title="Standard deviation for mean coverage of the sequence">Standard<br>deviation</th>
+                                <th data-field="min" data-sortable="true" class="coverage_table_header" title="Minimal coverage depth for the genome">Min<br>depth</th>
+                                <th data-field="max" data-sortable="true" class="coverage_table_header" title="Maximum coverage depth for the genome">Max<br>depth</th>
+                                <th data-field="median" data-sortable="true" class="coverage_table_header" title="Median of the coverage depth for the genome">Depth<br>median</th>
+                                <th data-field="over1" data-sortable="true" class="coverage_table_header" title="% of bases in the genome in coverage depth 1 or superior">Sequence %<br>>=1 Depth</th>
+                                <th data-field="over10" data-sortable="true" class="coverage_table_header" title="% of bases in the genome in coverage depth 10 or superior">Sequence %<br>>=10 Depth </th>
+                                <th data-visible="false" data-field="over25" data-sortable="true" class="coverage_table_header" title="% of bases in the genome in coverage depth 25 or superior">Sequence %<br>>=25 Depth </th>
+                                <th data-field="over50" data-sortable="true" class="coverage_table_header" title="% of bases in the genome in coverage depth 50 or superior">Sequence %<br>>=50 Depth </th>
+                                <th data-visible="false" data-field="over75" data-sortable="true" class="coverage_table_header" title="% of bases in the genome in coverage depth 75 or superior">Sequence %<br>>=75 Depth </th>
+                                <th data-field="over100" data-sortable="true" class="coverage_table_header" title="% of bases in the genome in coverage depth 100 or superior">Sequence %<br>>=100 Depth</th>
+                                </tr>
+                                </thead>
+<tbody>
+<tr>
+                                     <td></td>
+                                     <td style="text-align: center; vertical-align: middle;"><a href="#GCA_008766915.1" title="Go to table corresponding to this assembly: GCA_008766915.1">GCA_008766915.1</a></td>
+                                     <td style="text-align: center; vertical-align: middle;">Phocid alphaherpesvirus 1 genome</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Phocid alphaherpesvirus 1 genome is 0.40973946418837265">0.41</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Standard deviation for Phocid alphaherpesvirus 1 genome mean coverage is 4.649504892400915">4.65</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 233">233</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="14.532157078% of bases over depth 1">14.53</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.06722188800000001% of bases over depth 10">0.07</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.066348876% of bases over depth 25">0.07</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.06372984000000001% of bases over depth 50">0.06</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.06111080400000001% of bases over depth 75">0.06</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.056745744% of bases over depth 100">0.06</td>
+                                     </tr>
+<tr>
+                                     <td></td>
+                                     <td style="text-align: center; vertical-align: middle;"><a href="#GCF_000845685.2" title="Go to table corresponding to this assembly: GCF_000845685.2">GCF_000845685.2</a></td>
+                                     <td style="text-align: center; vertical-align: middle;">Human betaherpesvirus 6A genome</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Human betaherpesvirus 6A genome is 0.192103199257387">0.19</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Standard deviation for Human betaherpesvirus 6A genome mean coverage is 0.650309869175835">0.65</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 6">6</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="9.690175400000001% of bases over depth 1">9.69</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                     </tr>
+<tr>
+                                     <td></td>
+                                     <td style="text-align: center; vertical-align: middle;"><a href="#GCF_000860865.1" title="Go to table corresponding to this assembly: GCF_000860865.1">GCF_000860865.1</a></td>
+                                     <td style="text-align: center; vertical-align: middle;">Equine arteritis virus strain=Bucyrus genome</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Equine arteritis virus strain=Bucyrus genome is 0.1596350478905144">0.16</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Standard deviation for Equine arteritis virus strain=Bucyrus genome mean coverage is 0.6311269116638517">0.63</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 4">4</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="6.675070000000001% of bases over depth 1">6.68</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                     </tr>
+<tr>
+                                     <td></td>
+                                     <td style="text-align: center; vertical-align: middle;"><a href="#GCF_002985885.1" title="Go to table corresponding to this assembly: GCF_002985885.1">GCF_002985885.1</a></td>
+                                     <td style="text-align: center; vertical-align: middle;">Phocid alphaherpesvirus 1 strain=PB84 genome</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Phocid alphaherpesvirus 1 strain=PB84 genome is 0.23042382156609426">0.23</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Standard deviation for Phocid alphaherpesvirus 1 strain=PB84 genome mean coverage is 0.7066230524558158">0.71</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 4">4</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="11.703908% of bases over depth 1">11.7</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                     <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                     </tr>
+</tbody>
+                                 </table>
+                                 </div>
+                                 </div>
+<div class="card-fluid" id="GCA_008766915.1" style="padding: 1%">
+                                      <h4>Phocid alphaherpesvirus 1</h4>
+                                     <div class="card-body">
+                                     <table class="table">
+<thead>
+                                         <tr style="background-color: #A7D5FF;  height: 100px;">
+                                         <th class="coverage_table_header" colspan="8" title="Name of the species"><span style="font-size: 18px">Species:</span><br><span style="font-weight: lighter; font-size: 18px">Phocid alphaherpesvirus 1</span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="5" title="Name of the assembly"><span style="font-size: 18px">Assembly:</span><br><span style="font-weight: lighter; font-size: 18px">GCA_008766915.1</span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="5" title="Number of sequences in the reference (whole genome not included)"><span style="font-size: 18px">Number of sequences:</span><br><span style="font-weight: lighter; font-size: 18px">1</span></th>
+                                         </tr>
+<tr style="margin-top: 5px; height: 90px">
+                                    <th class="coverage_table_header" colspan="2">Identifier</th>
+                                    <th class="coverage_table_header" title="Mean coverage depth for the sequence &#177; deviation">Mean depth</th>
+                                    <th class="coverage_table_header" title="Minimal coverage depth for the sequence">Min depth</th>
+                                    <th class="coverage_table_header" title="Maximum coverage depth for the sequence">Max depth</th>
+                                    <th class="coverage_table_header" title="Median of the coverage depth for the sequence">Depth median</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 1 or superior">Sequence %<br>>=1 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 10 or superior">Sequence %<br>>=10 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 25 or superior">Sequence %<br>>=25 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 50 or superior">Sequence %<br>>=50 Depth </th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 75 or superior">Sequence %<br>>=75 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 100 or superior">Sequence %<br>>=100 Depth</th>
+                                    <th class="coverage_table_header" title="Boxplot displaying the coverage depth of all bases in the sequence">Coverage depth <br> distribution</th>
+                                    <th class="coverage_table_header" title="Plot displaying the coverage depth of each base in the sequence">Coverage depth <br> by pos</th>
+                                    <th class="coverage_table_header" title="Plot displaying the % of bases in the sequence in or over a certain depth">Read percentage <br> vs depth</th>
+                                    </tr>
+                                    </thead>
+<tbody>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">MH509440.2</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for MH509440.2 is 0.40973946418837265 &#177; 4.649504892400915">0.41 &#177; 4.65</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 233">233</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="14.532157078% of bases over depth 1">14.53</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.06722188800000001% of bases over depth 10">0.07</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.066348876% of bases over depth 25">0.07</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.06372984000000001% of bases over depth 50">0.06</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.06111080400000001% of bases over depth 75">0.06</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.056745744% of bases over depth 100">0.06</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: MH509440.2 in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_MH509440.2_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence MH509440.2  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_MH509440.2_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly MH509440.2 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_MH509440.2_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence MH509440.2 that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_MH509440.2_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">Phocid alphaherpesvirus 1 genome</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Phocid alphaherpesvirus 1 genome is 0.40973946418837265 &#177; 4.649504892400915">0.41 &#177; 4.65</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 233">233</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="14.532157078% of bases over depth 1">14.53</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.06722188800000001% of bases over depth 10">0.07</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.066348876% of bases over depth 25">0.07</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.06372984000000001% of bases over depth 50">0.06</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.06111080400000001% of bases over depth 75">0.06</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.056745744% of bases over depth 100">0.06</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: Phocid alphaherpesvirus 1 genome in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_genome_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence Phocid alphaherpesvirus 1 genome  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly Phocid alphaherpesvirus 1 genome by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence Phocid alphaherpesvirus 1 genome that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_genome_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr style="background-color: #E8F5F8; height: 60px;">
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_full_boxplot.html" target="_blank" title="View depth distribution of sequences in assembly GCA_008766915.1">All sequences: coverage depth distribution</a></th>
+                                     <th class="coverage_table_header virus_button" colspan="5">
+                                     <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">All sequences: coverage depth by pos</a>
+                                     <ul class="dropdown-menu dropdown-menu-lg-end">
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCA_008766915.1 by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                     </li>
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCA_008766915.1 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                     </li>
+                                     </ul>
+                                     </th>
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_GCA_008766915.1_full_lineplot.html" target="_blank" title="View % of all sequences in assembly GCA_008766915.1 in or over a certain depth">All sequences: percentage of reads by depth</a></th>
+                                     </tr>
+                                     </tbody>
+                                     </table>
+                                     </div>
+                                     </div>
+<div class="card-fluid" id="GCF_000845685.2" style="padding: 1%">
+                                      <h4>Human betaherpesvirus 6A</h4>
+                                     <div class="card-body">
+                                     <table class="table">
+<thead>
+                                         <tr style="background-color: #A7D5FF;  height: 100px;">
+                                         <th class="coverage_table_header" colspan="8" title="Name of the species"><span style="font-size: 18px">Species:</span><br><span style="font-weight: lighter; font-size: 18px">Human betaherpesvirus 6A</span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="5" title="Name of the assembly"><span style="font-size: 18px">Assembly:</span><br><span style="font-weight: lighter; font-size: 18px">GCF_000845685.2</span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="5" title="Number of sequences in the reference (whole genome not included)"><span style="font-size: 18px">Number of sequences:</span><br><span style="font-weight: lighter; font-size: 18px">1</span></th>
+                                         </tr>
+<tr style="margin-top: 5px; height: 90px">
+                                    <th class="coverage_table_header" colspan="2">Identifier</th>
+                                    <th class="coverage_table_header" title="Mean coverage depth for the sequence &#177; deviation">Mean depth</th>
+                                    <th class="coverage_table_header" title="Minimal coverage depth for the sequence">Min depth</th>
+                                    <th class="coverage_table_header" title="Maximum coverage depth for the sequence">Max depth</th>
+                                    <th class="coverage_table_header" title="Median of the coverage depth for the sequence">Depth median</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 1 or superior">Sequence %<br>>=1 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 10 or superior">Sequence %<br>>=10 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 25 or superior">Sequence %<br>>=25 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 50 or superior">Sequence %<br>>=50 Depth </th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 75 or superior">Sequence %<br>>=75 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 100 or superior">Sequence %<br>>=100 Depth</th>
+                                    <th class="coverage_table_header" title="Boxplot displaying the coverage depth of all bases in the sequence">Coverage depth <br> distribution</th>
+                                    <th class="coverage_table_header" title="Plot displaying the coverage depth of each base in the sequence">Coverage depth <br> by pos</th>
+                                    <th class="coverage_table_header" title="Plot displaying the % of bases in the sequence in or over a certain depth">Read percentage <br> vs depth</th>
+                                    </tr>
+                                    </thead>
+<tbody>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">NC_001664.4</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for NC_001664.4 is 0.192103199257387 &#177; 0.650309869175835">0.19 &#177; 0.65</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 6">6</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="9.690175400000001% of bases over depth 1">9.69</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: NC_001664.4 in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_NC_001664.4_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence NC_001664.4  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_NC_001664.4_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly NC_001664.4 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_NC_001664.4_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence NC_001664.4 that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_NC_001664.4_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">Human betaherpesvirus 6A genome</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Human betaherpesvirus 6A genome is 0.192103199257387 &#177; 0.650309869175835">0.19 &#177; 0.65</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 6">6</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="9.690175400000001% of bases over depth 1">9.69</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: Human betaherpesvirus 6A genome in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_genome_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence Human betaherpesvirus 6A genome  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly Human betaherpesvirus 6A genome by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence Human betaherpesvirus 6A genome that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_genome_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr style="background-color: #E8F5F8; height: 60px;">
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_full_boxplot.html" target="_blank" title="View depth distribution of sequences in assembly GCF_000845685.2">All sequences: coverage depth distribution</a></th>
+                                     <th class="coverage_table_header virus_button" colspan="5">
+                                     <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">All sequences: coverage depth by pos</a>
+                                     <ul class="dropdown-menu dropdown-menu-lg-end">
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCF_000845685.2 by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                     </li>
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCF_000845685.2 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                     </li>
+                                     </ul>
+                                     </th>
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Human_betaherpesvirus_6A_GCF_000845685.2_full_lineplot.html" target="_blank" title="View % of all sequences in assembly GCF_000845685.2 in or over a certain depth">All sequences: percentage of reads by depth</a></th>
+                                     </tr>
+                                     </tbody>
+                                     </table>
+                                     </div>
+                                     </div>
+<div class="card-fluid" id="GCF_000860865.1" style="padding: 1%">
+                                      <h4>Equine arteritis virus strain=Bucyrus</h4>
+                                     <div class="card-body">
+                                     <table class="table">
+<tr style="background-color: #A7D5FF;  height: 100px;">
+                                         <th class="coverage_table_header" colspan="5" title="Name of the species"><span style="font-size: 18px">Species:</span><br><span style="font-weight: lighter; font-size: 18px">Equine arteritis virus<span></th>
+                                         <th class="coverage_table_header" colspan="5" title="Name of the subspecies"><span style="font-size: 18px">Subspecies/Strain:</span><br><span style="font-weight: lighter; font-size: 18px">strain=Bucyrus<span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="4" title="Name of the assembly"><span style="font-size: 18px">Assembly:</span><br><span style="font-weight: lighter; font-size: 18px">GCF_000860865.1</span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="4" title="Number of sequences in the reference (whole genome not included)"><span style="font-size: 18px">Number of sequences:</span><br><span style="font-weight: lighter; font-size: 18px">1</span></th>
+                                         </tr>
+<tr style="margin-top: 5px; height: 90px">
+                                    <th class="coverage_table_header" colspan="2">Identifier</th>
+                                    <th class="coverage_table_header" title="Mean coverage depth for the sequence &#177; deviation">Mean depth</th>
+                                    <th class="coverage_table_header" title="Minimal coverage depth for the sequence">Min depth</th>
+                                    <th class="coverage_table_header" title="Maximum coverage depth for the sequence">Max depth</th>
+                                    <th class="coverage_table_header" title="Median of the coverage depth for the sequence">Depth median</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 1 or superior">Sequence %<br>>=1 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 10 or superior">Sequence %<br>>=10 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 25 or superior">Sequence %<br>>=25 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 50 or superior">Sequence %<br>>=50 Depth </th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 75 or superior">Sequence %<br>>=75 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 100 or superior">Sequence %<br>>=100 Depth</th>
+                                    <th class="coverage_table_header" title="Boxplot displaying the coverage depth of all bases in the sequence">Coverage depth <br> distribution</th>
+                                    <th class="coverage_table_header" title="Plot displaying the coverage depth of each base in the sequence">Coverage depth <br> by pos</th>
+                                    <th class="coverage_table_header" title="Plot displaying the % of bases in the sequence in or over a certain depth">Read percentage <br> vs depth</th>
+                                    </tr>
+                                    </thead>
+<tbody>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">NC_002532.2</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for NC_002532.2 is 0.1596350478905144 &#177; 0.6311269116638517">0.16 &#177; 0.63</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 4">4</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="6.675070000000001% of bases over depth 1">6.68</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: NC_002532.2 in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_NC_002532.2_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence NC_002532.2  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_NC_002532.2_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly NC_002532.2 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_NC_002532.2_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence NC_002532.2 that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_NC_002532.2_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">Equine arteritis virus strain=Bucyrus genome</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Equine arteritis virus strain=Bucyrus genome is 0.1596350478905144 &#177; 0.6311269116638517">0.16 &#177; 0.63</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 4">4</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="6.675070000000001% of bases over depth 1">6.68</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: Equine arteritis virus strain=Bucyrus genome in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_genome_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence Equine arteritis virus strain=Bucyrus genome  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly Equine arteritis virus strain=Bucyrus genome by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence Equine arteritis virus strain=Bucyrus genome that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_genome_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr style="background-color: #E8F5F8; height: 60px;">
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_full_boxplot.html" target="_blank" title="View depth distribution of sequences in assembly GCF_000860865.1">All sequences: coverage depth distribution</a></th>
+                                     <th class="coverage_table_header virus_button" colspan="5">
+                                     <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">All sequences: coverage depth by pos</a>
+                                     <ul class="dropdown-menu dropdown-menu-lg-end">
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCF_000860865.1 by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                     </li>
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCF_000860865.1 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                     </li>
+                                     </ul>
+                                     </th>
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Equine_arteritis_virus_strain=Bucyrus_GCF_000860865.1_full_lineplot.html" target="_blank" title="View % of all sequences in assembly GCF_000860865.1 in or over a certain depth">All sequences: percentage of reads by depth</a></th>
+                                     </tr>
+                                     </tbody>
+                                     </table>
+                                     </div>
+                                     </div>
+<div class="card-fluid" id="GCF_002985885.1" style="padding: 1%">
+                                      <h4>Phocid alphaherpesvirus 1 strain=PB84</h4>
+                                     <div class="card-body">
+                                     <table class="table">
+<tr style="background-color: #A7D5FF;  height: 100px;">
+                                         <th class="coverage_table_header" colspan="5" title="Name of the species"><span style="font-size: 18px">Species:</span><br><span style="font-weight: lighter; font-size: 18px">Phocid alphaherpesvirus 1<span></th>
+                                         <th class="coverage_table_header" colspan="5" title="Name of the subspecies"><span style="font-size: 18px">Subspecies/Strain:</span><br><span style="font-weight: lighter; font-size: 18px">strain=PB84<span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="4" title="Name of the assembly"><span style="font-size: 18px">Assembly:</span><br><span style="font-weight: lighter; font-size: 18px">GCF_002985885.1</span></th>
+                                         <th class="coverage_table_header" style="font-size: 18px" colspan="4" title="Number of sequences in the reference (whole genome not included)"><span style="font-size: 18px">Number of sequences:</span><br><span style="font-weight: lighter; font-size: 18px">1</span></th>
+                                         </tr>
+<tr style="margin-top: 5px; height: 90px">
+                                    <th class="coverage_table_header" colspan="2">Identifier</th>
+                                    <th class="coverage_table_header" title="Mean coverage depth for the sequence &#177; deviation">Mean depth</th>
+                                    <th class="coverage_table_header" title="Minimal coverage depth for the sequence">Min depth</th>
+                                    <th class="coverage_table_header" title="Maximum coverage depth for the sequence">Max depth</th>
+                                    <th class="coverage_table_header" title="Median of the coverage depth for the sequence">Depth median</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 1 or superior">Sequence %<br>>=1 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 10 or superior">Sequence %<br>>=10 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 25 or superior">Sequence %<br>>=25 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 50 or superior">Sequence %<br>>=50 Depth </th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 75 or superior">Sequence %<br>>=75 Depth</th>
+                                    <th class="coverage_table_header" title="% of bases in the sequence in coverage depth 100 or superior">Sequence %<br>>=100 Depth</th>
+                                    <th class="coverage_table_header" title="Boxplot displaying the coverage depth of all bases in the sequence">Coverage depth <br> distribution</th>
+                                    <th class="coverage_table_header" title="Plot displaying the coverage depth of each base in the sequence">Coverage depth <br> by pos</th>
+                                    <th class="coverage_table_header" title="Plot displaying the % of bases in the sequence in or over a certain depth">Read percentage <br> vs depth</th>
+                                    </tr>
+                                    </thead>
+<tbody>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">NC_043410.1</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for NC_043410.1 is 0.23042382156609426 &#177; 0.7066230524558158">0.23 &#177; 0.71</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 4">4</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="11.703908% of bases over depth 1">11.7</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: NC_043410.1 in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_NC_043410.1_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence NC_043410.1  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_NC_043410.1_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly NC_043410.1 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_NC_043410.1_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence NC_043410.1 that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_NC_043410.1_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr>
+                                         <td style="text-align: center; vertical-align: middle;" colspan="2">Phocid alphaherpesvirus 1 strain=PB84 genome</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Mean coverage for Phocid alphaherpesvirus 1 strain=PB84 genome is 0.23042382156609426 &#177; 0.7066230524558158">0.23 &#177; 0.71</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Minimum depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Maximum depth is 4">4</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="Median depth is 0">0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="11.703908% of bases over depth 1">11.7</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 10">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 25">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 50">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 75">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="0.0% of bases over depth 100">0.0</td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View depth distribution of sequence: Phocid alphaherpesvirus 1 strain=PB84 genome in a boxplot"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_genome_single_boxplot.html" target="_blank">view</a></td>
+                                         <td style="text-align: center; vertical-align: middle;">
+                                         <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">view</a>
+                                         <ul class="dropdown-menu">
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of sequence Phocid alphaherpesvirus 1 strain=PB84 genome  by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                             </li>
+                                             <li>
+                                                 <a class="dropdown-item" title="View coverage depth of assembly Phocid alphaherpesvirus 1 strain=PB84 genome by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                             </li>
+                                         </ul>
+                                         </td>
+                                         <td style="text-align: center; vertical-align: middle;" title="View % of sequence Phocid alphaherpesvirus 1 strain=PB84 genome that is in or over a certain depth"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_genome_single_lineplot.html" target="_blank" >view</a></td>
+                                         </tr>
+<tr style="background-color: #E8F5F8; height: 60px;">
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_full_boxplot.html" target="_blank" title="View depth distribution of sequences in assembly GCF_002985885.1">All sequences: coverage depth distribution</a></th>
+                                     <th class="coverage_table_header virus_button" colspan="5">
+                                     <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">All sequences: coverage depth by pos</a>
+                                     <ul class="dropdown-menu dropdown-menu-lg-end">
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCF_002985885.1 by position, with max coverage set as the max coverage overall" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_full_coverage_depth_by_pos.html" target="_blank">Standard scale</a>
+                                     </li>
+                                     <li>
+                                     <a class="dropdown-item" title="View coverage depth of sequences in assembly GCF_002985885.1 by position, with max coverage set to 500" href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_full_coverage_depth_by_pos_capped_500.html" target="_blank">Limited to 500 depth</a>
+                                     </li>
+                                     </ul>
+                                     </th>
+                                     <th class="coverage_table_header virus_button" colspan="5"><a href="Sample1/virus_coverage/plots/Sample1_Phocid_alphaherpesvirus_1_strain=PB84_GCF_002985885.1_full_lineplot.html" target="_blank" title="View % of all sequences in assembly GCF_002985885.1 in or over a certain depth">All sequences: percentage of reads by depth</a></th>
+                                     </tr>
+                                     </tbody>
+                                     </table>
+                                     </div>
+                                     </div>
+</div>
+                                </div>
+</div>
+<script>
+                        var $table = $('#table')
+                        $(function() {
+                        $('#toolbar').find('select').change(function () {
+                        $table.bootstrapTable('destroy').bootstrapTable({
+                        exportDataType: $(this).val(),
+                        exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
+                        })
+                        }).trigger('change')
+                        })
+                        </script>
+<script>
+                        function display_corresponding_quality(id) {var elems = document.getElementsByName("quality_control_section");for (var i=0;i<elems.length;i+=1){elems[i].style.display = 'none';}
+                        document.getElementById(id).style.display = "block"}
+                        </script></body>
+</html>

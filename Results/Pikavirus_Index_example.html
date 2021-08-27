@@ -1,0 +1,89 @@
+<html>
+   <head>
+      <title>Pikavirus: result index</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <style>
+         .icon { width: 32px; height: 32px;}
+         td {border: 1px solid hsl(0, 0%, 87%); text-align: center; padding: 2%; width: 8%}
+         .True { background-color:rgba(0,255,0,0.15); }
+         .False { background-color:rgba(255, 0, 0, 0.15); }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid" style="background-color: #003B6F; color: white;">
+         <h1 style="padding: 60px; color:white; margin-top: 2%;">Pikavirus: index</h1>
+      </div>
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+         <div class="container-fluid">
+            <a class="navbar-brand" style="color: white; font-size: 30px">Result index </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-expanded="False">
+            <span class="navbar-toggler-icon">Toggle navigation</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar_buttons">
+               <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li><a class="nav-link active" href="">How does this work?</a></li>
+               </ul>
+               <ul class="nav navbar-nav ml-auto">
+                  <li><a class="nav-link active" href="https://github.com/BU-ISCIII/PikaVirus" target="_blank"><img class=icon src="https://raw.githubusercontent.com/GuilleGorines/nf-core-pikavirus/a96b707ae03383d3cb727b935d348a0ed859f0c7/assets/github_logo.svg"></a></li>
+                  <li><a class="nav-link active" href="https://twitter.com/BUISCIII" target="_blank"><img class=icon src="https://raw.githubusercontent.com/GuilleGorines/nf-core-pikavirus/a96b707ae03383d3cb727b935d348a0ed859f0c7/assets/twitter_logo.svg"></a></li>
+                  <li><a class="nav-link active" href="https://www.facebook.com/pages/Escuela-Nacional-de-Sanidad-Isciii/203300096355772?fref=ts" target="_blank"><img class=icon src="https://raw.githubusercontent.com/GuilleGorines/nf-core-pikavirus/a96b707ae03383d3cb727b935d348a0ed859f0c7/assets/facebook_logo.svg"></a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container-fluid">
+         <div class="row mb-2">
+            <div class="container-fluid col-md-5">
+               <h2 style="padding: 3%">Parameters</h2>
+               <table id="params_table">
+                  <tr>
+                     <td><a>Quality control</a></td>
+                     <td class=True><a>True</a></td>
+                  </tr>
+                  <tr>
+                     <td><a>Control genome removal</a></td>
+                     <td class=True><a>True</a></td>
+                  </tr>
+                  <tr>
+                     <td><a>Initial scouting</a></td>
+                     <td class=True><a>True</a></td>
+                  </tr>
+                  <tr>
+                     <td><a>Coverage analysis</a></td>
+                     <td class=True><a>True</a></td>
+                  </tr>
+                  <tr>
+                     <td><a>Virus</a></td>
+                     <td class=True><a>True</a></td>
+                  </tr>
+               </table>
+               <div class="container-fluid" style="padding: 3%;">
+                  <p>This report was generated on Day, Year, at HH:MM</p>
+               </div>
+               <a class="list-group-item list-group-item-action" style="text-align: center;">View MultiQC file for all samples</a>
+            </div>
+            <div class="container-fluid col-md-5">
+               <h2 style="padding: 3%">Sample list</h2>
+               <div class="list-group">
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample A</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample B</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample C</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample D</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample E</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample F</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample G</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample H</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample I</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample J</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample K</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample L</a>
+                  <a style="text-align: center;" class="list-group-item list-group-item-action">Sample M</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
