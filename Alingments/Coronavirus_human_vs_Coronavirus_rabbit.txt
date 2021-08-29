@@ -1,0 +1,2539 @@
+########################################
+# Program: stretcher
+# Rundate: Sun 29 Aug 2021 14:59:08
+# Commandline: stretcher
+#    -auto
+#    -stdout
+#    -asequence emboss_stretcher-I20210829-150411-0642-51779860-p1m.asequence
+#    -bsequence emboss_stretcher-I20210829-150411-0642-51779860-p1m.bsequence
+#    -datafile EDNAFULL
+#    -gapopen 16
+#    -gapextend 4
+#    -aformat3 pair
+#    -snucleotide1
+#    -snucleotide2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Human_coronavirus_OC43_strain_ATCC_VR-759_complete_genome
+# 2: Rabbit_coronavirus_HKU14_complete_genome
+# Matrix: EDNAFULL
+# Gap_penalty: 16
+# Extend_penalty: 4
+#
+# Length: 31228
+# Identity:   26561/31228 (85.1%)
+# Similarity: 26561/31228 (85.1%)
+# Gaps:         615/31228 ( 2.0%)
+# Score: 113297
+# 
+#
+#=======================================
+
+Human_coronav      1 -ATTGTGAGCGATTTGCGTGCGTGCATCCCGCTTCACTGATCTCTTGTTA     49
+                      |||.|||||||||||||||||||||||| ||.|||.|||.|||||||||
+Rabbit_corona      1 GATTCTGAGCGATTTGCGTGCGTGCATCC-GCCTCAGTGAACTCTTGTTA     49
+
+Human_coronav     50 GATCTTTTTGTAATCTAAACTTTATAAAAACATCCACTCCCTGTAATCTA     99
+                     |.|||..|| ||||||||||||||||||||||.|.|||||||||||||||
+Rabbit_corona     50 GTTCTAATT-TAATCTAAACTTTATAAAAACACCTACTCCCTGTAATCTA     98
+
+Human_coronav    100 TGCTTGTGGGCGTAGATTTTTCATAGTGGTGTTTATATTCATTTCTGCTG    149
+                     ||||||.|.|.||||||.||||||||||||||.||..||..||.|...||
+Rabbit_corona     99 TGCTTGCGAGTGTAGATCTTTCATAGTGGTGTCTAGTTTTGTTCCATTTG    148
+
+Human_coronav    150 TTAACAGCTTTCAGCCAGGGACGTGTTGTATCCTAGGCAGTGGCCCGCCC    199
+                     ||||||||||||||||.|.|||||||||||||||||||||||||||.|||
+Rabbit_corona    149 TTAACAGCTTTCAGCCGGTGACGTGTTGTATCCTAGGCAGTGGCCCACCC    198
+
+Human_coronav    200 ATAGGTCACAATGTCGAAGATCAACAAATACGGTCTCGAACTACACTGGG    249
+                     ||||||||.||||.|||||||||||||||||||||||||.||.||.||||
+Rabbit_corona    199 ATAGGTCATAATGCCGAAGATCAACAAATACGGTCTCGAGCTGCAATGGG    248
+
+Human_coronav    250 CTCCAGAATTTCCATGGATGTTTGAGGACGCAGAGGAGAAGTTGGATAAC    299
+                     |||||||||||||.|||||||||||||||.||||||||||||||||..||
+Rabbit_corona    249 CTCCAGAATTTCCGTGGATGTTTGAGGACACAGAGGAGAAGTTGGACTAC    298
+
+Human_coronav    300 CCTAGTAGTTCAGAGGTGGATATGATTTGCTCCACCACTGCGCAAAAGCT    349
+                     |||||.||||||||.||||.||||.|||||.||||.||.|||||||||||
+Rabbit_corona    299 CCTAGCAGTTCAGAAGTGGGTATGGTTTGCCCCACTACCGCGCAAAAGCT    348
+
+Human_coronav    350 GGAAACAGACGGAATTTGTCCTGAAAATCATGTGATGGTGGATTGTCGCC    399
+                     ||.|.||...|||||||.||.|.|.|||||.||||||||.||||||||||
+Rabbit_corona    349 GGGATCAAGTGGAATTTTTCTTAAGAATCACGTGATGGTTGATTGTCGCC    398
+
+Human_coronav    400 GACTTCTTAAACAAGAGTGTTGTGTGCAGTCTAGCCTAATACGTGAAATT    449
+                     |.||..|.||..|.|||||||||||||||||||..||.|||||||||||.
+Rabbit_corona    399 GCCTCGTAAAGTATGAGTGTTGTGTGCAGTCTAATCTGATACGTGAAATA    448
+
+Human_coronav    450 GTTATGAATGCAAGTCCATATGATTTGGAGGTGCTACTTCAAGATGCTTT    499
+                     ..|||||||.||.||||..|||.|.||||.|...|..|||||||.||..|
+Rabbit_corona    449 AATATGAATACAGGTCCTGATGCTATGGACGCTGTTATTCAAGAAGCACT    498
+
+Human_coronav    500 GCAGTCCCGTGAAGCAGTTTTGGTTACAACCCCCTTAG-GTATGTCTTTA    548
+                     .|||||||||...||.|||||.|||||| ||.|||.|| |.||||||||.
+Rabbit_corona    499 TCAGTCCCGTAGTGCTGTTTTAGTTACA-CCACCTCAGCGCATGTCTTTG    547
+
+Human_coronav    549 GAGGCATGCTATGTGAGAGGTTGTAATCCTAAAGGATGGACCATGGGTTT    598
+                     ||....|.||||......||.|||..|||||||||.||||||||||||||
+Rabbit_corona    548 GACATGTACTATAAATTGGGGTGTTGTCCTAAAGGTTGGACCATGGGTTT    597
+
+Human_coronav    599 GTTTCGGCGTAGAAGTGTGTGTAACACTGGTCGTTGCACTGTTAATAAGC    648
+                     ||||||.|||....|...|||||..|||||...|||.|.||||.|.|..|
+Rabbit_corona    598 GTTTCGTCGTCATTGCCAGTGTAGAACTGGCAATTGTAATGTTGAAACCC    647
+
+Human_coronav    649 ATGTGGCCTATCAGTTATATATGATTGATCCTGCAGGTGTCTGTCTTGGT    698
+                     ||||.|||.|||||.|.||||||||.||.||||.||||||||||||.||.
+Rabbit_corona    648 ATGTTGCCAATCAGCTCTATATGATAGACCCTGAAGGTGTCTGTCTAGGA    697
+
+Human_coronav    699 GCAGGTCAATTCGTGGGTTGGGTCATACC---CTTAGC-CTTTATGCCTG    744
+                     ||||||...||..|.||.|||.|..|.||   |||.|| ||...||..||
+Rabbit_corona    698 GCAGGTACGTTTATAGGATGGTTTGTTCCACTCTTTGCGCTACCTGAGTG    747
+
+Human_coronav    745 TGCAATCCCGGAAATTTATTGTTCCATGGGTTATGTACTTGCGTAAGCGT    794
+                     ||   |.|.|||.|.. |...||||.||||||.|||||.||||.||||.|
+Rabbit_corona    748 TG---TGCGGGATAAA-ACCTTTCCCTGGGTTTTGTACCTGCGAAAGCAT    793
+
+Human_coronav    795 GGCGAAAAGGGTGCTTACAATAAAGATCATGGACGTGGCGGTTTTGGACA    844
+                     ||.||.||.|||||..|...|||.|.|||||   |||.|..||||.....
+Rabbit_corona    794 GGTGAGAAAGGTGCGCATTCTAAGGGTCATG---GTGACACTTTTTATGT    840
+
+Human_coronav    845 TGTTTATGATTTTAAAGTTGAAGATGCTTATGACCAGGTGCATGATGAGC    894
+                     .|.||||||.|||.|.||||||||||||||.||..||||.||||||.|.|
+Rabbit_corona    841 GGATTATGACTTTGATGTTGAAGATGCTTACGAAGAGGTTCATGATAACC    890
+
+Human_coronav    895 CTAAGGGTAAGTTTTCTAAGAAGGCTTATGCTTTAATTAGAGGGTATCGT    944
+                     ||||.|||||||.|||||||||.|||||||||||..|.||.||.||||||
+Rabbit_corona    891 CTAAAGGTAAGTATTCTAAGAAAGCTTATGCTTTGTTGAGGGGATATCGT    940
+
+Human_coronav    945 GGTGTTAAACCACTTCTCTATGTAGACCAGTATGGTTGTGATTATACTGG    994
+                     |||||||||||||||||.|||||.|||||||||||||||||.||||||||
+Rabbit_corona    941 GGTGTTAAACCACTTCTTTATGTGGACCAGTATGGTTGTGACTATACTGG    990
+
+Human_coronav    995 TAGTCTTGCAGATGGCTTAGAGGCTTATGCTGATAAGACATTGCAAGAAA   1044
+                     ||.|||||||||.||.||.||.|||||||||||.....|..|.|||||.|
+Rabbit_corona    991 TAATCTTGCAGAGGGATTGGAAGCTTATGCTGAGTTCTCTCTTCAAGAGA   1040
+
+Human_coronav   1045 TGAAGGCATTATTTCCTACTTGGAGTCAGGAACTCCTTTTTGATGTAATT   1094
+                     ||||.|.|.|.|||||.|..|||||||.....||||..|.||||||..||
+Rabbit_corona   1041 TGAAAGAACTTTTTCCCATATGGAGTCTTAGTCTCCCATATGATGTTGTT   1090
+
+Human_coronav   1095 GTGGCATGGCATGTTGTGCGTGATCCACGTTATGTTATGAGATTGCAGAG   1144
+                     ||||||||||||||.||.||||||||.|..|.|||.||||..|||||...
+Rabbit_corona   1091 GTGGCATGGCATGTAGTTCGTGATCCTCAGTTTGTGATGAAGTTGCAATC   1140
+
+Human_coronav   1145 TGCTGCTACTATACGTAGTGTTGCATATGTTGCTAATCCTACTGAAGACT   1194
+                     |..|||||||||.|||||..|||..||||||||..|.||||||||.||.|
+Rabbit_corona   1141 TCTTGCTACTATTCGTAGCATTGAGTATGTTGCAGAACCTACTGAGGATT   1190
+
+Human_coronav   1195 TGTGTGATGGTTCTGTTGTTATAAAAGAACCTGTGCATGTTTATGCAGAT   1244
+                     |...||||||..|.||||||||.||||||||.|||||......|||....
+Rabbit_corona   1191 TAGTTGATGGCACGGTTGTTATTAAAGAACCCGTGCACACACTTGCCCCA   1240
+
+Human_coronav   1245 GACTCTATTATTTTACGTCAATATAATTTAGTTGACATTATGAGTCATTT   1294
+                     ||..|.||..|||||...|....|||..|..||||..|||||...||   
+Rabbit_corona   1241 GATGCCATAGTTTTAAAGCTGCCTAAGCTTATTGATCTTATGCAGCA---   1287
+
+Human_coronav   1295 TTATATGGAGGCAGATACAGTTGTAAATGCTTTTTATGGTGTTGCTTTGA   1344
+                        ||..||..|   |||.||.||..|..||.|||||..........|||
+Rabbit_corona   1288 ---TACAGATTC---TACTGTAGTGGAGTCTATTTATAAAACCAAGCTGA   1331
+
+Human_coronav   1345 AAGATTGCGGTTTTGTTATGCAGTTTGGTTACATTGATTGCGAACAAGAC   1394
+                     ||.||||.|||||||||||||||||||||||..||||.||....||.||.
+Rabbit_corona   1332 AACATTGTGGTTTTGTTATGCAGTTTGGTTATGTTGAATGTTCTCAGGAT   1381
+
+Human_coronav   1395 TCGTGTGATTTTAAAGGTTGGATTCCTGGTAACATGATAGATGGTTTTGC   1444
+                     ...||....||||.|||||||.||||.||.||.|||||||||||.|||||
+Rabbit_corona   1382 GATTGCACCTTTACAGGTTGGGTTCCAGGGAATATGATAGATGGATTTGC   1431
+
+Human_coronav   1445 TTGCACCACTTGTGGTCATGTTTATGAAGTAGGTGATTTGATGGCACAAT   1494
+                     .|||||..|.||||.|..||||||||.....|.|||||||.|.|||||||
+Rabbit_corona   1432 CTGCACATCATGTGCTTTTGTTTATGGCACTGTTGATTTGCTTGCACAAT   1481
+
+Human_coronav   1495 CTTCAGGTGTTTTGCCTGTTAACCCTGTATTGCATACTAAGAGTGCAGCA   1544
+                     ||||.||.|||.||||....||.|||||..|...|||.|| || ||  ||
+Rabbit_corona   1482 CTTCTGGCGTTATGCCCCAAAATCCTGTTCTTTTTACCAA-AG-GC--CA   1527
+
+Human_coronav   1545 GGCTATGGTGGTTTTGGTTGTAAAGATTCTTTTACTCTGTATGGCCAAAC   1594
+                     ||||||  |......||      .|||||.||||..||.|||||..|..|
+Rabbit_corona   1528 GGCTAT--TACAAACGG------GGATTCATTTAAGCTTTATGGAAATTC   1569
+
+Human_coronav   1595 TGTAGTTTATTTTGGAGGTTGTGTGTATTGGAGTCCAGCACGTAATATAT   1644
+                     |||..||...|||||.||||||.||||||||||.|||.|||.|..|.|.|
+Rabbit_corona   1570 TGTTATTCCATTTGGTGGTTGTTTGTATTGGAGCCCAACACCTGGTGTTT   1619
+
+Human_coronav   1645 GGATTCCTATATTAAAATCCTCTGTTAAGTCATATGACAGTTTGGTTTAT   1694
+                     ||.|||||.|..|.||.||.||||||||..||||.||..||.||||||||
+Rabbit_corona   1620 GGCTTCCTTTGATTAAGTCATCTGTTAAAGCATACGATGGTATGGTTTAT   1669
+
+Human_coronav   1695 ACTGGAGTTTTAGGTTGCAAGGCTATTGTAAAGGAAACAAATCTCATTTG   1744
+                     ||.||.|||.|||||||.||..|.|||||.||.||||||.|.....||||
+Rabbit_corona   1670 ACAGGTGTTGTAGGTTGTAAAACCATTGTCAAAGAAACAGAAGCTGTTTG   1719
+
+Human_coronav   1745 CAAAGCTTTGTACCTTGATTATGTTCAACACAAGTGTGGCAATTTACACC   1794
+                     .|||||..||||..|.||||||||.||..||||||||.|..|..||.|.|
+Rabbit_corona   1720 TAAAGCACTGTATTTGGATTATGTCCAGTACAAGTGTAGTGACCTAAAGC   1769
+
+Human_coronav   1795 AACGGGAGTTGCTAGGTGTTTCAGATGTGTGGCATAAACAATTGCTATTA   1844
+                     |..|.||.....|.|||.|..|.|||||.|||||||||||..|..|..|.
+Rabbit_corona   1770 AGAGAGAAGGTTTGGGTCTCGCTGATGTTTGGCATAAACAGCTTTTGATT   1819
+
+Human_coronav   1845 AATAGAGGTGTTTATAAACCTCTGTTAGAGAATATTGATTATTTTAATAT   1894
+                     ||||||||||.||||.|||||||.||.||.|||.||||||||||||.|||
+Rabbit_corona   1820 AATAGAGGTGATTATCAACCTCTTTTGGATAATGTTGATTATTTTAGTAT   1869
+
+Human_coronav   1895 GCGGCGCGCTAAATTTAGTTTAGAAACTTTTACTGTTTGTGCAGATGGCT   1944
+                     |||..|.||....||||||.|.||.||...||||||.|||.||||.||.|
+Rabbit_corona   1870 GCGCAGAGCACGTTTTAGTATGGAGACAGCTACTGTCTGTTCAGAGGGAT   1919
+
+Human_coronav   1945 TTATGCCTTTTCTTTTAGATGATTTAGTTCCACGCGCATATTATTTGGCA   1994
+                     |||||||.|||.|.||.||||.|||.||.||.|||.|.||||||||||..
+Rabbit_corona   1920 TTATGCCCTTTTTGTTGGATGGTTTGGTGCCGCGCACTTATTATTTGGTT   1969
+
+Human_coronav   1995 GTAAGTGGTCAAGCATTTTGTGATTATGCAGATAAACTTTG-CCATGCCG   2043
+                     ...|||||.|||||.||||||||| ||||......|.|||| |||.|..|
+Rabbit_corona   1970 AAGAGTGGCCAAGCTTTTTGTGAT-ATGCTTTGTGAGTTTGGCCAAGAAG   2018
+
+Human_coronav   2044 TTGTGTCTAAGAGTAAAGAGTTACTTGATGTGTCTCTGGATTCTTTAGGT   2093
+                     |||....|..|||.||||||||.||||.||||.||.|.|||||..|...|
+Rabbit_corona   2019 TTGCAGATTTGAGCAAAGAGTTGCTTGTTGTGACTTTAGATTCAGTTACT   2068
+
+Human_coronav   2094 GCAGCTATACATTATTTGAATTCTAAGATTGTTGATTTGGCTCAACATTT   2143
+                     .|.||..||||.|.|||||....|||..|||.|....|..|..||..|.|
+Rabbit_corona   2069 TCTGCATTACAATTTTTGACGCTTAATGTTGGTAGGCTTACCGAATGTCT   2118
+
+Human_coronav   2144 TAGTGATTTTGGAACAAGTTTCGTTTCTAAAATTGTTCATTTCTTTAAGA   2193
+                     ||..|..|||||.|..|..||.||....||..|..|.||.|.||||||.|
+Rabbit_corona   2119 TAAGGGCTTTGGTATTAAGTTTGTCAACAAGCTGATACAGTACTTTAAAA   2168
+
+Human_coronav   2194 CTTTTACTACTAGCACTGCTCTTGCATTTGCATGGGTTTTATTTCATGTT   2243
+                     ||..|||||...|.||.|||||.||.||||||||||||||..||||||||
+Rabbit_corona   2169 CTGCTACTAGATGTACCGCTCTCGCCTTTGCATGGGTTTTGCTTCATGTT   2218
+
+Human_coronav   2244 TTGCATGGTGCTTATATAGTAGTGGAGAGTGATATATATTTTGTTAAAAA   2293
+                     ||||..||.||.||||||||.||.||.|||||||||||||||.|||..|.
+Rabbit_corona   2219 TTGCGAGGCGCATATATAGTGGTTGAAAGTGATATATATTTTATTATGAG   2268
+
+Human_coronav   2294 CATTCCTCGTTATGCTAGTGCTGTTGCACAAGCATTTCAGAGTGTTGCTA   2343
+                     ||||||...||||||..|.|.|||||..|...|.|||||||.||||..||
+Rabbit_corona   2269 CATTCCAGATTATGCGCGCGTTGTTGTGCGTACTTTTCAGAATGTTTTTA   2318
+
+Human_coronav   2344 AAGTTGTACTGGACTCTTTAAGAGTTACTTTTATTGATGGCCTTTCTTGT   2393
+                     |..|.|.|.|.||.|.|.|||.|||..|.|||.|..|.|||||||||..|
+Rabbit_corona   2319 AGATGGCATTAGATTGTGTAAAAGTGTCATTTTTAAAAGGCCTTTCTGCT   2368
+
+Human_coronav   2394 TTTAAGATTGGACGTAGAAGAATTTGTCTTTCAGGCAGAAAAATTTATGA   2443
+                     ||||||||.||.|||..||.|||||||.||..|||.||.||..|||||.|
+Rabbit_corona   2369 TTTAAGATAGGGCGTGAAAAAATTTGTTTTGTAGGAAGCAAGTTTTATAA   2418
+
+Human_coronav   2444 AGTTGAGCGTGGCTTGTTACATTCATCCCAATTGCCATTAGATGTTTAT-   2492
+                     |||.||.||.||..          |||..|||.   |||.|.|...||. 
+Rabbit_corona   2419 AGTGGAACGAGGAA----------ATCTTAATG---ATTTGGTTCGTAGA   2455
+
+Human_coronav   2493 GATTTAACCATGCCTAGTCAAGTTCAGAAAGCCAAG---CAAAAACCTAT   2539
+                     |||||.....|.||||||..|...||||.|||.||.   ||..|||||.|
+Rabbit_corona   2456 GATTTGGTTGTTCCTAGTGTAACACAGAGAGCTAAAAATCAGCAACCTGT   2505
+
+Human_coronav   2540 TTATTTAAAAGGTTCTGGTTCTGATTTTTCATTAGCGGATAGTGTAGTTG   2589
+                     .|||||.|..|||..|.||.||..|.||....|||..|||..|||.||||
+Rabbit_corona   2506 CTATTTGACCGGTAATTGTGCTCCTGTTAATGTAGATGATGATGTGGTTG   2555
+
+Human_coronav   2590 AAGTTGTTACAACTTCACTTACACCATGTGGTTATTCTGAACCACCTAAA   2639
+                     |.||||||||.|...||.|||||.|.|||||||||....||||||||.||
+Rabbit_corona   2556 AGGTTGTTACTAACCCAGTTACATCTTGTGGTTATCAAAAACCACCTCAA   2605
+
+Human_coronav   2640 GTTGCAGCTAAAATTTGCATTGTGGATAATGTTTATATGGCCAAGGCTGG   2689
+                     ......|.|||.|||||.|||||||||||||||||||||||.||...|||
+Rabbit_corona   2606 AAATGTGATAAGATTTGTATTGTGGATAATGTTTATATGGCTAAATGTGG   2655
+
+Human_coronav   2690 TGACAAATATTACCCTGTTGTGGTT---GATGATCATGTTGGACTCTTGG   2736
+                     |||.||.|..|..||.||||||||.   ||.|||.|..||||.||.||.|
+Rabbit_corona   2656 TGAGAAGTTCTTTCCAGTTGTGGTGAACGAAGATTACATTGGCCTTTTAG   2705
+
+Human_coronav   2737 ATCAAGCATGGAGAGTTCCTTGTGCTGGAAGGCGTGTTACATTTAAGGAA   2786
+                     |||||||.||||||.|||||||||||||||.|....||.|.|||...||.
+Rabbit_corona   2706 ATCAAGCTTGGAGATTTCCTTGTGCTGGAAAGAAAATTTCCTTTGTAGAG   2755
+
+Human_coronav   2787 CAGCCTACAGTAAAGGAGATTATAAGCATGCCTAAGATTATTAAGGTTTT   2836
+                     .|.|||.||||.||||||||..|.|..|.|   ||||.|.||||.||.|.
+Rabbit_corona   2756 GAACCTTCAGTGAAGGAGATCGTCACAAAG---AAGACTGTTAAAGTCTG   2802
+
+Human_coronav   2837 TTATGAGCTTGACAACGATTTTAATACTATTTTAAATACTGCGTGTGGAG   2886
+                     ||.|||||||||.....||||||||||||||||..|.|||||.|||.|.|
+Rabbit_corona   2803 TTTTGAGCTTGATGCTAATTTTAATACTATTTTGGACACTGCTTGTAGCG   2852
+
+Human_coronav   2887 TGTTTGAAGTGGATGATACTGTTGATATGGAGGAATTTTATGCTGTGGTG   2936
+                     |||||||.||.|||.|||||||.|||||||||||.|||..||||||.||.
+Rabbit_corona   2853 TGTTTGAGGTAGATAATACTGTAGATATGGAGGAGTTTGCTGCTGTTGTC   2902
+
+Human_coronav   2937 ATTGATGCCATAGAAGAGAAACTTTCTCCATGTAAGGAGCTTGAAGGTGT   2986
+                     ..||||||.|||||.|||||||||.|||||||||||||||||||.|||||
+Rabbit_corona   2903 GCTGATGCGATAGAGGAGAAACTTACTCCATGTAAGGAGCTTGATGGTGT   2952
+
+Human_coronav   2987 AGGTGCTAAAGTTAGTGCCTTTTTACAGAAATTAGAGGATAATCCCCTAT   3036
+                     .||...||||||||||||||||||.|||||..|.||.||||||...||..
+Rabbit_corona   2953 TGGCATTAAAGTTAGTGCCTTTTTGCAGAAGCTGGAAGATAATAATCTTC   3002
+
+Human_coronav   3037 TTTTATTTGATGAGGCTGGCGAGGAAGTTCTTGCTCCTAAATTGTATTGT   3086
+                     ..||.||||||||.|||||.||....|||.|.|||.||||.||.||||||
+Rabbit_corona   3003 ACTTCTTTGATGAAGCTGGTGATTGTGTTTTGGCTTCTAAGTTATATTGT   3052
+
+Human_coronav   3087 GCCTTTACAGCTCCTGAAGATGATGACTTTCTTGAGGAAAGTGATGTTGA   3136
+                     .|.|||.|.||||||...|||||.||.|||...|||..|   ||...|||
+Rabbit_corona   3053 ACATTTTCGGCTCCTATTGATGAAGATTTTGGAGAGTCA---GAATATGA   3099
+
+Human_coronav   3137 AGAAGATGATGTAGAAGGTGAGGAAACTGATTTAACTGTCACAAGT----   3182
+                     |||||.||||||.||.|.|||.||||||||||..|.|||.||.||.    
+Rabbit_corona   3100 AGAAGGTGATGTTGATGTTGATGAAACTGATTCCATTGTTACTAGCACCT   3149
+
+Human_coronav   3183 -GCTGGA--------CAG-----------CCTTGTG--------------   3198
+                      ||.|||        |||           |||||||              
+Rabbit_corona   3150 CGCAGGAGGTTTGTGCAGGTTCGGGCATCCCTTGTGGTACGGACTGCAAT   3199
+
+Human_coronav   3199 ----TTGCTAGTGAACAGGAGGAGTCTTCTGAAGTCTTAGAGGACACTTT   3244
+                         ||||.|.||.||||||||||.|.||.||||||||.||.....||..
+Rabbit_corona   3200 AGTATTGCCAATGGACAGGAGGAGGCATCAGAAGTCTTTGAAATAGCTGA   3249
+
+Human_coronav   3245 GGATGATGGTCCAAGTGTGGA-GACATCTGATTCA-----CAAGTTGAAG   3288
+                     .|.|||.|.|.|.|.|.|||| ||..|...|.|||     ||||...|.|
+Rabbit_corona   3250 AGTTGAGGATTCTATTTTGGAAGAACTTCAAGTCAGCATACAAGCGCATG   3299
+
+Human_coronav   3289 AAGATGTAGAAAT---GTC---GGATTTTG---------TTGATCTTGAA   3323
+                     |.||.||.||..|   |||   |||||.||         |||..|.|||.
+Rabbit_corona   3300 ATGAAGTGGACGTTGTGTCTGCGGATTCTGATTCCGTGCTTGTGCATGAT   3349
+
+Human_coronav   3324 TCTGT-GATTCAGG--ATTATGAAAATGT---TTGT---------TTTGA   3358
+                     |...| |||...|.  |||||||.|.|.|   ||||         |||||
+Rabbit_corona   3350 TACATAGATGGTGTTAATTATGACACTTTCTATTGTGATACTGTTTTTGA   3399
+
+Human_coronav   3359 GTTTTATACTACA------GAGCCAGAATTTGTTAAAGTTTTGGGTCTGT   3402
+                     .||||||..|.||      ||.||.||.||.||.||||||.|.|||.|||
+Rabbit_corona   3400 TTTTTATGTTGCACACAAGGAACCTGATTTCGTAAAAGTTCTTGGTGTGT   3449
+
+Human_coronav   3403 ATGTGCCTAAAGCAACTCGCAACAATTGCTGGTTGCGATCAGTTTTGGCA   3452
+                     ||||.|||||||||||.|||||.|||||.||||||||.||.||.|||||.
+Rabbit_corona   3450 ATGTTCCTAAAGCAACGCGCAATAATTGTTGGTTGCGTTCTGTCTTGGCT   3499
+
+Human_coronav   3453 GTGATGCAGAAATTGCCCTGTCAATTTAAAGATAAAAATTTGCAGGATCT   3502
+                     ||..|.|||||.|||||.|||...|||||.|||||||||||||||..|.|
+Rabbit_corona   3500 GTTTTTCAGAAGTTGCCATGTACTTTTAAGGATAAAAATTTGCAGAGTTT   3549
+
+Human_coronav   3503 TTGGGTGTTATACAAGCAACAGTATAGTCAGTTGTTTGTTGATACCTTGG   3552
+                     .|||.|||..||.|||||.||.|.|..||||||||||||.||.||..|..
+Rabbit_corona   3550 GTGGTTGTCTTATAAGCAGCAATTTGATCAGTTGTTTGTAGACACTATTA   3599
+
+Human_coronav   3553 TTAATAAGATACCTGCTAATATTGTACTTCCACAAGGTGGTTATGTTGCT   3602
+                     |..|.||.||||||||.|||||.||..|||||||.|||||||||||.|||
+Rabbit_corona   3600 TGCAGAAAATACCTGCAAATATAGTTGTTCCACAGGGTGGTTATGTAGCT   3649
+
+Human_coronav   3603 GATTTTGCATATTGGTTTTTAACCTTATGTGATTGGCAGTGTGTTGCAT-   3651
+                     ||||||||.||||||.|..|.||.||.||.||||||.|   ||..|||| 
+Rabbit_corona   3650 GATTTTGCTTATTGGCTACTTACTTTGTGCGATTGGAA---TGCGGCATC   3696
+
+Human_coronav   3652 --ACTGGAAATGCATTAAATGTGATTTAGCTCTTAAGCTTAAAGGCTTGG   3699
+                       |.||||.|||..|||||||||||||.||.||.||.|||.||||.||||
+Rabbit_corona   3697 TCATTGGAGATGTCTTAAATGTGATTTGGCACTAAACCTTCAAGGTTTGG   3746
+
+Human_coronav   3700 ATGCTATGTTCTTTTATGGTGATGTTGTTTCACATATATGCAAGTGTGGT   3749
+                     |||||||.|||||||||||.||..|.||.||||||.|.||.||||||||.
+Rabbit_corona   3747 ATGCTATATTCTTTTATGGAGACATAGTGTCACATGTTTGTAAGTGTGGC   3796
+
+Human_coronav   3750 GAGTCTATGGTACTTATTGATGTTGATGTGCCATTTACAGCCCACTTTGC   3799
+                     |||||||||||.|||.||.|.|||||||||||.|||||.||.||.|||||
+Rabbit_corona   3797 GAGTCTATGGTTCTTCTTAAAGTTGATGTGCCGTTTACTGCACATTTTGC   3846
+
+Human_coronav   3800 TCTTAAAGATAAGTTGTTTTGTGCATTTATTACTAAGCGTATTGTGTATA   3849
+                     |.|.||.||||||..|||||||.|.||||..||..|.|||..|.|.|.||
+Rabbit_corona   3847 TGTGAAGGATAAGCAGTTTTGTTCTTTTACGACACAACGTCGTATTTTTA   3896
+
+Human_coronav   3850 AAGCAGCTTGTGTTGTGGATGTTAATGATAGTCATTCTATGGCTGTTGTT   3899
+                     ||||.|||||.|||.|.|||...|||||..||||||||||||||||..||
+Rabbit_corona   3897 AAGCTGCTTGCGTTATTGATAAAAATGACCGTCATTCTATGGCTGTCATT   3946
+
+Human_coronav   3900 GATGGTAAACAAATTGATGATCATCGTATCACTAGTATTACTAGTGATAA   3949
+                     ||||||||||||||||||||..|.|.|.|.|||..|||||..||||||||
+Rabbit_corona   3947 GATGGTAAACAAATTGATGACAAGCTTGTTACTGATATTAACAGTGATAA   3996
+
+Human_coronav   3950 GTTTGATTTTATTATTGGGCATGGTATGTCATTTTCAATGACTACTTTTG   3999
+                     |||||||||||||||||||||||..|||.|||||...|||.|..|.||||
+Rabbit_corona   3997 GTTTGATTTTATTATTGGGCATGAGATGGCATTTAGTATGTCATCCTTTG   4046
+
+Human_coronav   4000 AAATTGCCCAATTGTATGGTTCTTGTATAACACCTAATGTGTGTTTTGTT   4049
+                     |||||||.|||||||||||||..|||||||||||||||||.|||||||||
+Rabbit_corona   4047 AAATTGCTCAATTGTATGGTTGCTGTATAACACCTAATGTTTGTTTTGTT   4096
+
+Human_coronav   4050 AAAGGTGATATAATTAAAGTATCTAAGCTTGTTAAAGCAGAAGTTGTTGT   4099
+                     |||||||||.|.||.|.|.|..|..|||||||..|.||.||.||.|||||
+Rabbit_corona   4097 AAAGGTGATGTTATAAGAATTGCCCAGCTTGTGTATGCTGATGTAGTTGT   4146
+
+Human_coronav   4100 AAACCCTGCTAATGGCCATATGGCACATGGTGGTGGTGTTGCAAAAGCTA   4149
+                     .||.||.|||||||||||||||||.||||||||||||||.||||||||||
+Rabbit_corona   4147 TAATCCCGCTAATGGCCATATGGCTCATGGTGGTGGTGTGGCAAAAGCTA   4196
+
+Human_coronav   4150 TTGCAGTAGCAGCTGGACAGCAGTTTGTTAAAGAGACTACCGATATGGTT   4199
+                     |.||....||||||||.||....|||.||||.||||||.|..||||||||
+Rabbit_corona   4197 TAGCTAATGCAGCTGGTCAAAGTTTTATTAAGGAGACTGCTAATATGGTT   4246
+
+Human_coronav   4200 AAGTCTAAAGGAGTTTGTGCTACTGGAGATTGTTATGTCTCTACAGGGGG   4249
+                     |||||||||||||||||||||||.||.|||||||||||.||..||||.||
+Rabbit_corona   4247 AAGTCTAAAGGAGTTTGTGCTACCGGTGATTGTTATGTGTCATCAGGAGG   4296
+
+Human_coronav   4250 CAAATTATGTAAAACTGTGCTTAATGTTGTTGGACCTGATGCGAGAACAC   4299
+                     |||||||||||||||||||||||||||||||||.|||||.||..||.|.|
+Rabbit_corona   4297 CAAATTATGTAAAACTGTGCTTAATGTTGTTGGTCCTGACGCACGAGCTC   4346
+
+Human_coronav   4300 AGGGTAAACAAAGTTATGTATTGTTAGAGCGTGTTTATAAACATCTTAAC   4349
+                     |||||||.|||.||||||.|||||||||.......||||||||.||||||
+Rabbit_corona   4347 AGGGTAAGCAATGTTATGCATTGTTAGAAAAGACATATAAACACCTTAAC   4396
+
+Human_coronav   4350 AACTATGACTGTGTTGTTACAACTTTGATCTCAGCTGGTATATTTAGTGT   4399
+                     ||.|||||.|||..|.||||.||..|.||.||.|||||.|||||||||||
+Rabbit_corona   4397 AAGTATGATTGTAGTCTTACTACACTTATTTCTGCTGGCATATTTAGTGT   4446
+
+Human_coronav   4400 GCCTTCTGATGTGTCTTTAACATATCTACTTGGTACTGCTAAGAAACAAG   4449
+                     |||.||||||||||||||.|||||..||||||||..||...|.|||||||
+Rabbit_corona   4447 GCCATCTGATGTGTCTTTGACATACTTACTTGGTGTTGTAGAAAAACAAG   4496
+
+Human_coronav   4450 TTGTTCTTGTTAGCAATAATCAAGAGGATTTTGATCTTATTTCTAAGTGT   4499
+                     ||.||||||||||.||.||..||||.|||||||||.|.||||||||||||
+Rabbit_corona   4497 TTATTCTTGTTAGTAACAACAAAGAAGATTTTGATTTGATTTCTAAGTGT   4546
+
+Human_coronav   4500 CAGATAACTGCTGTTGAGGGCACTAAGAAATTGGCAGCGCGTCTTTCTTT   4549
+                     ||..||||.|||||.||||||||||..||.||.||||.||||||.|||||
+Rabbit_corona   4547 CAACTAACGGCTGTAGAGGGCACTAGAAAGTTTGCAGAGCGTCTATCTTT   4596
+
+Human_coronav   4550 TAATGTTGGACGTTCCATTGTTTACGAAACAGATGCTAATAAGTTGATTT   4599
+                     ||||||.|||||..|.|||...||.|||||||||||||||||||||.||.
+Rabbit_corona   4597 TAATGTAGGACGCACTATTAAATATGAAACAGATGCTAATAAGTTGCTTA   4646
+
+Human_coronav   4600 TAATCAATGACGTTGCATTTGTTTCGACATTTAATGTTTTACAGGATGTT   4649
+                     |.|.||||||.||.|.|||||||||.||.||||||||.||.||.||||||
+Rabbit_corona   4647 TTAGCAATGATGTAGTATTTGTTTCTACTTTTAATGTGTTGCAAGATGTT   4696
+
+Human_coronav   4650 TTATCCTTAAGACATGATATAGCACTTGATGATGATGCACGAACCTTCGT   4699
+                     ....|.||..|.||.|||||...|||||||||||||||.||....||.||
+Rabbit_corona   4697 AACACATTGCGGCACGATATTAAACTTGATGATGATGCGCGTGTTTTTGT   4746
+
+Human_coronav   4700 TCAGAGCAATGTTGATGTTGTACCTGAGGGTTGGCGTGTTGTCAATAAGT   4749
+                     .|||...|||.|.||...|.|.|||...|.||||||..|.||.|||||||
+Rabbit_corona   4747 GCAGTCAAATATGGAGAATTTGCCTACAGATTGGCGCATAGTTAATAAGT   4796
+
+Human_coronav   4750 TTTATCAAATTAATGGTGTTAGAACCGTTAAGTATTTTGAGTGTACTGGA   4799
+                     ||.||||.|||||||||||||||||||||||.||||||||.|||.||||.
+Rabbit_corona   4797 TTGATCAGATTAATGGTGTTAGAACCGTTAAATATTTTGAATGTCCTGGT   4846
+
+Human_coronav   4800 GGCATAGATATATGCAGCCAGGATAAAGTTTTTGGTTATGTACAGCAGGG   4849
+                     ||||||||.||.||.|||||||.|||||.||||||||||.||||||||||
+Rabbit_corona   4847 GGCATAGACATTTGTAGCCAGGGTAAAGATTTTGGTTATATACAGCAGGG   4896
+
+Human_coronav   4850 TATTTTTAATAAGGCTACTGTTGCTCAAATTAAAGCCTTGTTTTTGGATA   4899
+                     |..||||.|.|||||.|||||....||||||||.||.||||||.|.||||
+Rabbit_corona   4897 TTCTTTTTACAAGGCCACTGTAAGCCAAATTAAGGCTTTGTTTGTTGATA   4946
+
+Human_coronav   4900 AAGTGGACATCTTGCTAACTGTTGATGGTGTTAATTTCACTAATAGGTTT   4949
+                     ||.|.||..|.|||||.||||||||||||||||||||.||.|.|||||.|
+Rabbit_corona   4947 AAATAGATGTTTTGCTTACTGTTGATGGTGTTAATTTTACCACTAGGTAT   4996
+
+Human_coronav   4950 GTGCCTGTTGGTGAAAGTTTTGGTAAGAGTCTAGGAAATGTGTTTTGTGA   4999
+                     ||.|||.||||||||..||||||.||.|..|||||.|||||.||||||||
+Rabbit_corona   4997 GTACCTCTTGGTGAAGTTTTTGGCAAAACACTAGGCAATGTATTTTGTGA   5046
+
+Human_coronav   5000 TGGAGTTAATGTCACGAAGCATAAGTGTGATATAAATTATAAAGGTAAAG   5049
+                     ||...||||||||||.||....|||..|||....||.||||||||.||.|
+Rabbit_corona   5047 TGCTATTAATGTCACAAAATGCAAGGCTGAACAGAAATATAAAGGAAAGG   5096
+
+Human_coronav   5050 TCTTTTTCCAGTTTGATAATCTTTCTAGTGAAGATTTAAAGGCTGTAAGA   5099
+                     |.||.||.||||||||||||||.||||.||.|||||||||.|||||.|..
+Rabbit_corona   5097 TGTTCTTTCAGTTTGATAATCTGTCTAATGCAGATTTAAAAGCTGTTAAG   5146
+
+Human_coronav   5100 AGTTCCTTTAATTTTGATCAGAAGGAATTGCTTGCCTATTACAACATGCT   5149
+                     |||||.||.|||||||||||.||.||||||.|.||.||||||||..|.||
+Rabbit_corona   5147 AGTTCTTTCAATTTTGATCAAAAAGAATTGTTGGCTTATTACAATGTCCT   5196
+
+Human_coronav   5150 TGTTAATTGTTTTAAGTGGCAGGTTGTTGTTAATGGTAAGTATTTCACTT   5199
+                     |||.|.||||..|||||||||..||||||||||||||||.|||||.||||
+Rabbit_corona   5197 TGTGAGTTGTGGTAAGTGGCAAATTGTTGTTAATGGTAAATATTTTACTT   5246
+
+Human_coronav   5200 TTAAGCAAGCTAATAACAATTGTTTTGTTAATGTTTCTTGCTTAATGCTC   5249
+                     |||||||.||.|||||.|||||.||||||||||.|.|.||..|.|||||.
+Rabbit_corona   5247 TTAAGCAGGCAAATAATAATTGCTTTGTTAATGCTGCATGTCTTATGCTT   5296
+
+Human_coronav   5250 CAGAGTTTGCATCTGACATTTAAAATTGTTCAATGGCAAGAGGCATGGCT   5299
+                     ||||.|.|..||.|||..|||..||...|.||||||||.||.||||||||
+Rabbit_corona   5297 CAGAATGTTAATTTGAAGTTTGTAAGCATGCAATGGCAGGAAGCATGGCT   5346
+
+Human_coronav   5300 TGAATTTCGTTCTGGCCGCCCTGCTAGATTTGTAGCTTTGGTTTTGGCCA   5349
+                     .||||||.|..|.||....||.....|.||||||||..|.||||..||.|
+Rabbit_corona   5347 CGAATTTAGAGCCGGAAAACCCCTACGGTTTGTAGCACTTGTTTATGCTA   5396
+
+Human_coronav   5350 AAGGTGGGTTTAAATTTGGAGATCCTGCTGATTCTAGAGATTTCTTGCGT   5399
+                     |.||||..|||||||||||.|||||||||||||||||||||||..|.|||
+Rabbit_corona   5397 AGGGTGCTTTTAAATTTGGCGATCCTGCTGATTCTAGAGATTTTATTCGT   5446
+
+Human_coronav   5400 GTTGTGTTTAGTCAAGTTGATTTGACTGGGGCAATATGTGATTTTGAAAT   5449
+                     ||.||..||||.|||..|||||||.|||.|||...||||||||.|||..|
+Rabbit_corona   5447 GTGGTTCTTAGCCAAACTGATTTGGCTGAGGCTGCATGTGATTATGAGTT   5496
+
+Human_coronav   5450 TGCATGTAAATGTGGTGTAAAGCAGGAACAGCGTACTGGTCTGGACGCTG   5499
+                     ||..||||||||||||||.|||||.||.||||||||.|||.|.|||||||
+Rabbit_corona   5497 TGTTTGTAAATGTGGTGTTAAGCAAGAGCAGCGTACAGGTATTGACGCTG   5546
+
+Human_coronav   5500 TTATGCATTTTGGTACATTGAGTCGTGAAGATCTTGAGATTGGTTATACC   5549
+                     |||||||||||||.|||||||||||||||||||||||.|..||.||.||.
+Rabbit_corona   5547 TTATGCATTTTGGAACATTGAGTCGTGAAGATCTTGAAAAAGGCTACACA   5596
+
+Human_coronav   5550 GTGGACTGTTCTTGCGGTAAAAAGCTAATTCATTGTGTACGATTTGATGT   5599
+                     .|.||.|||..|||.|||.|.||||||||||||||....|||.||.||||
+Rabbit_corona   5597 ATTGATTGTAGTTGTGGTGATAAGCTAATTCATTGCACGCGAATTAATGT   5646
+
+Human_coronav   5600 ACCATTTTTAATTTGCAGTAATACACCT---GCTAGTGTAAAATTACCTA   5646
+                     .|||||||||||||||||.||.|||||.   |..|||||   ..|.||||
+Rabbit_corona   5647 TCCATTTTTAATTTGCAGCAACACACCCAAAGACAGTGT---CGTGCCTA   5693
+
+Human_coronav   5647 AGGGTGTAGGAAGTGCAAATATTTTTATAGGTGATAAGGTTGGTCATTAT   5696
+                     |||||||...|.||||||||.|||||||.||||.|||.||.||.||.|||
+Rabbit_corona   5694 AGGGTGTGACATGTGCAAATGTTTTTATTGGTGGTAATGTGGGGCACTAT   5743
+
+Human_coronav   5697 GTTCATGTTAAGTGTGAACAATCTTATCAGCTTTATGATGCTTCTAATGT   5746
+                     ..||||.|.|.||||||...|..||||||.||||.|||||||||||.|||
+Rabbit_corona   5744 ACTCATTTGAGGTGTGACTCAAGTTATCAACTTTTTGATGCTTCTACTGT   5793
+
+Human_coronav   5747 TAAGAAGGTTACAGATGTTACTGGCAAGTTGTCAGATTGTCTGTATCTTA   5796
+                     |||.|||.||||....||.|.|||.||..|..|.||.|||.|||||||||
+Rabbit_corona   5794 TAAAAAGATTACTACAGTCAATGGTAAAATCACTGACTGTTTGTATCTTA   5843
+
+Human_coronav   5797 AAAATTTGAAACAAACTTTTAAATCGGTGTTAACCACCTATTATTTGGAT   5846
+                     ||||||||||.||||||||||..||.||.||.||.||.||||||||||||
+Rabbit_corona   5844 AAAATTTGAAGCAAACTTTTAGGTCTGTTTTGACGACTTATTATTTGGAT   5893
+
+Human_coronav   5847 GATGTTAAGAAAATTGAGTATAAACCTGACTTGTCACAATATTATTGTGA   5896
+                     |||||||||||..||||||||||.|||||..|..||||.||.||.|||||
+Rabbit_corona   5894 GATGTTAAGAAGGTTGAGTATAATCCTGATCTTACACAGTACTACTGTGA   5943
+
+Human_coronav   5897 CGGAGGTAAGTATTATACTCAGCGTATTATTAAAGCCCAATTTAAAACAT   5946
+                     .||.|||||||||||||||||..|.|||||.||.||.|||||||.|||.|
+Rabbit_corona   5944 GGGTGGTAAGTATTATACTCAAAGAATTATAAAGGCTCAATTTAGAACTT   5993
+
+Human_coronav   5947 TCGAGAAAGTAGATGGTGTGTATACTAATTTTAAATTGATAGGACACACC   5996
+                     |.|||||.||.||||||||.||||||||.|||||.||..|.||.||||||
+Rabbit_corona   5994 TTGAGAAGGTTGATGGTGTCTATACTAACTTTAAGTTAGTTGGTCACACC   6043
+
+Human_coronav   5997 GTCTGTGACAGTCTTAATGCTAAGTTGGGTTTTGATAGCTCTAAAGAGTT   6046
+                     .|||||||.||..|.||||||||..|||||||||||.....|||..|.||
+Rabbit_corona   6044 ATCTGTGATAGCTTGAATGCTAAACTGGGTTTTGATGCTAATAAGCATTT   6093
+
+Human_coronav   6047 TGTTGAATATAAGATTACTGAGTGGCCAACAGCTACAGGTGATGTGGTGT   6096
+                     ||..||||.||||.|||||||||||||.|.||||||.|||||||||||.|
+Rabbit_corona   6094 TGAAGAATTTAAGGTTACTGAGTGGCCCATAGCTACTGGTGATGTGGTAT   6143
+
+Human_coronav   6097 TGGCTACTGATGATTTGTATGTTAAGAGATATGAGAGGGGTTGTATTACT   6146
+                     |||.||||||||||.|||||||||||||.|||||||.|||.|||||||||
+Rabbit_corona   6144 TGGTTACTGATGATATGTATGTTAAGAGGTATGAGAAGGGATGTATTACT   6193
+
+Human_coronav   6147 TTTGGTAAACCTGTTATATGGTTAAGCCATGAGAAAGCTTCCCTCAATTC   6196
+                     |||||||||||||||||.||||..|.||||||..|.||.|||||.|||||
+Rabbit_corona   6194 TTTGGTAAACCTGTTATTTGGTATAACCATGATCAGGCATCCCTTAATTC   6243
+
+Human_coronav   6197 TTTAACATATTTTAATAGACCTTCATTGGTTGATGATAATAAATTTGATG   6246
+                     |.|.||||||||||||.|||||...||||||||||.||||||.|||||||
+Rabbit_corona   6244 TCTTACATATTTTAATCGACCTAGTTTGGTTGATGTTAATAAGTTTGATG   6293
+
+Human_coronav   6247 TTTTAAAAGTGGATGATGTTGACGATGGTGGTGA------CAGCTCAGA-   6289
+                     ||||.|||||.||||||||||..|..|..|.|||      ||||||.|| 
+Rabbit_corona   6294 TTTTGAAAGTTGATGATGTTGTTGCAGAAGTTGAATCTTGCAGCTCTGAC   6343
+
+Human_coronav   6290 -----------------GAGTGGT--------------------------   6296
+                                      |||||||                          
+Rabbit_corona   6344 TTGAGCCATGGGAGTTTGAGTGGTAGTGTGAGTACAGGCAGCTCTTACCT   6393
+
+Human_coronav   6297 --GCC---AAAGAAACCA--------------------------------   6309
+                       |||   ||.|.||.||                                
+Rabbit_corona   6394 GAGCCCACAAGGTAATCAGGGGAGTAATGTCGAAGCTCATACGACTGTTC   6443
+
+Human_coronav   6310 -------AAGAAATCAAC--------------------------------   6320
+                            |.|.||||||.                                
+Rabbit_corona   6444 TTGCTTCAGGTAATCAAGGGAGTAATGCAATTAATGGTTCAGCTAATAGT   6493
+
+Human_coronav   6321 ------ATTATTAAGTTAAGTGGTGTTAAAAAACCATTTAAGGTTGAAGA   6364
+                           |||.||||.||||.||||||||||||.||.||||||||||||.|
+Rabbit_corona   6494 AATAAGATTGTTAAATTAAATGGTGTTAAAAAGCCTTTTAAGGTTGAAAA   6543
+
+Human_coronav   6365 TAGTGTCATTGTTAATGATGATACTAGTGAAACCAAATATGTTAAGAGTT   6414
+                     ||||||..||||||||||....||||||||.|||||||.|||||||||||
+Rabbit_corona   6544 TAGTGTTGTTGTTAATGACAGCACTAGTGAGACCAAATTTGTTAAGAGTT   6593
+
+Human_coronav   6415 TGTCTATTGTTGATGTGTATGATATGTGGCTTACAGGTTGTAAGTATGTT   6464
+                     ||||||||||||||||.||||||||||||||.||.|||.||..|||||||
+Rabbit_corona   6594 TGTCTATTGTTGATGTTTATGATATGTGGCTGACTGGTAGTCGGTATGTT   6643
+
+Human_coronav   6465 GTTAGAACTGCTAATGCTTTGAGCAGAGCAGTTAACGTACCTACAATACG   6514
+                     ||||.||||||||||||..|.||....||.|||||||||||||||||...
+Rabbit_corona   6644 GTTAAAACTGCTAATGCACTTAGTGCTGCGGTTAACGTACCTACAATCAA   6693
+
+Human_coronav   6515 TAAGTTTATAAAATTTGGTATGACTCTTGTTAGTATACCAATTGATTTGT   6564
+                     .|||||||||||||||||||||||||||||||||||||||||.|||||||
+Rabbit_corona   6694 GAAGTTTATAAAATTTGGTATGACTCTTGTTAGTATACCAATAGATTTGT   6743
+
+Human_coronav   6565 TAAATTTAAGAGAGATTAAGCCTGCTGTTAATGTGGTTAAAGCTGTGCGA   6614
+                     |.|||||..||||.||||||||||...||..||..|..||||..||..||
+Rabbit_corona   6744 TGAATTTGCGAGAAATTAAGCCTGTGTTTGGTGCAGCGAAAGTGGTTAGA   6793
+
+Human_coronav   6615 AATAAAATTTCTGTATGCTTTAATTTTATTAAATGGCTTTTTGTCTTATT   6664
+                     .|.|.|.||||||..||||.....||||||||||||||||||||..|.||
+Rabbit_corona   6794 GACAGAGTTTCTGACTGCTACCGCTTTATTAAATGGCTTTTTGTTCTTTT   6843
+
+Human_coronav   6665 ATTTGGCTGGATTAAAATATCCGCTGATAATAAAGTAATCTACACCACAG   6714
+                     .|||||.|||||.|||||||||..|.||||||.|||..|.||||||||||
+Rabbit_corona   6844 GTTTGGGTGGATAAAAATATCCAGTTATAATAGAGTTGTATACACCACAG   6893
+
+Human_coronav   6715 AAATTGCATCAAAGCTTACGTGTAAGCTTGTAGCTTTAGCTTTTAAAAAT   6764
+                     |.|||||.|||||||||||||||||||||||.|||||.|||.||||||||
+Rabbit_corona   6894 AGATTGCTTCAAAGCTTACGTGTAAGCTTGTCGCTTTGGCTGTTAAAAAT   6943
+
+Human_coronav   6765 GCATTTTTGACATTTAAGTGGAGTATGGTTGCTAGAGGTGCTTGCATTAT   6814
+                     ||.||.|||||||||||.|||||||||||||...||||...||...||||
+Rabbit_corona   6944 GCTTTATTGACATTTAAATGGAGTATGGTTGTACGAGGATTTTTTCTTAT   6993
+
+Human_coronav   6815 AGCGACTATATTTCTATTGTGGTTTAATTTTATATATGCCAATGTAATTT   6864
+                     .||.||.||||||.|.||.|||||||||||||||||||||||||||||.|
+Rabbit_corona   6994 TGCCACCATATTTTTGTTATGGTTTAATTTTATATATGCCAATGTAATAT   7043
+
+Human_coronav   6865 TTAGTGATTTTTATTTGCCTAAAATCGGTTTCTTGCCGACTTTTGTTGGT   6914
+                     |||||||||||||||||||||||||.|||||..||||.||.||.||||||
+Rabbit_corona   7044 TTAGTGATTTTTATTTGCCTAAAATTGGTTTTCTGCCAACATTCGTTGGT   7093
+
+Human_coronav   6915 AAGATTGCACAGTGGATTAAGAACACTTTTAGTCTTGTAACTATTTGTGA   6964
+                     |...|||..||||||.||||||..||.|||.|..||...||..|.|||||
+Rabbit_corona   7094 AGTGTTGTGCAGTGGCTTAAGACTACATTTGGGTTTTATACCTTGTGTGA   7143
+
+Human_coronav   6965 TCTATATTCCATTCAGGATGTGGGTTTTAAGAATCAGTATTGTAATGGAA   7014
+                     |.|.|||..||.|.....|.|.||.|||||.|||||||||||||||||||
+Rabbit_corona   7144 TTTTTATGACACTGCTAGTATAGGCTTTAAAAATCAGTATTGTAATGGAA   7193
+
+Human_coronav   7015 GTATTGCATGTCAGTTCTGCTTGGCAGGATTTGATATGTTAGATAATTAT   7064
+                     ||.||||.||.|||.|.||..|..|.||.|||||||||.|.|||||||||
+Rabbit_corona   7194 GTCTTGCTTGCCAGCTTTGTGTTTCTGGTTTTGATATGCTTGATAATTAT   7243
+
+Human_coronav   7065 AAAGCCATTGATGTAGTACAGTATGAAGCTGATAGGAGAGCATTTGTTGA   7114
+                     ||.||.||.||.||.||.|||||.||.||||||.|..|..|..|.|||||
+Rabbit_corona   7244 AAGGCTATAGACGTTGTTCAGTACGAGGCTGATCGACGTTCTGTAGTTGA   7293
+
+Human_coronav   7115 TTATACAGGTGTGTTAAAGATTGTCATTGAATTGATAGTTAGTTACGCCC   7164
+                     |||||||||..||.|.|||.|..|.|||||.|||.|.||||||||.|||.
+Rabbit_corona   7294 TTATACAGGCATGATTAAGTTGATTATTGAGTTGGTTGTTAGTTATGCCT   7343
+
+Human_coronav   7165 TGTATACGGCATGGTTTTATCCATTGTTTGCCCTTATCAGTATTCAGATC   7214
+                     |||||||.|..||||||||.||||||||||..||||||.|..|.|||||.
+Rabbit_corona   7344 TGTATACTGTTTGGTTTTACCCATTGTTTGGTCTTATCTGCTTGCAGATG   7393
+
+Human_coronav   7215 TTGACCACTTGGCTGCCTGAGCTTTTTATGCTTAGTACATTACATTGGAG   7264
+                     |||||.||.|||.|||||||..||||||||.|||||.||||.||||||..
+Rabbit_corona   7394 TTGACGACATGGTTGCCTGAATTTTTTATGGTTAGTTCATTGCATTGGTT   7443
+
+Human_coronav   7265 TTTTAGGTTGCTGGTGGCTTTAGCTAATATGTTACCAGCACATGTGTTTA   7314
+                     |||.||..|.||.||..||.|.||.|||.||||.|||||||||||||||.
+Rabbit_corona   7444 TTTGAGAATACTTGTTTCTGTTGCCAATTTGTTGCCAGCACATGTGTTTT   7493
+
+Human_coronav   7315 TGAGGTTTTATATTATTATTGCCTCTTTTATTAAGCTCTTTAGCTTGTTT   7364
+                     ||||||||||.||||.|.|..|||.|.||.||||..|.|||||..|.|||
+Rabbit_corona   7494 TGAGGTTTTACATTACTGTGACCTTTATTTTTAAAATATTTAGTCTTTTT   7543
+
+Human_coronav   7365 AGGCATGTTGCCTATGGTTGTAGTAAATCTGGTTGTTTGTTTTGTTACAA   7414
+                     ||.|||||.....||||.||||.||||.|||||||.||||||||.||.||
+Rabbit_corona   7544 AGACATGTAATACATGGGTGTAATAAAGCTGGTTGCTTGTTTTGCTATAA   7593
+
+Human_coronav   7415 GAGGAATCGTAGTCTACGTGTTAAATGTAGTACTATCGTTGGTGGCATGA   7464
+                     |||.||.||||||.|.||.||.|||||.|||||..|.||.||||||||||
+Rabbit_corona   7594 GAGAAACCGTAGTGTTCGCGTCAAATGCAGTACGGTTGTAGGTGGCATGA   7643
+
+Human_coronav   7465 TACGCTATTACGATGTTATGGCTAATGGTGGCACTGGCTTTTGTTCAAAA   7514
+                     ||||||||||||||||.||||||||||||||.||.||.||||||...|||
+Rabbit_corona   7644 TACGCTATTACGATGTGATGGCTAATGGTGGTACCGGTTTTTGTAGCAAA   7693
+
+Human_coronav   7515 CATCAATGGAATTGCATTGATTGTGATTCTTATAAACCAGGTAATACTTT   7564
+                     ||.|||||||||||||||.||||||||||.|||||||||||||||||.||
+Rabbit_corona   7694 CACCAATGGAATTGCATTAATTGTGATTCCTATAAACCAGGTAATACATT   7743
+
+Human_coronav   7565 TATTACTGTTGAGGCCGCTCTTGATCTATCTAAGGAATTGAAACGGCCCA   7614
+                     .|||||||||||.||.||....||.||.||||||||||||..||||||..
+Rabbit_corona   7744 CATTACTGTTGAAGCTGCCGCAGAGCTTTCTAAGGAATTGCGACGGCCTG   7793
+
+Human_coronav   7615 TTCAGCCTACAGATGTTGCTTATCATACGGTTACTGATGTTAAGCAAGTT   7664
+                     ||...||.||.|||||||||||.|||||.|||||.|||||||||||.|||
+Rabbit_corona   7794 TTGTACCCACTGATGTTGCTTACCATACTGTTACAGATGTTAAGCAGGTT   7843
+
+Human_coronav   7665 GGTTGTTCTATGCGCTTGTTCTATGATCGTGATGGACAGCGCACATATGA   7714
+                     ||||||||||||||.||||||||.|||.|.||||||||.||....|||||
+Rabbit_corona   7844 GGTTGTTCTATGCGTTTGTTCTACGATAGGGATGGACAACGTGTTTATGA   7893
+
+Human_coronav   7715 TGATGTTAATGCTAGTTTGTTTGTGGATTATAGTAATTTGCTACATTCTA   7764
+                     ||||||||||||||||||||||||||||||||..|||.||||.|||||||
+Rabbit_corona   7894 TGATGTTAATGCTAGTTTGTTTGTGGATTATAACAATCTGCTGCATTCTA   7943
+
+Human_coronav   7765 AGGTTAAGAGTGTGCCTAATATGCATGTTGTGGTAGTGGAAAATGATGCT   7814
+                     |.||||||||||||||||||.||||||||||.||.||.||.|||||||||
+Rabbit_corona   7944 AAGTTAAGAGTGTGCCTAATTTGCATGTTGTAGTGGTTGAGAATGATGCT   7993
+
+Human_coronav   7815 GATAAAGCCAATTTTCTGAATGCTGCTGTATTTTATGCACAGTCTTTGTT   7864
+                     |||||||||||.|||||.|||||.|||||||||||||||||.|||.|.||
+Rabbit_corona   7994 GATAAAGCCAACTTTCTCAATGCCGCTGTATTTTATGCACAATCTCTTTT   8043
+
+Human_coronav   7865 TAGACCTATTTTAATGGTTGATAAAAATCTGATAACTACTGCTAACACTG   7914
+                     |||.|||.|..|.|||||.|||||.|.|.|.||.||.|||||.|||||.|
+Rabbit_corona   8044 TAGGCCTGTGCTGATGGTGGATAAGAGTTTAATTACCACTGCAAACACGG   8093
+
+Human_coronav   7915 GTACGTCTGTTACAGAAACTATGTTTGATGTTTATGTGGATACATTTTTG   7964
+                     ||||.||||||.|..|.||||||||.|||||.|||||.||.|||||.|||
+Rabbit_corona   8094 GTACTTCTGTTTCTCAGACTATGTTCGATGTCTATGTTGACACATTGTTG   8143
+
+Human_coronav   7965 TCTATGTTTGATGTGGATAAAAAGAGTCTTAATGCTTTAATAGCAACTGC   8014
+                     ||.||||||||.||.||||.|||||||||.|.|.|.||.|||...||.||
+Rabbit_corona   8144 TCGATGTTTGACGTTGATAGAAAGAGTCTGACTTCATTTATAAATACAGC   8193
+
+Human_coronav   8015 GCATTCTTCTATAAAACAGGGTACGCAGATTTATAAAGTTTTGGATACCT   8064
+                     .|||||||||||.||..|||||...|||.|..||||.||||||.||||.|
+Rabbit_corona   8194 TCATTCTTCTATTAAGGAGGGTGTTCAGCTGGATAAGGTTTTGAATACGT   8243
+
+Human_coronav   8065 TTTTAAGCTGTGCTCGTAAAAGTTGTTCTATTGATTCAGATGTTGATACT   8114
+                     ||.|.|||||||||.|.||.|||||.|||||.|||||.||||||||.|||
+Rabbit_corona   8244 TTATTAGCTGTGCTAGAAAGAGTTGCTCTATAGATTCTGATGTTGACACT   8293
+
+Human_coronav   8115 AAGTGTTTAGCTGATTCTGTCATGTCTGCTGTATCGGCAGGTCTTGAATT   8164
+                     ||.|||.|.||||||||||||||||||||.||..|.||.|||.|||||||
+Rabbit_corona   8294 AAATGTGTGGCTGATTCTGTCATGTCTGCAGTTGCTGCGGGTATTGAATT   8343
+
+Human_coronav   8165 GACGGATGAAAGTTGTAATAACTTGGTGCCAACATATTTGAAGAGTGACA   8214
+                     |||.||||||||.|.||||||.|||||.|||||.|||.|.||||||||.|
+Rabbit_corona   8344 GACAGATGAAAGCTATAATAATTTGGTACCAACGTATATAAAGAGTGATA   8393
+
+Human_coronav   8215 ACATTGTGGCAGCTGATTTAGGTGTTCTGATTCAAAATTCTGCAAAGCAT   8264
+                     |.||.||.||||||||||||||||||||.||||||||||||.|.||||||
+Rabbit_corona   8394 ATATAGTCGCAGCTGATTTAGGTGTTCTTATTCAAAATTCTTCTAAGCAT   8443
+
+Human_coronav   8265 GTGCAGGGTAATGTTGCTAAAATAGCTGGTGTTTCCTGTATATGGTCTGT   8314
+                     ||.|||||.||.|||||||||||.||||||||.||.||||||||||||||
+Rabbit_corona   8444 GTACAGGGCAACGTTGCTAAAATCGCTGGTGTGTCTTGTATATGGTCTGT   8493
+
+Human_coronav   8315 GGATGCTTTTAATCAGTTTAGTTCTGATTTCCAGCATAAATTGAAGAAAG   8364
+                     ||||||||||||||||.|||||||||||||.|||||||||||||||||.|
+Rabbit_corona   8494 GGATGCTTTTAATCAGCTTAGTTCTGATTTTCAGCATAAATTGAAGAAGG   8543
+
+Human_coronav   8365 CATGTTGTAAAACTGGTTTGAAACTGAAGCTTACTTATAATAAGCAGATG   8414
+                     |||||||||||||||||.|.|||.||||||||||||||||||||||||..
+Rabbit_corona   8544 CATGTTGTAAAACTGGTCTTAAATTGAAGCTTACTTATAATAAGCAGAGT   8593
+
+Human_coronav   8415 GCTAATGTCTCTGTTTTAACTACACCCTTTAGTCTTAAAGGGGGTGCAGT   8464
+                     .||||||||||||||||.||||||||.||||||.|.|||||.|||||.||
+Rabbit_corona   8594 TCTAATGTCTCTGTTTTGACTACACCATTTAGTTTGAAAGGTGGTGCTGT   8643
+
+Human_coronav   8465 TTTTAGTTATTTTGTTTATGTGTGTTTTGTGTTGAGTTTGGTCTGTTTTA   8514
+                     |||||||||.|||||||||...||||||||..|.||||||.|.|||||||
+Rabbit_corona   8644 TTTTAGTTACTTTGTTTATAGTTGTTTTGTTGTTAGTTTGATTTGTTTTA   8693
+
+Human_coronav   8515 TTGGACTGTGGTGCTTAATGCCCACTTACACAGTACACAAATCAGATTTT   8564
+                     |.|||.||||||||||.|||||.|||||..|.||.|||||||||||.||.
+Rabbit_corona   8694 TAGGATTGTGGTGCTTGATGCCTACTTATTCTGTGCACAAATCAGACTTC   8743
+
+Human_coronav   8565 CAGCTTCCCGTTTATGCCAGTTATAAAGTTTTAGATAATGGTGTTATTAG   8614
+                     .|||||||..||||||||||||||||||||||.||||||||||||||.||
+Rabbit_corona   8744 GAGCTTCCTATTTATGCCAGTTATAAAGTTTTGGATAATGGTGTTATCAG   8793
+
+Human_coronav   8615 AGATGTTAGCGTTGAAGATGTTTGTTTCGCTAACAAATTTGAACAATTTG   8664
+                     ||||||||||||..|.|||||||||||||||||||||||||||||.||||
+Rabbit_corona   8794 AGATGTTAGCGTGAATGATGTTTGTTTCGCTAACAAATTTGAACAGTTTG   8843
+
+Human_coronav   8665 ATCAATGGTATGAGTCTACATTTGGTCTAAGTTATTATAGTAACAGTATG   8714
+                     ||..|||||||||||||||.||||||.|.|.|||||||||.||.||||||
+Rabbit_corona   8844 ATGCATGGTATGAGTCTACTTTTGGTTTGACTTATTATAGCAATAGTATG   8893
+
+Human_coronav   8715 GCTTGTCCCATTGTTGTTGCTGTAATAGATCAGGATTTTGGCTCTACAGT   8764
+                     ||||||||.||||||||||||||.||||||||.|||.|.||||||||.||
+Rabbit_corona   8894 GCTTGTCCTATTGTTGTTGCTGTGATAGATCAAGATATAGGCTCTACTGT   8943
+
+Human_coronav   8765 GTTTAATGTCCCTACCAAAGTGTTACGATATGGTTATCATGTGTTGCACT   8814
+                     .||||||||.|||||||||||||||||.|||||||.||||||||||||.|
+Rabbit_corona   8944 TTTTAATGTTCCTACCAAAGTGTTACGGTATGGTTTTCATGTGTTGCATT   8993
+
+Human_coronav   8815 TTATTACACATGCACTTTCTGCTGATGGAGTGCAGTGTTATACGCCACAT   8864
+                     ||||.||.||||||||||||.|||||.|.||||||||||||||.||||||
+Rabbit_corona   8994 TTATAACTCATGCACTTTCTACTGATAGTGTGCAGTGTTATACTCCACAT   9043
+
+Human_coronav   8865 AGTCAAATATCGTATTCTAATTTTTATGCTAGTGGCTGTGTGCTTTCCTC   8914
+                     ...||||||.||||||||||||||||||.||||||.|||||..|.||.||
+Rabbit_corona   9044 TACCAAATACCGTATTCTAATTTTTATGATAGTGGTTGTGTTTTGTCATC   9093
+
+Human_coronav   8915 TGCTTGCACTATGTTTACAATGGCCGATGGTAGTCCACAACCTTATTGTT   8964
+                     .|||||||||||||||.|.|||.|.|||||.|..||||||||||.|||||
+Rabbit_corona   9094 AGCTTGCACTATGTTTGCTATGTCTGATGGAAAACCACAACCTTTTTGTT   9143
+
+Human_coronav   8965 ATACAGAGGGGCTTATGCAAAATGCTTCTCTGTATAGTTCATTGGTACCT   9014
+                     ||||.||.|||||||||.|.|||||||||||||||||.|||||||..||.
+Rabbit_corona   9144 ATACGGATGGGCTTATGAATAATGCTTCTCTGTATAGCTCATTGGCTCCA   9193
+
+Human_coronav   9015 CACGTGCGGTATAATCTTGCTAATGCTAAAGGTTTTATCCGTTTTCCAGA   9064
+                     ||||||||.|||||.|||||.||||.||||||||.|||.||.|||||.||
+Rabbit_corona   9194 CACGTGCGTTATAACCTTGCAAATGTTAAAGGTTATATACGGTTTCCTGA   9243
+
+Human_coronav   9065 AGTGTTGCGAGAAGGGCTTGTACGTATCGTGCGTACTCGTTCTATGTCGT   9114
+                     ||||.||||.|||||.|||||.|||||.||.||.||.||.||||||.|||
+Rabbit_corona   9244 AGTGCTGCGTGAAGGTCTTGTGCGTATTGTTCGCACACGATCTATGACGT   9293
+
+Human_coronav   9115 ATTGCAGAGTTGGATTATGTGAGGAAGCTGATGAGGGTATATGCTTTAAT   9164
+                     |||||||||||||..|||||||||...|.|||||||||||.||.||||||
+Rabbit_corona   9294 ATTGCAGAGTTGGGCTATGTGAGGTTTCAGATGAGGGTATTTGTTTTAAT   9343
+
+Human_coronav   9165 TTTAATGGTTCTTGGGTGCTTAATAATGATTATTATAGATCATTGCCTGG   9214
+                     |||||||||||.|||||..|.||||||||||||||||||...|||||.||
+Rabbit_corona   9344 TTTAATGGTTCATGGGTTTTGAATAATGATTATTATAGAAGTTTGCCAGG   9393
+
+Human_coronav   9215 GACCTTTTGTGGTAGAGATGTTTTTGATTTAATTTATCAGCTATTTAAAG   9264
+                     .||.|||||||||||.||||||||||||||..|.||||||.|.||.|..|
+Rabbit_corona   9394 AACATTTTGTGGTAGGGATGTTTTTGATTTGGTATATCAGTTTTTGAGCG   9443
+
+Human_coronav   9265 GTTTAGCACAGCCTGTGGATTTTTTGGCATTGACTGCTAGTTCCATTGCT   9314
+                     ||||..|.||||||||||||||.||.||..|.|||||.||||||||.|||
+Rabbit_corona   9444 GTTTGTCTCAGCCTGTGGATTTCTTTGCTCTTACTGCAAGTTCCATAGCT   9493
+
+Human_coronav   9315 GGTGCTATACTCGCTGTAATTGTTGTTTTGGTGTTTTATTACCTAATAAA   9364
+                     |||||.||.||.|||.|.||||||||||||||||||||||||||||||||
+Rabbit_corona   9494 GGTGCCATTCTTGCTATTATTGTTGTTTTGGTGTTTTATTACCTAATAAA   9543
+
+Human_coronav   9365 GCTTAAACGTGCTTTTGGTGATTACACCAGTGTTGTTTTTGTTAACGTGA   9414
+                     |||.|||.|.|||||||||||||||||.||||||||..|||||||.||||
+Rabbit_corona   9544 GCTCAAAAGAGCTTTTGGTGATTACACTAGTGTTGTGGTTGTTAATGTGA   9593
+
+Human_coronav   9415 TTGTGTGGTGTGTAAATTTTATGATGCTTTTTGTGTTTCAAGTTTACCCC   9464
+                     |.||.||||.|||.|||||..|||||||.|||||||||||.|||||.|||
+Rabbit_corona   9594 TAGTTTGGTTTGTTAATTTCCTGATGCTATTTGTGTTTCAGGTTTATCCC   9643
+
+Human_coronav   9465 ATACTTTCTTGTGTATATGCTATTTGTTATTTTTATGCCACGCTTTATTT   9514
+                     |..||.||||||.||||||||...|.||||||||||...|||||.|||||
+Rabbit_corona   9644 ACTCTATCTTGTATATATGCTGCATTTTATTTTTATATTACGCTCTATTT   9693
+
+Human_coronav   9515 CCCTTCGGAGATAAGTGTGATAATGCACTTACAATGGCTAGTTATGTATG   9564
+                     ||||||||||||.|||||.||.|||||.||.||.|||.|.||.|||||||
+Rabbit_corona   9694 CCCTTCGGAGATTAGTGTAATTATGCATTTGCAGTGGGTGGTGATGTATG   9743
+
+Human_coronav   9565 GCACTATTATGCCTTTATGGTTTTGTTTGCTATATATAGCTGTTGTTGTT   9614
+                     |.|.|||||||||.||.||||||.||.||||.|||||.||..|.|||.||
+Rabbit_corona   9744 GTAGTATTATGCCCTTGTGGTTTAGTCTGCTTTATATTGCCATAGTTATT   9793
+
+Human_coronav   9615 TCAAATCATGCTTTTTGGGTATTTTCTTACTGCAGAAAGCTTGGTACTTC   9664
+                     |||||.||.||.||.||||||||.||||||||||||||||||||||||..
+Rabbit_corona   9794 TCAAACCACGCATTCTGGGTATTCTCTTACTGCAGAAAGCTTGGTACTGG   9843
+
+Human_coronav   9665 TGTTCGTAGTGATGGTACATTTGAAGAAATGGCTCTCACTACTTTTATGA   9714
+                     |||.|||||||||||.||.||||||||.||||||||||||||||||||||
+Rabbit_corona   9844 TGTACGTAGTGATGGCACTTTTGAAGAGATGGCTCTCACTACTTTTATGA   9893
+
+Human_coronav   9715 TTACAAAAGATTCTTATTGTAAGCTTAAGAATTCTTTGTCTGATGTTGCT   9764
+                     ||||.||.||||||||||||||||||||||||||..|.||||||||||||
+Rabbit_corona   9894 TTACTAAGGATTCTTATTGTAAGCTTAAGAATTCGCTTTCTGATGTTGCT   9943
+
+Human_coronav   9765 TTTAATAGATATTTGAGTTTGTATAATAAATATAGGTATTACAGCGGTAA   9814
+                     |||||||||||||||.||||||||||||||||||||||||||||.|||||
+Rabbit_corona   9944 TTTAATAGATATTTGGGTTTGTATAATAAATATAGGTATTACAGTGGTAA   9993
+
+Human_coronav   9815 AATGGATACTGCTGCATATAGGGAGGCTGCTTGCTCTCAGTTGGCTAAAG   9864
+                     |||||||||.|||||.|||||.|||||||||||.||.||||||||.||.|
+Rabbit_corona   9994 AATGGATACCGCTGCTTATAGAGAGGCTGCTTGTTCACAGTTGGCAAAGG  10043
+
+Human_coronav   9865 CAATGGACACATTTACCAATAATAATGGTAGTGATGTGCTTTACCAACCG   9914
+                     ||||||||||||||||||||||||||||||||||.||||||||||||||.
+Rabbit_corona  10044 CAATGGACACATTTACCAATAATAATGGTAGTGACGTGCTTTACCAACCA  10093
+
+Human_coronav   9915 CCTACTGCTTCCGTCTCAACTTCATTCTTGCAATCTGGTATTGTGAAAAT   9964
+                     |||||.||.||.||.||.||.|||||.||||||||||||||||||||.||
+Rabbit_corona  10094 CCTACGGCGTCTGTTTCCACATCATTTTTGCAATCTGGTATTGTGAAGAT  10143
+
+Human_coronav   9965 GGTAAATCCTACTTCTAAGGTAGAACCATGTGTTGTCAGTGTTACCTATG  10014
+                     |||.|.||||||||||||.||||||||.||.|||||||||||||||||.|
+Rabbit_corona  10144 GGTTAGTCCTACTTCTAAAGTAGAACCTTGCGTTGTCAGTGTTACCTACG  10193
+
+Human_coronav  10015 GTAATATGACATTGAATGGTTTATGGTTGGATGACAAGGTCTACTGTCCC  10064
+                     ||||||||||||||||||||.|.|||||||||||.||.|||||||||||.
+Rabbit_corona  10194 GTAATATGACATTGAATGGTCTTTGGTTGGATGATAAAGTCTACTGTCCT  10243
+
+Human_coronav  10065 AGACATGTAATATGTTCTGCTTCAGATATGACTAATCCAGATTATACAAA  10114
+                     ||.|||||.||.||.||||||||||||||||||||||||||||||.|.||
+Rabbit_corona  10244 AGGCATGTTATTTGCTCTGCTTCAGATATGACTAATCCAGATTATCCTAA  10293
+
+Human_coronav  10115 TTTGTTGTGTAGAGTAACATCAAGTGATTTTACTGTATTGTTTGATCGTC  10164
+                     ||||.|.|||||||||||||||||||||||||||.||.|||.|||||||.
+Rabbit_corona  10294 TTTGCTTTGTAGAGTAACATCAAGTGATTTTACTATAATGTCTGATCGTA  10343
+
+Human_coronav  10165 TAAGCCTTACAGTGATGTCTTATCAAATGCGGGGTTGTATGCTTGTTCTT  10214
+                     |.|||||.||.||.|||||||||||.||||..||.||||||||||||||.
+Rabbit_corona  10344 TGAGCCTGACTGTTATGTCTTATCAGATGCAAGGATGTATGCTTGTTCTA  10393
+
+Human_coronav  10215 ACAGTGACCCTGCAAAATTCTCGTACGCCAAAATATACATTTGGTGTGGT  10264
+                     ||.||.||..||||.|||.||||.||.|||||||||||.||||||||.||
+Rabbit_corona  10394 ACTGTAACATTGCAGAATCCTCGAACACCAAAATATACTTTTGGTGTTGT  10443
+
+Human_coronav  10265 TAAACCTGGTGAGACTTTTACTGTTTTAGCTGCTTATAACGGCAAACCAC  10314
+                     .||||||||||||||.|||||.|||.|.|||||||||||.||||.|||||
+Rabbit_corona  10444 CAAACCTGGTGAGACATTTACAGTTCTTGCTGCTTATAATGGCAGACCAC  10493
+
+Human_coronav  10315 AAGGAGCCTTTCATGTAACTATGCGTAGTAGTTATACCATTAAGGGTTCC  10364
+                     ||||||||||||||||.||||||.|.|||||||.|||.||||||||||||
+Rabbit_corona  10494 AAGGAGCCTTTCATGTGACTATGAGAAGTAGTTTTACTATTAAGGGTTCC  10543
+
+Human_coronav  10365 TTTTTATGCGGATCTTGTGGATCTGTTGGTTATGTAATAATGGGTGATTG  10414
+                     |||||.|||||||||||||||||||||||||||||..|.|||||||||||
+Rabbit_corona  10544 TTTTTGTGCGGATCTTGTGGATCTGTTGGTTATGTTTTGATGGGTGATTG  10593
+
+Human_coronav  10415 TGTTAAATTTGTTTATATGCATCAATTGGAGCTTAGTACTGGTTGTCATA  10464
+                     ||||||.|||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  10594 TGTTAAGTTTGTTTATATGCATCAATTGGAGCTTAGTACTGGTTGTCATA  10643
+
+Human_coronav  10465 CTGGTACTGACTTCAATGGGGATTTTTATGGTCCTTATAAGGATGCTCAG  10514
+                     ||||.|||||||||||||||||.|||||||||||||||||.|||||.||.
+Rabbit_corona  10644 CTGGAACTGACTTCAATGGGGACTTTTATGGTCCTTATAAAGATGCACAA  10693
+
+Human_coronav  10515 GTTGTTCAGTTGCTCATTCAGGATTATATACAATCTGTTAATTTTGTAGC  10564
+                     |||||.||.||||.|.||||.||||||.|.||||||||||||||||||||
+Rabbit_corona  10694 GTTGTCCAATTGCCCGTTCAAGATTATGTGCAATCTGTTAATTTTGTAGC  10743
+
+Human_coronav  10565 ATGGCTTTATGCTGCTATACTTAACAATTGTAATTGGTTTGTACAAAGTG  10614
+                     |||||||||||||||.||.|||||||||||.|||||||||||||||||||
+Rabbit_corona  10744 ATGGCTTTATGCTGCAATTCTTAACAATTGCAATTGGTTTGTACAAAGTG  10793
+
+Human_coronav  10615 ATAAGTGTTCTGTAGAAGATTTTAATGTGTGGGCTCTGTCCAATGGATTT  10664
+                     |||..||||||.|.|||||.|.||||||.||||||.||||.|||||||||
+Rabbit_corona  10794 ATAGATGTTCTATTGAAGACTATAATGTTTGGGCTATGTCAAATGGATTT  10843
+
+Human_coronav  10665 AGCCAAGTTAAATCTGACCTTGTTATAGATGCTTTAGCTTCTATGACTGG  10714
+                     ||||||.||||||||||..|.|||.|.||||||.|.||.|||||||||||
+Rabbit_corona  10844 AGCCAAATTAAATCTGATTTGGTTGTTGATGCTCTTGCATCTATGACTGG  10893
+
+Human_coronav  10715 TGTGTCTTTGGAAACACTGTTGGCTGCTATTAAGCGTCTTAAGAATGGTT  10764
+                     ||||||||||||||...|||||||||||||||||||.||..|.||.||.|
+Rabbit_corona  10894 TGTGTCTTTGGAAAACTTGTTGGCTGCTATTAAGCGCCTGCATAAAGGAT  10943
+
+Human_coronav  10765 TCCAAGGACGTCAGATTATGGGTAGTTGCTCTTTTGAGGATGAATTGACA  10814
+                     ||||.|||||||||||||||||||||||..|||||||.|||||.||||||
+Rabbit_corona  10944 TCCAGGGACGTCAGATTATGGGTAGTTGTGCTTTTGAAGATGAGTTGACA  10993
+
+Human_coronav  10815 CCTAGCGATGTTTATCAACAACTCGCTGGTATCAAGTTACAATCAAAACG  10864
+                     ||||||||||||||.||||||||.|||||..||||||||||||||||.||
+Rabbit_corona  10994 CCTAGCGATGTTTACCAACAACTAGCTGGCGTCAAGTTACAATCAAAGCG  11043
+
+Human_coronav  10865 CACTAGATTGTTTAAAGGCACTGTTTGTTGGATTATGGCTTCTACATTTT  10914
+                     |.|||||.|..|||||||.|||.||||.|||.||||.|||||||||||||
+Rabbit_corona  11044 CTCTAGAGTTATTAAAGGAACTATTTGCTGGGTTATTGCTTCTACATTTT  11093
+
+Human_coronav  10915 TGTTTAGTTGCATAATTACAGCATTTGTGAAATGGACTATGTTTATGTAT  10964
+                     ||||||||||||||||||||||||||||.|||||||||||||||||||||
+Rabbit_corona  11094 TGTTTAGTTGCATAATTACAGCATTTGTTAAATGGACTATGTTTATGTAT  11143
+
+Human_coronav  10965 GTAACTACTAATATGTTTAGTATTACGTTTTGTGCACTTTGTGTTATAAG  11014
+                     |||||.|||.|||||||.|||.||||..|.|..|||||||||..|.|.||
+Rabbit_corona  11144 GTAACGACTCATATGTTGAGTGTTACAGTGTTGGCACTTTGTTGTGTGAG  11193
+
+Human_coronav  11015 TTTGGCCATGTTGTTGGTTAAGCATAAGCATCTTTATTTGACTATGTATA  11064
+                     |||..|.|||.|.|||||.||.||||||||||||||||||||.|||||||
+Rabbit_corona  11194 TTTTACTATGCTTTTGGTGAAACATAAGCATCTTTATTTGACAATGTATA  11243
+
+Human_coronav  11065 TAACTCCTGTGCTTTTTACACTGTTGTATAACAACTATTTGGTTGTGTAC  11114
+                     |.|.||||||.|||||.|||.||.|.||||||||||||||||||||.||.
+Rabbit_corona  11244 TCATTCCTGTACTTTTGACATTGCTATATAACAACTATTTGGTTGTTTAT  11293
+
+Human_coronav  11115 AAGCATACATTTAGAGGCTATGTCTATGCATGGCTATCATATTATGTTCC  11164
+                     ||||||.|.||||||||.|||||.|||||||||||.||..|||...|.||
+Rabbit_corona  11294 AAGCATTCTTTTAGAGGGTATGTGTATGCATGGCTTTCTCATTTCATGCC  11343
+
+Human_coronav  11165 ATCAGTTGAGTACACTTATACTGATGAAGTTATTTATGGCATGTTATTGC  11214
+                     .|||||.||.|||||||||||.|||||.||.||||||.||||..|.||||
+Rabbit_corona  11344 GTCAGTGGATTACACTTATACGGATGAGGTGATTTATAGCATTGTTTTGC  11393
+
+Human_coronav  11215 TTGTAGGAATGGTCTTTGTTACATTACGTAGCATTAACCATGATTTGTTT  11264
+                     |..|.||.|||.|.|||.||||..|.|||||.|||||.||||||.|||||
+Rabbit_corona  11394 TCTTTGGTATGATTTTTATTACTATGCGTAGTATTAATCATGATGTGTTT  11443
+
+Human_coronav  11265 TCTTTTATAATGTTTGTTGGTCGTTTGATTTCTGTTTTCTCTTTGTGGTA  11314
+                     |||.||||||||||||..||.||..||||||||..|.|.|||.|||||||
+Rabbit_corona  11444 TCTGTTATAATGTTTGCAGGCCGGGTGATTTCTACTGTTTCTATGTGGTA  11493
+
+Human_coronav  11315 CAAGGGTTCTAACTTAGAGGAAGAAATTCTTCTTATGTTGGCTTCCCTTT  11364
+                     ||..|||||.|||||.|||||.|||.|.|||||..|..|.|.|||....|
+Rabbit_corona  11494 CATAGGTTCAAACTTGGAGGAGGAAGTCCTTCTCCTCCTTGTTTCTGCCT  11543
+
+Human_coronav  11365 TTGGTACTTACACATGGACAACAGTTTTATCTATGGCTGTAGCAAAGGTT  11414
+                     |.|||||||||||||||||.|||||.||.||..|||||||..|||||.||
+Rabbit_corona  11544 TCGGTACTTACACATGGACTACAGTATTGTCATTGGCTGTGTCAAAGATT  11593
+
+Human_coronav  11415 ATTGCTAAGTGGGTTGCTGTGAATGTCTTGTATTTCACAGATATACCTCA  11464
+                     |||||.||.|||.||.||||||||.|.||.|||||||||||.|||||.|.
+Rabbit_corona  11594 ATTGCAAAATGGATTTCTGTGAATTTGTTATATTTCACAGACATACCGCT  11643
+
+Human_coronav  11465 AATTAAGATAGTGCTTTTGTGCTATTTGTTTATTGGTTATATTATTAGCT  11514
+                     .|||||..|.||.||||||.|||||||||||.||||||||.||.||||.|
+Rabbit_corona  11644 TATTAAATTGGTTCTTTTGAGCTATTTGTTTGTTGGTTATGTTGTTAGTT  11693
+
+Human_coronav  11515 GTTATTGGGGCTTGTTTTCCTTGATGAACAGTTTGTTTAGAATGCCTTTG  11564
+                     ||||||||||.|||||||||||||||||||...|.||||||||||||.||
+Rabbit_corona  11694 GTTATTGGGGATTGTTTTCCTTGATGAACAAGCTTTTTAGAATGCCTCTG  11743
+
+Human_coronav  11565 GGTGTTTATAATTATAAAATTTCAGTACAGGAATTAAGATATATGAATGC  11614
+                     ||||||||||||||||||||||||||.||||||||.||.|||||||||||
+Rabbit_corona  11744 GGTGTTTATAATTATAAAATTTCAGTGCAGGAATTGAGGTATATGAATGC  11793
+
+Human_coronav  11615 TAATGGATTGCGCCCTCCTAAGAATAGTTTTGAAGCCCTTATGCTTAATT  11664
+                     ||||||.|||||.||.||....|||||||||||||||||||||||.||||
+Rabbit_corona  11794 TAATGGTTTGCGTCCACCGCGTAATAGTTTTGAAGCCCTTATGCTCAATT  11843
+
+Human_coronav  11665 TTAAGCTGTTGGGTATTGGAGGTGTTCCAATCATTGAAGTATCTCAATTT  11714
+                     |||||||.|||||||||||.|||||.||||||||.|||||||||||..|.
+Rabbit_corona  11844 TTAAGCTTTTGGGTATTGGTGGTGTGCCAATCATAGAAGTATCTCAGATC  11893
+
+Human_coronav  11715 CAATCAAAATTGACTGATGTCAAATGTGCTAATGTCGTCTTGCTTAATTG  11764
+                     ||||||||||||||||||||.||||||||||||||.||.|||||||||||
+Rabbit_corona  11894 CAATCAAAATTGACTGATGTTAAATGTGCTAATGTTGTTTTGCTTAATTG  11943
+
+Human_coronav  11765 CTTGCAACATTTGCATGTTGCTTCTAATTCTAAGTTGTGGCATTATTGTA  11814
+                     ||||||.|||||||||||.||.||||||||||||||||||||.|||||||
+Rabbit_corona  11944 CTTGCAGCATTTGCATGTGGCATCTAATTCTAAGTTGTGGCAGTATTGTA  11993
+
+Human_coronav  11815 GCACTTTGCACAATGAAATACTTGCCACTTCGGATCTGAGTGTTGCTTTT  11864
+                     |.|||.|.||.||.||.||||||||||||||.|||.||||...|||||||
+Rabbit_corona  11994 GTACTCTTCATAACGAGATACTTGCCACTTCAGATTTGAGCACTGCTTTT  12043
+
+Human_coronav  11865 GAAAAGCTTGCTCAGTTATTAATTGTTTTGTTTGCTAATCCAGCTGCTGT  11914
+                     ||||||||||||||.||..|.||.||||||||||||||||||||||||||
+Rabbit_corona  12044 GAAAAGCTTGCTCAATTGCTTATAGTTTTGTTTGCTAATCCAGCTGCTGT  12093
+
+Human_coronav  11915 GGATAGCAAGTGCCTGACTAGTATTGAAGAAGTTTGCGATGATTACGCAA  11964
+                     ||||||||||||||||.||||||||||||||||||||||||||||.||||
+Rabbit_corona  12094 GGATAGCAAGTGCCTGTCTAGTATTGAAGAAGTTTGCGATGATTATGCAA  12143
+
+Human_coronav  11965 AGGACAATACTGTTTTGCAGGCTTTACAGAGTGAATTTGTTAATATGGCT  12014
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  12144 AGGACAATACTGTTTTGCAGGCTTTACAGAGTGAATTTGTTAATATGGCT  12193
+
+Human_coronav  12015 AGCTTCGTTGAATATGAAGTTGCTAAGAAAAATCTTGATGAGGCGCGTTT  12064
+                     ||||||||||||||||||||||||||.||.|||||||||||||||||.|.
+Rabbit_corona  12194 AGCTTCGTTGAATATGAAGTTGCTAAAAAGAATCTTGATGAGGCGCGCTC  12243
+
+Human_coronav  12065 TAGTGGTTCTGCTAATCAACAGCAGTTAAAACAGCTAGAGAAAGCCTGTA  12114
+                     ||||||||||||||||||||||||.||||||||.|||||||||||.||||
+Rabbit_corona  12244 TAGTGGTTCTGCTAATCAACAGCAATTAAAACAACTAGAGAAAGCTTGTA  12293
+
+Human_coronav  12115 ATATTGCTAAATCTGCTTATGAACGCGACCGTGCTGTAGCAAAAAAGTTG  12164
+                     |||||||.||||||||||||||.||.||..|.|||||.||....||||||
+Rabbit_corona  12294 ATATTGCGAAATCTGCTTATGAGCGTGATAGAGCTGTTGCTCGCAAGTTG  12343
+
+Human_coronav  12165 GAGCGTATGGCTGATTTGGCTCTCACTAATATGTATAAAGAAGCTAGAAT  12214
+                     |||||.|||||.|||||||||.|.||||||||||||||||||||||||||
+Rabbit_corona  12344 GAGCGCATGGCAGATTTGGCTTTGACTAATATGTATAAAGAAGCTAGAAT  12393
+
+Human_coronav  12215 TAATGATAAGAAGAGTAAGGTTGTTTCTGCCTTGCAAACTATGCTTTTTA  12264
+                     .|||||.||.|||||||||||.||||||||.|||||||||||||||||||
+Rabbit_corona  12394 AAATGACAAAAAGAGTAAGGTAGTTTCTGCTTTGCAAACTATGCTTTTTA  12443
+
+Human_coronav  12265 GTATGGTGCGTAAGTTAGATAATCAAGCTCTGAATTCAATATTAGATAAC  12314
+                     |||||||.|||||..|.||||..||||||||.|||||.|||||||||||.
+Rabbit_corona  12444 GTATGGTTCGTAAACTGGATACCCAAGCTCTTAATTCGATATTAGATAAT  12493
+
+Human_coronav  12315 GCTGTGAAGGGTTGTGTACCATTGAATGCAATACCTTCATTGGCAGCAAA  12364
+                     ||.||.||.|||||||||||.||||||||||||||.|.|.|..|.||.||
+Rabbit_corona  12494 GCAGTTAAAGGTTGTGTACCCTTGAATGCAATACCATTACTTACTGCTAA  12543
+
+Human_coronav  12365 TACTCTGAATATAATTGTACCAGATAAAAGTGTTTATGACCAGGTAGTTG  12414
+                     .|||.|||.|||||||||||||||||||...||||.|||.|||||.||||
+Rabbit_corona  12544 CACTTTGACTATAATTGTACCAGATAAACAAGTTTTTGATCAGGTTGTTG  12593
+
+Human_coronav  12415 ATAATGTCTATGTTACCTATGCGGGTAATGTATGGCAGATTCAAACTATC  12464
+                     |||||||.||||||.|||||||.||.|||||.|||||.||.|||.|..|.
+Rabbit_corona  12594 ATAATGTATATGTTGCCTATGCAGGGAATGTTTGGCATATACAATCAGTG  12643
+
+Human_coronav  12465 CAGGATTCAGATGGTACAAATAAGCAGTTGAATGAGATATCTGATGATTG  12514
+                     ||||||.||||||||||||||||.||.||||||||||||..|||.||||.
+Rabbit_corona  12644 CAGGATGCAGATGGTACAAATAAACAATTGAATGAGATAAGTGAAGATTC  12693
+
+Human_coronav  12515 TAACTGGCCACTAGTTATTATTGCAAATCGGTATAATGAGGTATCTGCTA  12564
+                     |||||||||||||||||||.||||||||.||.||||||||||||||....
+Rabbit_corona  12694 TAACTGGCCACTAGTTATTGTTGCAAATAGGCATAATGAGGTATCTCAAG  12743
+
+Human_coronav  12565 CTGTTTTGCAAAATAATGAATTAATGCCTGCTAAGTTGAAAATTCAGGTT  12614
+                     |.|||||||||||.||||||||.||||||||.|||||.|.||..|||.||
+Rabbit_corona  12744 CCGTTTTGCAAAACAATGAATTGATGCCTGCAAAGTTAAGAACGCAGATT  12793
+
+Human_coronav  12615 GTTAATAGTGGTCCAGATCAGACTTGTAATACACCTACTCAATGTTACTA  12664
+                     ||.||||||||||||||...||.||||||||||||.|||||.|||||.||
+Rabbit_corona  12794 GTCAATAGTGGTCCAGACATGAATTGTAATACACCCACTCAGTGTTATTA  12843
+
+Human_coronav  12665 TAATAATAGTAACAATGGGAAGATTGTTTATGCTATACTTAGTGATGTTG  12714
+                     ||||||||||||||..||.|..|||.|.||||||||.|||||||||||.|
+Rabbit_corona  12844 TAATAATAGTAACACGGGTAGAATTATATATGCTATTCTTAGTGATGTCG  12893
+
+Human_coronav  12715 ATGGTCTTAAGTATACAAAAATTCTTAAAGATGATGGCAATTTTGTTGTT  12764
+                     |||||||||||||.||.||.||..|.|||||.|||||.||||.|||||||
+Rabbit_corona  12894 ATGGTCTTAAGTACACTAAGATAGTAAAAGAAGATGGAAATTGTGTTGTT  12943
+
+Human_coronav  12765 TTGGAGTTAGATCCTCCTTGTAAATTTACTGTTCAAGATGCTAAAGGTCT  12814
+                     ||||||.|.||||||||||||||.||||||||||||||||||||||||||
+Rabbit_corona  12944 TTGGAGCTTGATCCTCCTTGTAAGTTTACTGTTCAAGATGCTAAAGGTCT  12993
+
+Human_coronav  12815 TAAAATTAAGTACCTTTATTTTGTAAAAGGTTGTAACACACTAGCAAGAG  12864
+                     ||||.|||||||||||||||||||.||.|||||||||||||||||..|.|
+Rabbit_corona  12994 TAAAGTTAAGTACCTTTATTTTGTTAAGGGTTGTAACACACTAGCCCGTG  13043
+
+Human_coronav  12865 GCTGGGTTGTTGGTACAATTTCTTCTACAGTTAGATTGCAAGCTGGAACT  12914
+                     |||||||||||||||||||.||.||.|||||||||||.||||||||.|||
+Rabbit_corona  13044 GCTGGGTTGTTGGTACAATATCATCGACAGTTAGATTACAAGCTGGTACT  13093
+
+Human_coronav  12915 GCTACTGAATATGCTTCCAACTCATCTATATTGTCTTTATGTGCGTTTTC  12964
+                     ||||||||.|||||.||||||||.||||||.||||.||.|||||||||||
+Rabbit_corona  13094 GCTACTGAGTATGCGTCCAACTCGTCTATACTGTCATTGTGTGCGTTTTC  13143
+
+Human_coronav  12965 TGTAGATCCTAAGAAAACGTATTTAGATTTTATACAACAAGGAGGAACAC  13014
+                     ||||||||||||||||||||||.|.|||||||||||||||||||||.|.|
+Rabbit_corona  13144 TGTAGATCCTAAGAAAACGTATCTTGATTTTATACAACAAGGAGGAGCTC  13193
+
+Human_coronav  13015 CTATTGCCAATTGTGTTAAAATGTTGTGTGACCATGCTGGTACCGGTATG  13064
+                     |||||.|||||||||||||||||.|.||||||||||||||||||||||||
+Rabbit_corona  13194 CTATTTCCAATTGTGTTAAAATGCTTTGTGACCATGCTGGTACCGGTATG  13243
+
+Human_coronav  13065 GCCATTACTGTTAAACCCGATGCTACCACTAGTCAGGATTCATATGGTGG  13114
+                     ||.||||||||||||||.||.|||||.|||||||||||||||||||||||
+Rabbit_corona  13244 GCTATTACTGTTAAACCTGAGGCTACTACTAGTCAGGATTCATATGGTGG  13293
+
+Human_coronav  13115 TGCGTCTGTTTGTATATATTGCCGCGCACGAGTTGAACACCCAGATGTTG  13164
+                     |||.|||||||||||.|||||||||||||||.|||||||.||||||||||
+Rabbit_corona  13294 TGCTTCTGTTTGTATTTATTGCCGCGCACGAATTGAACATCCAGATGTTG  13343
+
+Human_coronav  13165 ATGGGTTGTGCAAATTACGCGGCAAGTTTGTACAAGTGCCTGTAGGTATA  13214
+                     ||||.||||||||.||||||||.||||||||.|||||||||||.||||||
+Rabbit_corona  13344 ATGGATTGTGCAAGTTACGCGGTAAGTTTGTTCAAGTGCCTGTGGGTATA  13393
+
+Human_coronav  13215 AAAGATCCTGTGTCTTATGTTTTGACACATGATGTTTGTCGAGTTTGTGG  13264
+                     ||||||||||||||||||.|.|||||||||||||||||||.|||||||||
+Rabbit_corona  13394 AAAGATCCTGTGTCTTATATATTGACACATGATGTTTGTCAAGTTTGTGG  13443
+
+Human_coronav  13265 ATTTTGGCGGGATGGAAGTTGTTCATGTGTTAGCACTGACACTACTGTTC  13314
+                     .||||||.|||||||.||.||.||.||.|||||.||.|...||...||||
+Rabbit_corona  13444 CTTTTGGAGGGATGGTAGCTGCTCGTGCGTTAGTACGGGTGCTTTCGTTC  13493
+
+Human_coronav  13315 AATCAAAAGATACTAATTTTTTAAACGGGTTCGGGGTACGAGTGTAGATG  13364
+                     |.||||||||.||||||||||||||||||||||||||.||||||||||||
+Rabbit_corona  13494 AGTCAAAAGACACTAATTTTTTAAACGGGTTCGGGGTGCGAGTGTAGATG  13543
+
+Human_coronav  13365 CCCGTCTCGTACCCTGCGCCAGTGGTTTATCTACTGATGTACAATTAAGG  13414
+                     ||||||||||||||||.||||..|||.|.|||||.|||||.|||||||||
+Rabbit_corona  13544 CCCGTCTCGTACCCTGTGCCACCGGTCTTTCTACCGATGTTCAATTAAGG  13593
+
+Human_coronav  13415 GCATTTGATATTTACAATGCTAGTGTTGCTGGCATTGGTTTACATTTAAA  13464
+                     |||||||||||||..||||||||||||||||||||||||||.|||||.||
+Rabbit_corona  13594 GCATTTGATATTTGTAATGCTAGTGTTGCTGGCATTGGTTTGCATTTGAA  13643
+
+Human_coronav  13465 AGTTAATTGTTGCCGTTTTCAGCGTGTTGATGAGAACGGTGATAAATTAG  13514
+                     |||||||||.|||||||||||||||.|.|||||.|..|||.|||||.|.|
+Rabbit_corona  13644 AGTTAATTGCTGCCGTTTTCAGCGTTTAGATGAAAGTGGTAATAAAATGG  13693
+
+Human_coronav  13515 ATCAGTTCTTTGTTGTTAAGAGGACAGATCTGACTATATATAATAGAGAG  13564
+                     |||..||||||||.|||||.||.||.|||.|...||.|||||||||||||
+Rabbit_corona  13694 ATCGATTCTTTGTAGTTAAAAGAACTGATTTAGTTACATATAATAGAGAG  13743
+
+Human_coronav  13565 ATGAAATGCTATGAGCGTGTAAAAGATTGTAAGTTTGTGGCTGAACACGA  13614
+                     |||.||||.||||||||.|||||||.|||||...|||||||.||||||||
+Rabbit_corona  13744 ATGGAATGTTATGAGCGAGTAAAAGGTTGTAGAGTTGTGGCAGAACACGA  13793
+
+Human_coronav  13615 TTTCTTTACATTTGATGTAGAAGGTAGTCGTGTGCCACACATTGTACGCA  13664
+                     |||||||||.||||.||||||.||.|||||.||||||||.||.||.||||
+Rabbit_corona  13794 TTTCTTTACTTTTGCTGTAGAGGGAAGTCGAGTGCCACATATAGTTCGCA  13843
+
+Human_coronav  13665 AGGATTTAACAAAGTATACTATGTTGGATCTTTGCTATGCATTGCGACAT  13714
+                     |.|||.|.||||||||.|||||||||||||||||||||||||||||||||
+Rabbit_corona  13844 AAGATCTTACAAAGTACACTATGTTGGATCTTTGCTATGCATTGCGACAT  13893
+
+Human_coronav  13715 TTTGATCGCAATGATTGCATGCTGCTTTGTGACATTCTCTCTATATATGC  13764
+                     ||.|||||||||||||||..|||.||.||||||||.||||||||.|||||
+Rabbit_corona  13894 TTCGATCGCAATGATTGCTCGCTTCTGTGTGACATACTCTCTATGTATGC  13943
+
+Human_coronav  13765 TGGTTGTGAACAATCCTACTTTACTAAGAAGGATTGGTATGATTTTGTTG  13814
+                     ||||||||||||||||||.|||||..|.||||||||||||||||||||||
+Rabbit_corona  13944 TGGTTGTGAACAATCCTATTTTACACAAAAGGATTGGTATGATTTTGTTG  13993
+
+Human_coronav  13815 AAAATCCTGATATTATTAATGTGTATAAAAAGCTAGGACCTATTTTTAAT  13864
+                     |||||||||||||.||||||||.|||||.||||||||.||||||||||||
+Rabbit_corona  13994 AAAATCCTGATATAATTAATGTTTATAAGAAGCTAGGTCCTATTTTTAAT  14043
+
+Human_coronav  13865 AGAGCCCTAGTTAGCGCTACTGAGTTTGCGGACAAATTGGTGGAGGTAGG  13914
+                     |||||||||||||.|.||.||||||||||.||...|.|.||.||||..||
+Rabbit_corona  14044 AGAGCCCTAGTTAACACTGCTGAGTTTGCTGATGCACTTGTAGAGGCTGG  14093
+
+Human_coronav  13915 CTTAGTAGGCGTTTTAACACTTGATAATCAAGATTTAAATGGTAAATGGT  13964
+                     |||||||||.||||||||.|||||||||||||||||.|||||||..||||
+Rabbit_corona  14094 CTTAGTAGGTGTTTTAACTCTTGATAATCAAGATTTGAATGGTATGTGGT  14143
+
+Human_coronav  13965 ATGATTTTGGTGACTATGTTATTGCAGCCCCAGGATGTGGTGTTGCTATA  14014
+                     |||||||||||||.||||||.||.||||.||.||.|||||||||||..||
+Rabbit_corona  14144 ATGATTTTGGTGATTATGTTGTTACAGCACCTGGTTGTGGTGTTGCAGTA  14193
+
+Human_coronav  14015 GCAGATTCTTATTATTCTTATATCATGCCTATGCTGACCATGTGTCATGC  14064
+                     ||.||||||||||||||||||||.||||||||||||||||||||||||||
+Rabbit_corona  14194 GCTGATTCTTATTATTCTTATATGATGCCTATGCTGACCATGTGTCATGC  14243
+
+Human_coronav  14065 ATTGGATTGCGAATTGTATGTGAATAATGCTTATAGACTATTTGATCTTG  14114
+                     |||||||||.||.||.||.||.||||||.|||||||||.|||||||||||
+Rabbit_corona  14244 ATTGGATTGTGAGTTATACGTAAATAATACTTATAGACAATTTGATCTTG  14293
+
+Human_coronav  14115 TACAGTATGATTTTACTGATTACAAGCTTGAATTGTTTAATAAGTATTTT  14164
+                     ||||||||||.|||||||||||.|||||.||.||||||||||||||||||
+Rabbit_corona  14294 TACAGTATGACTTTACTGATTATAAGCTCGAGTTGTTTAATAAGTATTTT  14343
+
+Human_coronav  14165 AAGCACTGGAGTATGCCATATCATCCTAACACTGTTGATTGTCAGGATGA  14214
+                     |||||||||||||||||.|||||||||||||||.||||||||||||||||
+Rabbit_corona  14344 AAGCACTGGAGTATGCCTTATCATCCTAACACTATTGATTGTCAGGATGA  14393
+
+Human_coronav  14215 TCGGTGTATTATACATTGTGCTAATTTTAACATACTTTTTAGTATGGTTT  14264
+                     |.||||.|||||||||||||||||||||||||||||||||||||||||.|
+Rabbit_corona  14394 TAGGTGCATTATACATTGTGCTAATTTTAACATACTTTTTAGTATGGTGT  14443
+
+Human_coronav  14265 TACCTAATACATGTTTTGGGCCTCTTGTTAGGCAAATTTTTGTGGATGGT  14314
+                     ||||||||||.||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  14444 TACCTAATACTTGTTTTGGGCCTCTTGTTAGGCAAATTTTTGTAGATGGT  14493
+
+Human_coronav  14315 GTGCCTTTTGTTGTTTCAATTGGCTACCATTATAAAGAACTTGGTATTGT  14364
+                     ||.||||||||||||||||||||.|||||||||||||||||||||.||||
+Rabbit_corona  14494 GTTCCTTTTGTTGTTTCAATTGGGTACCATTATAAAGAACTTGGTGTTGT  14543
+
+Human_coronav  14365 GATGAATATGGATGTGGATACACATCGTTATCGCTTGTCTTTAAAAGACT  14414
+                     .|||||||||||||||||.|||||||||||||||||||||.|.|||||||
+Rabbit_corona  14544 TATGAATATGGATGTGGACACACATCGTTATCGCTTGTCTCTTAAAGACT  14593
+
+Human_coronav  14415 TGCTTTTATATGCTGCTGATCCAGCTTTGCATGTAGCTTCTGCTAGTGCA  14464
+                     ||||||||||.|||||||||||.|||||||||||.||.||.||||..|||
+Rabbit_corona  14594 TGCTTTTATACGCTGCTGATCCTGCTTTGCATGTTGCATCAGCTACAGCA  14643
+
+Human_coronav  14465 TTGTATGATTTACGCACTTGCTGTTTTAGTGTTGCCGCTATAACAAGCGG  14514
+                     ||||||||||||||.||.||.||.||||||||.||.||||||.||||.||
+Rabbit_corona  14644 TTGTATGATTTACGTACCTGTTGCTTTAGTGTAGCAGCTATAGCAAGTGG  14693
+
+Human_coronav  14515 TGTAAAATTTCAAACAGTTAAACCTGGTAATTTTAATCAGGATTTTTATG  14564
+                     |||.||.||||||||||||||.||||||||||||||||||||||||||||
+Rabbit_corona  14694 TGTGAAGTTTCAAACAGTTAAGCCTGGTAATTTTAATCAGGATTTTTATG  14743
+
+Human_coronav  14565 ATTTTGTTTTAAGTAAAGGCCTGCTTAAAGAGGGTAGCTCAGTTGATCTG  14614
+                     |||||.||||||||||.|||.||||||||||||||||||||||||||.||
+Rabbit_corona  14744 ATTTTATTTTAAGTAAGGGCTTGCTTAAAGAGGGTAGCTCAGTTGATTTG  14793
+
+Human_coronav  14615 AAGCACTTTTTCTTTACACAGGATGGTAATGCTGCTATTACTGATTATAA  14664
+                     |||||||||||||||||.||.|||||||||||||||||||||||||||||
+Rabbit_corona  14794 AAGCACTTTTTCTTTACGCAAGATGGTAATGCTGCTATTACTGATTATAA  14843
+
+Human_coronav  14665 TTATTATAAGTATAATTTGCCCACCATGGTGGACATTAAGCAGTTGTTGT  14714
+                     ||||||||||||||||||||||||.|||||||||||||||||||||||||
+Rabbit_corona  14844 TTATTATAAGTATAATTTGCCCACTATGGTGGACATTAAGCAGTTGTTGT  14893
+
+Human_coronav  14715 TTGTTTTGGAAGTTGTTTATAAGTATTTTGAGATTTATGATGGTGGGTGT  14764
+                     ||||||||||.|||||||||||||||||||||||||||||||||||.|||
+Rabbit_corona  14894 TTGTTTTGGAGGTTGTTTATAAGTATTTTGAGATTTATGATGGTGGTTGT  14943
+
+Human_coronav  14765 ATACCGGCATCACAAGTCATTGTTAATAATTATGATAAGAGTGCTGGCTA  14814
+                     |||||.|||||||||||.|||||.||||||||||||||||||||||||||
+Rabbit_corona  14944 ATACCCGCATCACAAGTTATTGTAAATAATTATGATAAGAGTGCTGGCTA  14993
+
+Human_coronav  14815 TCCATTTAACAAATTTGGAAAAGCCAGGCTCTATTATGAAGCATTATCAT  14864
+                     |||||||||.|||||||||||||||||.||.|||||.||.|||||.||||
+Rabbit_corona  14994 TCCATTTAATAAATTTGGAAAAGCCAGACTATATTACGAGGCATTGTCAT  15043
+
+Human_coronav  14865 TTGAGGAACAGGATGAAATTTACGCTTATACTAAGCGTAATGTCCTGCCA  14914
+                     ||||.||.||||||||.||||||||||||||||||||.|||||||||||.
+Rabbit_corona  15044 TTGATGAGCAGGATGATATTTACGCTTATACTAAGCGGAATGTCCTGCCC  15093
+
+Human_coronav  14915 ACACTTACTCAAATGAATTTGAAATATGCTATTAGTGCTAAGAATAGAGC  14964
+                     ||||||||.||||||||..|.||.|||||.|||||||||||.|||||.||
+Rabbit_corona  15094 ACACTTACACAAATGAACCTTAAGTATGCCATTAGTGCTAAAAATAGGGC  15143
+
+Human_coronav  14965 CCGCACTGTTGCTGGTGTTTCCATACTTAGTACTATGACTGGCAGAATGT  15014
+                     |||||||||.|||||.|||||.||..|.||||||||||||||||||||||
+Rabbit_corona  15144 CCGCACTGTAGCTGGAGTTTCTATTTTGAGTACTATGACTGGCAGAATGT  15193
+
+Human_coronav  15015 TTCATCAAAAATGTTTGAAAAGTATAGCAGCTACACGTGGTGTTCCTGTA  15064
+                     ||||.|||||.|||||||||||||||||||||||.||||||||||||||.
+Rabbit_corona  15194 TTCACCAAAAGTGTTTGAAAAGTATAGCAGCTACTCGTGGTGTTCCTGTT  15243
+
+Human_coronav  15065 GTTATAGGCACCACTAAATTTTATGGTGGCTGGGATGATATGTTACGCCG  15114
+                     |||||||||||.||.|||||.|||||.||.||||||||||||.|.|||||
+Rabbit_corona  15244 GTTATAGGCACTACGAAATTCTATGGCGGGTGGGATGATATGCTCCGCCG  15293
+
+Human_coronav  15115 CCTTATTAAAGATGTTGACAATCCTGTACTTATGGGTTGGGATTATCCTA  15164
+                     ||||||||||||||||||.|||||||||||||||||||||||||||||.|
+Rabbit_corona  15294 CCTTATTAAAGATGTTGATAATCCTGTACTTATGGGTTGGGATTATCCAA  15343
+
+Human_coronav  15165 AGTGTGATCGTGCTATGCCAAACCTACTACGTATTGTTAGTAGTTTGGTA  15214
+                     |.|||||||||||||||||||||.||||||||||||||||||||||||||
+Rabbit_corona  15344 AATGTGATCGTGCTATGCCAAACATACTACGTATTGTTAGTAGTTTGGTA  15393
+
+Human_coronav  15215 TTAGCCCGAAAACATGAGACATGTTGTTCGCAAAGCGATAGGTTTTATCG  15264
+                     |||||.|||||||||||..||||||||.|||||||||||||||||||.||
+Rabbit_corona  15394 TTAGCGCGAAAACATGATGCATGTTGTACGCAAAGCGATAGGTTTTACCG  15443
+
+Human_coronav  15265 ACTTGCGAATGAATGCGCACAAGTTTTGAGTGAAATTGTTATGTGTGGTG  15314
+                     |||||||||||||||.||||||||.|||||.||.||||||||||||||||
+Rabbit_corona  15444 ACTTGCGAATGAATGTGCACAAGTGTTGAGCGAGATTGTTATGTGTGGTG  15493
+
+Human_coronav  15315 GCTGTTATTATGTTAAGCCTGGTGGCACTAGTAGTGGTGATGCAACTACT  15364
+                     ||||||||||||||||.|||||.||.||||||||||||||||||||.|||
+Rabbit_corona  15494 GCTGTTATTATGTTAAACCTGGCGGTACTAGTAGTGGTGATGCAACCACT  15543
+
+Human_coronav  15365 GCTTTTGCTAATTCAGTCTTTAACATATGTCAAGCTGTTTCAGCCAATGT  15414
+                     ||.||||||||.|||||.||||||||||||||||||||||||||||||||
+Rabbit_corona  15544 GCCTTTGCTAACTCAGTTTTTAACATATGTCAAGCTGTTTCAGCCAATGT  15593
+
+Human_coronav  15415 ATGTGCCTTAATGTCATGCAATGGCAATAAGATTGAAGATCTTAGTATAC  15464
+                     |||..|.||||||.||||||||||.|||||||||||||||.|.|||||.|
+Rabbit_corona  15594 ATGCTCATTAATGGCATGCAATGGAAATAAGATTGAAGATTTGAGTATTC  15643
+
+Human_coronav  15465 GTGCTCTTCAGAAGCGCTTATACTCACATGTGTATAGAAGTGATAAGGTT  15514
+                     |.||||||||.|||||.||||||||||||||||||||||||||.|..|||
+Rabbit_corona  15644 GCGCTCTTCAAAAGCGTTTATACTCACATGTGTATAGAAGTGACACTGTT  15693
+
+Human_coronav  15515 GATTCAACCTTTGTCACAGAATATTATGAATTTTTAAATAAGCATTTTAG  15564
+                     ||..||||.|||||||||||.|||||||||||||||||||||||||||||
+Rabbit_corona  15694 GACCCAACATTTGTCACAGAGTATTATGAATTTTTAAATAAGCATTTTAG  15743
+
+Human_coronav  15565 TATGATGATTTTGAGTGATGATGGGGTTGTGTGTTATAATTCTGATTATG  15614
+                     ||||||||||.|...|||||||||.|||||||||||||||||||||||||
+Rabbit_corona  15744 TATGATGATTCTATCTGATGATGGTGTTGTGTGTTATAATTCTGATTATG  15793
+
+Human_coronav  15615 CGTCCAAAGGGTATATTGCTAATATAAGTGCCTTTCAACAGGTATTATAT  15664
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  15794 CGTCCAAAGGGTATATTGCTAATATAAGTGCCTTTCAACAGGTGTTATAT  15843
+
+Human_coronav  15665 TATCAAAATAACGTTTTTATGTCAGAATCCAAATGTTGGGTTGAACATGA  15714
+                     ||.||||||||||||||||||||.|||.|||||||||||||||||.||||
+Rabbit_corona  15844 TACCAAAATAACGTTTTTATGTCTGAAGCCAAATGTTGGGTTGAAAATGA  15893
+
+Human_coronav  15715 CATAAATAATGGACCTCATGAATTCTGTTCACAACACACAATGCTTGTAA  15764
+                     ||||||..||||||||||||||||.|||||||||||.||||||||.||.|
+Rabbit_corona  15894 CATAAACCATGGACCTCATGAATTTTGTTCACAACATACAATGCTAGTTA  15943
+
+Human_coronav  15765 AGATGGATGGTGACGATGTCTACCTTCCATATCCTAATCCTAGTCGTATA  15814
+                     |.|||||||||||.|||||||||||||||||||||.|||||||||||||.
+Rabbit_corona  15944 AAATGGATGGTGATGATGTCTACCTTCCATATCCTGATCCTAGTCGTATT  15993
+
+Human_coronav  15815 TTAGGAGCTGGATGTTTTGTAGATGATTTGTTAAAGACTGATAGTGTTCT  15864
+                     .|||||||||||||||||||||||||||||||||||||||||||.|||||
+Rabbit_corona  15994 CTAGGAGCTGGATGTTTTGTAGATGATTTGTTAAAGACTGATAGCGTTCT  16043
+
+Human_coronav  15865 TTTAATAGAACGATTTGTAAGTCTTGCAATAGATGCTTATCCACTTGTGT  15914
+                     |||.|||||.|||||||||||||||||||||||||||||||||.|.||.|
+Rabbit_corona  16044 TTTGATAGAGCGATTTGTAAGTCTTGCAATAGATGCTTATCCATTAGTAT  16093
+
+Human_coronav  15915 ATCATGAAAATGAAGAATACCAAAAGGTTTTTCGTGTTTATTTGGCGTAT  15964
+                     ||||.|||||||||||||||||||||||.||||||||.|||||||.||||
+Rabbit_corona  16094 ATCACGAAAATGAAGAATACCAAAAGGTGTTTCGTGTGTATTTGGAGTAT  16143
+
+Human_coronav  15965 ATAAAGAAGTTGTACAATGACCTGGGTAATCAGATCTTGGATAGCTACAG  16014
+                     ||||||||||||||||||||.||||||||||||||.|||||.|||||.||
+Rabbit_corona  16144 ATAAAGAAGTTGTACAATGATCTGGGTAATCAGATTTTGGACAGCTATAG  16193
+
+Human_coronav  16015 TGTTATTTTAAGTACTTGTGATGGACAAAAGTTCACTGATGAGTCCTTTT  16064
+                     ||||||||||||||||||||||||||||||.||.|||||.||||||||||
+Rabbit_corona  16194 TGTTATTTTAAGTACTTGTGATGGACAAAAATTTACTGACGAGTCCTTTT  16243
+
+Human_coronav  16065 ACAAGAACATGTATTTAAGAAGTGCAGTTATGCAGAGTGTTGGAGCTTGC  16114
+                     ||||||||||||||||||||||||||||||||||.||.|||||.||.|||
+Rabbit_corona  16244 ACAAGAACATGTATTTAAGAAGTGCAGTTATGCAAAGCGTTGGTGCCTGC  16293
+
+Human_coronav  16115 GTGGTCTGCTCTTCTCAAACATCATTACGTTGTGGCAGTTGCATCAGAAA  16164
+                     ||.||||||||.|||||||||||.||||||||||||||||||||.|||||
+Rabbit_corona  16294 GTAGTCTGCTCCTCTCAAACATCTTTACGTTGTGGCAGTTGCATTAGAAA  16343
+
+Human_coronav  16165 GCCTCTTCTTTGCTGCAAGTGTTGTTATGATCATGTTATGGCGACTGATC  16214
+                     .||||||.|.|||||||||||.|||||.||||||||||||||.|||||||
+Rabbit_corona  16344 ACCTCTTTTGTGCTGCAAGTGCTGTTACGATCATGTTATGGCAACTGATC  16393
+
+Human_coronav  16215 ATAAATATGTCTTGAGTGTTTCACCATATGTGTGTAATGCACCAGGATGT  16264
+                     |||||||||||.||||||||||||||||||||||||||.|.|||||||||
+Rabbit_corona  16394 ATAAATATGTCCTGAGTGTTTCACCATATGTGTGTAATTCGCCAGGATGT  16443
+
+Human_coronav  16265 GATGTAAATGATGTTACCAAATTGTATCTAGGTGGTATGTCATATTATTG  16314
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  16444 GATGTAAATGATGTTACCAAATTGTATCTAGGTGGTATGTCATATTATTG  16493
+
+Human_coronav  16315 TGAAGACCATAAGCCACAATATTCATTCAAGTTGGTAATGAATGGTCTGG  16364
+                     ||||||||||||.|||||.|||||.||.|||||.||||||||||||.|||
+Rabbit_corona  16494 TGAAGACCATAAACCACAGTATTCTTTTAAGTTAGTAATGAATGGTATGG  16543
+
+Human_coronav  16365 TTTTTGGTCTATATAAACAATCTTGTACAGGATCTCCGTACATAGACGAT  16414
+                     ||||||||.|.||||||||.||||||||.|||||||||||||||||.|||
+Rabbit_corona  16544 TTTTTGGTTTGTATAAACAGTCTTGTACCGGATCTCCGTACATAGATGAT  16593
+
+Human_coronav  16415 TTTAATCGTATAGCTAGTTGTAAATGGACCGATGTGGATGATTACATACT  16464
+                     ||||||||.||.|||||.|||||||||||.|||||.||.|||||||||||
+Rabbit_corona  16594 TTTAATCGCATTGCTAGCTGTAAATGGACTGATGTAGACGATTACATACT  16643
+
+Human_coronav  16465 AGCTAATGAATGTACAGAGCGCTTGAAATTGTTTGCTGCAGAAACGCAAA  16514
+                     |||.|||||||||||.||.|||||.|||||||||||||||||.||.||||
+Rabbit_corona  16644 AGCAAATGAATGTACCGAACGCTTAAAATTGTTTGCTGCAGAGACACAAA  16693
+
+Human_coronav  16515 AGGCAACCGAGGAAGCCTTTAAGCAGAGTTATGCATCAGCAACAATACAA  16564
+                     ||||.||.||.||.||.|||||||||||.|||||||||||||||||.|||
+Rabbit_corona  16694 AGGCCACTGAAGAGGCATTTAAGCAGAGCTATGCATCAGCAACAATCCAA  16743
+
+Human_coronav  16565 GAGATTGTTAGTGAGCGCGAATTGATTCTCTCTTGGGAGATTGGAAAAGT  16614
+                     ||||||||.||.||.||.|||||.||||||||||||||||.|||.||.||
+Rabbit_corona  16744 GAGATTGTAAGCGATCGTGAATTAATTCTCTCTTGGGAGACTGGTAAGGT  16793
+
+Human_coronav  16615 TAAGCCACCACTTAATAAAAATTATGTTTTTACTGGCTACCATTTTACTA  16664
+                     |||||||||.||||||||.|||||||||||||||||.||||||||.||||
+Rabbit_corona  16794 TAAGCCACCGCTTAATAAGAATTATGTTTTTACTGGTTACCATTTCACTA  16843
+
+Human_coronav  16665 AAAATGGTAAGACAGTTTTAGGTGAGTATGTTTTTGATAAGAGTGAGTTG  16714
+                     |.|||||||||||||||||.|||||.|||.||||||||||||||||||||
+Rabbit_corona  16844 AGAATGGTAAGACAGTTTTGGGTGAATATATTTTTGATAAGAGTGAGTTG  16893
+
+Human_coronav  16715 ACTAATGGTGTGTATTATCGCGCCACAACCACTTATAAGCTATCTGTAGG  16764
+                     ||||||||||||||.||||||||||||||||||||||||||||||||.||
+Rabbit_corona  16894 ACTAATGGTGTGTACTATCGCGCCACAACCACTTATAAGCTATCTGTTGG  16943
+
+Human_coronav  16765 AGATGTTTTTGTTTTAACCTCTCATTCAGTAGCTAATTTAAGTGCTCCTA  16814
+                     .|||||.||||||||.||||||||||||||||||||||||||||||||||
+Rabbit_corona  16944 TGATGTCTTTGTTTTGACCTCTCATTCAGTAGCTAATTTAAGTGCTCCTA  16993
+
+Human_coronav  16815 CGCTTGTTCCGCAGGAGAATTATAGTAGTATTAGATTTGCTAGTGTTTAT  16864
+                     |||||||.||||||||||||||||||||.||.||||||||||||||||||
+Rabbit_corona  16994 CGCTTGTACCGCAGGAGAATTATAGTAGCATAAGATTTGCTAGTGTTTAT  17043
+
+Human_coronav  16865 AGTGTGCTTGAGACGTTTCAGAACAATGTTGTTAATTATCAACACATTGG  16914
+                     |||||||||||.||||||||||.|||||||||.|||||||||||||||||
+Rabbit_corona  17044 AGTGTGCTTGAAACGTTTCAGAGCAATGTTGTCAATTATCAACACATTGG  17093
+
+Human_coronav  16915 TATGAAACGTTACTGCACCGTGCAAGGACCTCCTGGTACAGGGAAGTCAC  16964
+                     .|||||||||||.||.||||||||||||||.|||||.|||||||||||||
+Rabbit_corona  17094 AATGAAACGTTATTGTACCGTGCAAGGACCCCCTGGAACAGGGAAGTCAC  17143
+
+Human_coronav  16965 ATCTTGCTATTGGTCTTGCTGTATTCTATTGTACAGCACGTGTTGTATAC  17014
+                     ||||||||||.|||.|.|||||||..||||||||||||.|.||||||||.
+Rabbit_corona  17144 ATCTTGCTATCGGTTTGGCTGTATATTATTGTACAGCAAGAGTTGTATAT  17193
+
+Human_coronav  17015 ACAGCGGCCAGCCATGCAGCTGTTGACGCATTGTGTGAAAAAGCATATAA  17064
+                     ||.||.|||||||||||.||||||||.|||||.||||||||.||||||||
+Rabbit_corona  17194 ACTGCTGCCAGCCATGCTGCTGTTGATGCATTATGTGAAAAGGCATATAA  17243
+
+Human_coronav  17065 ATTTTTGAATATAAATGATTGCACTCGTATTGTTCCGGCCAAGGTCAGGG  17114
+                     ||||||.|||||.|||||.|||||.|||||||||||.||.|||||..|.|
+Rabbit_corona  17244 ATTTTTAAATATTAATGACTGCACGCGTATTGTTCCTGCTAAGGTGCGTG  17293
+
+Human_coronav  17115 TGGAGTGCTATGATAAGTTTAAAATTAATGACACCACTCGTAAGTATGTG  17164
+                     ||||.|||||||||||.|||||.|||||||||||..||||||||||||||
+Rabbit_corona  17294 TGGATTGCTATGATAAATTTAAGATTAATGACACTTCTCGTAAGTATGTG  17343
+
+Human_coronav  17165 TTTACTACCATAAATGCATTACCTGAGATGGTGACTGATATTGTTGTTGT  17214
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  17344 TTTACTACCATAAATGCATTACCTGAGATGGTGACTGATATTGTTGTTGT  17393
+
+Human_coronav  17215 AGATGAAGTTAGTATGCTTACCAATTATGAGCTTTCTGTTATTAATGCTC  17264
+                     |||||||||.|||||||||||||||||.|||||.||||||||.||.||||
+Rabbit_corona  17394 AGATGAAGTAAGTATGCTTACCAATTACGAGCTATCTGTTATCAACGCTC  17443
+
+Human_coronav  17265 GTATTCGCGCTAAGCATTATGTTTATATTGGTGATCCTGCTCAATTGCCA  17314
+                     |||||||.||||||||||||||.|||||||||||.||||||||.||||||
+Rabbit_corona  17444 GTATTCGTGCTAAGCATTATGTCTATATTGGTGACCCTGCTCAGTTGCCA  17493
+
+Human_coronav  17315 GCACCACGTGTGTTATTGAGCAAGGGTACACTTGAACCTAAATATTTTAA  17364
+                     |||||.||||||||||||||.||.||..|.||.|||||||||||||||||
+Rabbit_corona  17494 GCACCCCGTGTGTTATTGAGTAAAGGATCCCTAGAACCTAAATATTTTAA  17543
+
+Human_coronav  17365 CACTGTTACTAAGCTCATGTGTTGCTTAGGGCCAGACATTTTTCTTGGTA  17414
+                     .|||||.||||||||.||||||||||||||.||.||.|||||..|.||.|
+Rabbit_corona  17544 TACTGTAACTAAGCTAATGTGTTGCTTAGGTCCTGATATTTTCTTGGGAA  17593
+
+Human_coronav  17415 CATGTTATAGATGTCCTAAGGAAATCGTTGATACAGTGTCCGCCTTGGTT  17464
+                     ||||.|||.|.||||||||||||||.||.||||||||.||.|||||||||
+Rabbit_corona  17594 CATGCTATCGCTGTCCTAAGGAAATTGTGGATACAGTATCAGCCTTGGTT  17643
+
+Human_coronav  17465 TATGAAAATAAGCTTAAGGCTAAGAATGAGAGTAGTTCATTGTGTTTTAA  17514
+                     |||||.||||||||.||||||||||||||.|.|||.||||||||||||||
+Rabbit_corona  17644 TATGATAATAAGCTCAAGGCTAAGAATGAAAATAGCTCATTGTGTTTTAA  17693
+
+Human_coronav  17515 GGTCTATTATAAGGGCGTTACAACACATGAAAGTTCTAGTGCTGTAAATA  17564
+                     ||||||||.|||||||||||||||||||||.||||||||.|||||.||||
+Rabbit_corona  17694 GGTCTATTTTAAGGGCGTTACAACACATGAGAGTTCTAGCGCTGTTAATA  17743
+
+Human_coronav  17565 TGCAGCAGATTTATTTGATTAATAAGTTTTTGAAGGCTAACCCTTTGTGG  17614
+                     ||||||||||||||||.||||.|||.||||||||||||||.||.||||||
+Rabbit_corona  17744 TGCAGCAGATTTATTTAATTAGTAAATTTTTGAAGGCTAATCCATTGTGG  17793
+
+Human_coronav  17615 CATAAAGCTGTTTTTATTAGCCCATATAATAGTCAGAACTTTGCAGCTAA  17664
+                     |||||.||.||||||||||||||.||||||||||||||||||||.|||||
+Rabbit_corona  17794 CATAACGCCGTTTTTATTAGCCCTTATAATAGTCAGAACTTTGCTGCTAA  17843
+
+Human_coronav  17665 GCGTGTTTTGGGTTTACAAACCCAAACCGTGGATTCTGCTCAAGGTTCTG  17714
+                     .||.|||||||||.|.||.||.||||||||.|||||.||.|||||.||||
+Rabbit_corona  17844 ACGCGTTTTGGGTCTTCAGACTCAAACCGTTGATTCAGCGCAAGGGTCTG  17893
+
+Human_coronav  17715 AATATGATTATGTTATATATTCACAGACTGCAGAAACAGCGCATTCTGTA  17764
+                     |||||||||||||.||.||||||||||||||.|||||||||||||||||.
+Rabbit_corona  17894 AATATGATTATGTCATTTATTCACAGACTGCGGAAACAGCGCATTCTGTT  17943
+
+Human_coronav  17765 AATGTTAATCGCTTCAATGTTGCTATTACTCGAGCCAAGAAAGGTATTCT  17814
+                     ||||||||||||||||||||.||||||||..|.|||||||||||||||||
+Rabbit_corona  17944 AATGTTAATCGCTTCAATGTAGCTATTACCAGGGCCAAGAAAGGTATTCT  17993
+
+Human_coronav  17815 TTGTGTTATGAGTAATATGCAGTTGTTTGAAGCATTACAGTTTACTACAT  17864
+                     .|||||.|||.||||||||||..|.|||||.||.|||||.|||||..||.
+Rabbit_corona  17994 CTGTGTCATGTGTAATATGCAACTTTTTGAGGCTTTACAATTTACAGCAC  18043
+
+Human_coronav  17865 TGACCTTAGATAAAGTGCCACAGGCCGTCGAAACTAAAGTTCAATGTAGT  17914
+                     ||||.||.||||||||.||..            |.|||.|.||.||||.|
+Rabbit_corona  18044 TGACTTTGGATAAAGTTCCTT------------CCAAATTGCAGTGTACT  18081
+
+Human_coronav  17915 ACTAATTTATTTAAAGATTGTAGCAAGAGTTATAGCGGTTATCACCCAGC  17964
+                     ||.||||||||.|||||||||||||||||.||||..|||||.||.|||||
+Rabbit_corona  18082 ACCAATTTATTCAAAGATTGTAGCAAGAGCTATATTGGTTACCATCCAGC  18131
+
+Human_coronav  17965 TCATGCTCCTTCATTTTTGGCAGTAGATGACAAATATAAGGCAACTGGCG  18014
+                     ||||||||||||||||||.|||||.|||||.|||||.||||.||.|||.|
+Rabbit_corona  18132 TCATGCTCCTTCATTTTTAGCAGTGGATGAAAAATACAAGGTAAATGGTG  18181
+
+Human_coronav  18015 ATTTAGCCGTGTGTCTTGGTATTGGTGATTCTGCTGTTACATATTCAAGA  18064
+                     ||||.|||||.||.|||||..|.||||||||..||||.||||||||.|||
+Rabbit_corona  18182 ATTTGGCCGTTTGCCTTGGAGTAGGTGATTCCTCTGTAACATATTCTAGA  18231
+
+Human_coronav  18065 TTAATATCACTCATGGGTTTTAAATTGGATGTTACCCTTGATGGGTATTG  18114
+                     .||||||||||||||||||||||.||.|||.|.||.|||||.||.|||||
+Rabbit_corona  18232 CTAATATCACTCATGGGTTTTAAGTTAGATCTGACACTTGAGGGATATTG  18281
+
+Human_coronav  18115 TAAGCTTTTTATAACTAAAGAAGAAGCTGTTAAACGCGTGCGTGCCTGGG  18164
+                     ||||||.|||||.||.||||||||.|||||||||||.||..|.||.||||
+Rabbit_corona  18282 TAAGCTATTTATTACAAAAGAAGAGGCTGTTAAACGTGTTAGAGCTTGGG  18331
+
+Human_coronav  18165 TTGGCTTTGATGCTGAAGGTGCTCATGCCACGCGTGATAGCATTGGGACA  18214
+                     |.|||||.||.|||||||||||.||.||.||.|||||.|.||||||.||.
+Rabbit_corona  18332 TCGGCTTCGACGCTGAAGGTGCCCACGCTACACGTGACAACATTGGAACT  18381
+
+Human_coronav  18215 AATTTCCCACTTCAATTAGGATTTTCCACAGGAATTGATTTTGTTGTGGA  18264
+                     ||||||||..|.|||||||||||||||||.|||||.||||||||.|||||
+Rabbit_corona  18382 AATTTCCCCTTACAATTAGGATTTTCCACTGGAATAGATTTTGTAGTGGA  18431
+
+Human_coronav  18265 AGCCACTGGTTTGTTTGCTGATAGAGATGGTTACAGCTTTAAAAAGGCTG  18314
+                     |||.||||||||||||||.||.||||||||||||||.||||.|||.||||
+Rabbit_corona  18432 AGCTACTGGTTTGTTTGCAGAAAGAGATGGTTACAGTTTTAGAAAAGCTG  18481
+
+Human_coronav  18315 TGGCGAAAGCTCCTCCTGGTGAACAATTTAAGCACCTCATCCCTTTGATG  18364
+                     ||||.||||||||.|||||||||||||||||.||.||||||||.||.|||
+Rabbit_corona  18482 TGGCCAAAGCTCCACCTGGTGAACAATTTAAACATCTCATCCCGTTAATG  18531
+
+Human_coronav  18365 ACGAGAGGTCATCGCTGGGATGTTGTTAGACCTAGAATAGTACAAATGTT  18414
+                     .|....||.||.||.|||||||||||||||||||||||||||||||||||
+Rabbit_corona  18532 TCCCAGGGACAGCGGTGGGATGTTGTTAGACCTAGAATAGTACAAATGTT  18581
+
+Human_coronav  18415 TGCAGATCATTTAATTGATCTGTCTGATTGTGTTGTGCTAGTTACATGGG  18464
+                     |.|||||||||||.||||||||.|||||.|.|||||.||.||||||||||
+Rabbit_corona  18582 TTCAGATCATTTAGTTGATCTGGCTGATAGCGTTGTACTTGTTACATGGG  18631
+
+Human_coronav  18465 CAGCCAACTTTGAGCTCACTTGTCTCCGCTACTTTGCAAAAGTAGGGCGT  18514
+                     |.||||.|||||||||.|||||||||||.||.|||||.|||.||||....
+Rabbit_corona  18632 CTGCCAGCTTTGAGCTTACTTGTCTCCGATATTTTGCGAAAATAGGTAAG  18681
+
+Human_coronav  18515 GAGATTTCTTGTAATGTATGCACTAAACGTGCCACAGTTTACAATTCTAG  18564
+                     ||||..|.|||||||||.||||||||.|||||||||||.||.||||||||
+Rabbit_corona  18682 GAGACATGTTGTAATGTGTGCACTAATCGTGCCACAGTCTATAATTCTAG  18731
+
+Human_coronav  18565 AACTGGTTACTATGGTTGTTGGCGCCATAGTGTTACATGTGATTACTTGT  18614
+                     |||||||||||||||.||.|||||.|||||||||.|||||||||||||||
+Rabbit_corona  18732 AACTGGTTACTATGGCTGCTGGCGTCATAGTGTTTCATGTGATTACTTGT  18781
+
+Human_coronav  18615 ATAATCCACTTATTGTTGATATTCAACAGTGGGGATATATTGGTTCTTTA  18664
+                     |.||.|||||||||||||||||||||||||||||||||.|.|||||.||.
+Rabbit_corona  18782 ACAACCCACTTATTGTTGATATTCAACAGTGGGGATATGTAGGTTCCTTG  18831
+
+Human_coronav  18665 TCAAGTAATCATGATTTATATTGTAGTGTCCATAAAGGAGCACATGTTGC  18714
+                     |||||||||||||||.|.||||||||..||||||||||||||||||||||
+Rabbit_corona  18832 TCAAGTAATCATGATATGTATTGTAGCATCCATAAAGGAGCACATGTTGC  18881
+
+Human_coronav  18715 TTCCTCTGATGCTATAATGACACGGTGTTTGGCCGTTTATGATTGCTTTT  18764
+                     |||.||.||||||||||||||||||||||||||||||||||||||.||||
+Rabbit_corona  18882 TTCGTCAGATGCTATAATGACACGGTGTTTGGCCGTTTATGATTGTTTTT  18931
+
+Human_coronav  18765 GCAATAATATTAATTGGAATGTGGAGTATCCCATCATTTCAAATGAGTTA  18814
+                     ||||||||||.|||||||||||||||||||||||.|||||||||||||||
+Rabbit_corona  18932 GCAATAATATAAATTGGAATGTGGAGTATCCCATTATTTCAAATGAGTTA  18981
+
+Human_coronav  18815 AGTATTAATACCTCTTGTAGGGTCTTGCAGCGTGTGATTCTTAAAGCTGC  18864
+                     |||||||||.|||||||||||...|||||||||||.||.||||||||.||
+Rabbit_corona  18982 AGTATTAATTCCTCTTGTAGGACATTGCAGCGTGTTATGCTTAAAGCCGC  19031
+
+Human_coronav  18865 CATGCTCTGCAACAGATATACTTTGTGTTATGATATTGGCAACCCAAAAG  18914
+                     .|||||.||||||||.||||.||||||.||||||||.|||||.||.||.|
+Rabbit_corona  19032 AATGCTTTGCAACAGGTATAGTTTGTGCTATGATATAGGCAATCCTAAGG  19081
+
+Human_coronav  18915 CGATTGCCTGTGTCAAAGATTTTGATTTTAAGTTCTATGATGCCCAACCA  18964
+                     |||||||.|||.||||||..|.|||||||||||||||||||||||||||.
+Rabbit_corona  19082 CGATTGCATGTATCAAAGGCTATGATTTTAAGTTCTATGATGCCCAACCG  19131
+
+Human_coronav  18965 ATTGTTAAGTCTGTTAAGACTCTTTTGTATTCTTTTGAGGCACATAAGGA  19014
+                     |||||||||||||||||||||.|.||.|||||||.|||||||||||||||
+Rabbit_corona  19132 ATTGTTAAGTCTGTTAAGACTTTGTTTTATTCTTATGAGGCACATAAGGA  19181
+
+Human_coronav  19015 CTCTTTTAAAGACGGTTTGTGTATGTTTTGGAACTGTAATGTGGATAAGT  19064
+                     |..|||||||||.|||||||||||||||||||||||.|||||||||||||
+Rabbit_corona  19182 CAGTTTTAAAGATGGTTTGTGTATGTTTTGGAACTGCAATGTGGATAAGT  19231
+
+Human_coronav  19065 ATCCACCGAATGCAGTTGTATGTAGATTTGACACTAGAGTGTTGAATAAT  19114
+                     |||||.||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  19232 ATCCATCGAATGCAGTTGTATGTAGATTTGACACTAGAGTGTTGAATAAT  19281
+
+Human_coronav  19115 TTAAATCTTCCTGGCTGTAATGGAGGTAGTTTGTATGTTAATAAACATGC  19164
+                     |||||.|||||||||||||||||.||.|||||||||||||||||||||||
+Rabbit_corona  19282 TTAAACCTTCCTGGCTGTAATGGTGGAAGTTTGTATGTTAATAAACATGC  19331
+
+Human_coronav  19165 ATTCCACACTAAACCCTTTGCTAGGGCAGCCTTTGAGCATTTGAAGCCTA  19214
+                     ||||||||||||.||||||.|.|||||||||||||||.||||||||||.|
+Rabbit_corona  19332 ATTCCACACTAATCCCTTTTCGAGGGCAGCCTTTGAGTATTTGAAGCCCA  19381
+
+Human_coronav  19215 TGCCATTCTTCTATTATTCAGATACGCCTTGTGTGTATATGGATGGCATG  19264
+                     |||||||.|||||||||||||||||.||||||||||||||||||||||||
+Rabbit_corona  19382 TGCCATTTTTCTATTATTCAGATACACCTTGTGTGTATATGGATGGCATG  19431
+
+Human_coronav  19265 GATGCTAAGCAGGTTGATTATGTACCTTTGAAATCTGCCACGTGCATCAC  19314
+                     |||..||||||||||||||||||||||||||||.|.|||||.||||||||
+Rabbit_corona  19432 GATAATAAGCAGGTTGATTATGTACCTTTGAAAGCCGCCACTTGCATCAC  19481
+
+Human_coronav  19315 AAGATGCAATTTAGGTGGTGCAGTTTGTTTAAAACATGCTGAAGAGTATC  19364
+                     .|..||||||||||||||.||.||||||||||||||||||||||||||||
+Rabbit_corona  19482 GAAGTGCAATTTAGGTGGCGCTGTTTGTTTAAAACATGCTGAAGAGTATC  19531
+
+Human_coronav  19365 GTGAGTACTTAGAGTCTTACAATACAGCTACTACAGCAGGTTTTACTTTT  19414
+                     |.|||||..|.||.|..|||||||||||.|||||||||||||||||||||
+Rabbit_corona  19532 GCGAGTATCTTGAATGCTACAATACAGCAACTACAGCAGGTTTTACTTTT  19581
+
+Human_coronav  19415 TGGGTCTATAAGACATTTGATTTTTATAATTTGTGGAATACGTTCACCAA  19464
+                     |||||.||||||||.|||||||||||||||||||||||||||||||||||
+Rabbit_corona  19582 TGGGTTTATAAGACTTTTGATTTTTATAATTTGTGGAATACGTTCACCAA  19631
+
+Human_coronav  19465 GCTACAAAGCTTGGAGAATGTTGTATATAATTTAGTCAAGACTGGTCATT  19514
+                     |||||||||.||||||||||||||.||||||||||||||||||||.||||
+Rabbit_corona  19632 GCTACAAAGTTTGGAGAATGTTGTGTATAATTTAGTCAAGACTGGACATT  19681
+
+Human_coronav  19515 ATACAGGACAGGCTGGTGAAATGCCTTGTGCCATTATAAATGATAAAGTT  19564
+                     ||||.||||||.||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  19682 ATACTGGACAGACTGGTGAAATGCCTTGTGCCATTATAAATGATAAAGTT  19731
+
+Human_coronav  19565 GTGGCTAAGATCGATAAGGAGGATGTTGTCATTTTTATTAATAATACAAC  19614
+                     ||||||||||||||..|||||||||||||.|||||||.||||||||||||
+Rabbit_corona  19732 GTGGCTAAGATCGAACAGGAGGATGTTGTTATTTTTACTAATAATACAAC  19781
+
+Human_coronav  19615 ATACCCTACTAATGTGGCCGTTGAATTATTTGCCAAGCGCAGTGTTCGAC  19664
+                     |||||||||||||.|.||.||||||.|.|||||.||||||||||||||||
+Rabbit_corona  19782 ATACCCTACTAATATTGCTGTTGAACTCTTTGCTAAGCGCAGTGTTCGAC  19831
+
+Human_coronav  19665 ACCACCCAGAGCTTAAGCTCTTTAGAAATTTAAATATAGACGTGTGTTGG  19714
+                     |||||||.|||||.||||||.|||||||.||.|||||.||||||||.|||
+Rabbit_corona  19832 ACCACCCTGAGCTCAAGCTCCTTAGAAACTTGAATATTGACGTGTGCTGG  19881
+
+Human_coronav  19715 AAGCACGTCATTTGGGATTATGCTAGAGAAAGTATATTTTGCAGTAATAC  19764
+                     ||||||||||||||||||||||.||||.|.|||||||..|||||||||||
+Rabbit_corona  19882 AAGCACGTCATTTGGGATTATGTTAGACAGAGTATATACTGCAGTAATAC  19931
+
+Human_coronav  19765 CTATGGTGTCTGCATGTATACAGATTTAAAGTTCATTGATAAATTGAATG  19814
+                     ||||||||||||||..||||||||||||||||||||||||||||||||||
+Rabbit_corona  19932 CTATGGTGTCTGCACATATACAGATTTAAAGTTCATTGATAAATTGAATG  19981
+
+Human_coronav  19815 TCCTTTTTGATGGTCGTGATAATGGTGCTCTTGAAGCTTTTAAACGTTCT  19864
+                     ||||||||||||||||||||||||||||||||||||||||||||||||.|
+Rabbit_corona  19982 TCCTTTTTGATGGTCGTGATAATGGTGCTCTTGAAGCTTTTAAACGTTGT  20031
+
+Human_coronav  19865 AATAATGGCGTTTACATTTCCACGACAAAAGTTAAGAGTCTTTCGATGAT  19914
+                     .|.||.||||||||||||||||||||||||.||||.||||||..||||||
+Rabbit_corona  20032 GAGAACGGCGTTTACATTTCCACGACAAAAATTAAAAGTCTTCAGATGAT  20081
+
+Human_coronav  19915 AAGAGGTCCACCGCGTGCTGAATTAAATGGCGTAGTGGTGGACAAGGTTG  19964
+                     .|.|||||||||.|||||||||||||||||||||||||||||.||.||||
+Rabbit_corona  20082 TAAAGGTCCACCACGTGCTGAATTAAATGGCGTAGTGGTGGATAAAGTTG  20131
+
+Human_coronav  19965 GAGACACTGATTGTGTGTTTTATTTTGCTGTGCGTAAAGAAGGTCAGGAT  20014
+                     |||||||||||..|||||||||.||.|||.||.|.|||||.|||||||||
+Rabbit_corona  20132 GAGACACTGATGTTGTGTTTTACTTCGCTATGAGAAAAGATGGTCAGGAT  20181
+
+Human_coronav  20015 GTCATCTTCAGCCAATTCGACAGCCTGGGAGTCAGCTCTAACCAGAGCCC  20064
+                     ||.|||||||||||..|.||||||||||||||||||.||.||..||||||
+Rabbit_corona  20182 GTTATCTTCAGCCATATAGACAGCCTGGGAGTCAGCCCTTACTGGAGCCC  20231
+
+Human_coronav  20065 ACAAGGTAATCTGGGGAGTAATGGTAAACCCGGTAATGTCGGTGGTAATG  20114
+                     |||||||||||..|||.|||||||||||||||||||||||||||||||||
+Rabbit_corona  20232 ACAAGGTAATCCAGGGGGTAATGGTAAACCCGGTAATGTCGGTGGTAATG  20281
+
+Human_coronav  20115 ATGCTCTGTCAATCTCTACTATCTTTACACAAAGCCGTGTTATTAGCTCT  20164
+                     |||||||..||.....||||||||||||.||.||.||.||||||||||||
+Rabbit_corona  20282 ATGCTCTAGCACAGGTTACTATCTTTACTCAGAGTCGCGTTATTAGCTCT  20331
+
+Human_coronav  20165 TTTACATGTCGTACTGATATGGAAAAAGATTTTATAGCTTTAGATCAAGA  20214
+                     ||...|||.|||.||||.|||||.|||||||||||||||||||||.||||
+Rabbit_corona  20332 TTCGAATGCCGTTCTGACATGGAGAAAGATTTTATAGCTTTAGATGAAGA  20381
+
+Human_coronav  20215 TGTGTTTATTCAGAAGTATGGTTTGGAGGACTATGCCTTTGAACACATTG  20264
+                     ..||||||||||||||||||||.|||||||||||||.|||||.|||||||
+Rabbit_corona  20382 GATGTTTATTCAGAAGTATGGTCTGGAGGACTATGCTTTTGATCACATTG  20431
+
+Human_coronav  20265 TTTATGGTAACTTCAACCAGAAGATTATTGGTGGTTTGCATTTGTTAATA  20314
+                     |.|||||.|..||||||||||||||||||||.||||||||||||.|.|||
+Rabbit_corona  20432 TATATGGAAGTTTCAACCAGAAGATTATTGGGGGTTTGCATTTGCTTATA  20481
+
+Human_coronav  20315 GGCTTGTACCGAAGACAGCAAACTTCCAATCTGGTTGTTCAGGAGTTTGT  20364
+                     |||||||.|||..|.||.||||..||||||||||||||.||||||||.||
+Rabbit_corona  20482 GGCTTGTTCCGGCGGCATCAAAAATCCAATCTGGTTGTACAGGAGTTCGT  20531
+
+Human_coronav  20365 TTCATATGACTCCAGCATACACTCTTATTTTATCACTGACGAGAAGAGTG  20414
+                     |...||||||||||||||.||.|||||||||||.|||||.||.|||||||
+Rabbit_corona  20532 TAGTTATGACTCCAGCATTCATTCTTATTTTATTACTGATGATAAGAGTG  20581
+
+Human_coronav  20415 GTGGTAGTAAGAGTGTTTGCACTGTTATAGATATTTTGTTGGATGATTTT  20464
+                     ||.|||||||||||||.|||||||||.|||||||||||||.|||||||||
+Rabbit_corona  20582 GTAGTAGTAAGAGTGTCTGCACTGTTGTAGATATTTTGTTAGATGATTTT  20631
+
+Human_coronav  20465 GTGGCTCTTGTTAAGTCACTTAATCTTAATTGTGTGAGTAAGGTTGTTAA  20514
+                     ||||||||||||||||||||.|||||.|||||||||||||||||||||||
+Rabbit_corona  20632 GTGGCTCTTGTTAAGTCACTGAATCTAAATTGTGTGAGTAAGGTTGTTAA  20681
+
+Human_coronav  20515 TGTTAATGTTGATTTTAAAGATTTTCAGTTTATGCTTTGGTGTAACGATG  20564
+                     |||||||||.||||||||||||||||||||||||||.|||||.||.||.|
+Rabbit_corona  20682 TGTTAATGTGGATTTTAAAGATTTTCAGTTTATGCTGTGGTGCAATGAGG  20731
+
+Human_coronav  20565 AGAAAGTTATGACTTTCTATCCTCGTTTGCAAGCTGCATCTGACTGGAAG  20614
+                     |||||||||||||||||||.||..|.|||||||||||||||||||||||.
+Rabbit_corona  20732 AGAAAGTTATGACTTTCTACCCCAGATTGCAAGCTGCATCTGACTGGAAA  20781
+
+Human_coronav  20615 CCTGGTTATTCTATGCCTGTATTATATAAGTATTTGAATTCTCCAATGGA  20664
+                     |||||||||..|||||||||.||||||||||||||||.|||.||.|||||
+Rabbit_corona  20782 CCTGGTTATAGTATGCCTGTGTTATATAAGTATTTGACTTCCCCTATGGA  20831
+
+Human_coronav  20665 AAGAGTTAGTCTCTGGAATTATGGGAAGCCAGTTACTTTGCCTACAGGCT  20714
+                     ||||||||.|||||||||.||.||.||||||.||||.|||||||||||||
+Rabbit_corona  20832 AAGAGTTAATCTCTGGAACTACGGAAAGCCAATTACATTGCCTACAGGCT  20881
+
+Human_coronav  20715 GTATGATGAATGTTGCTAAGTATACTCAGTTATGTCAATATCTGAATACT  20764
+                     ||||||||||||||||||||||||||||.||||||||||||.||||||||
+Rabbit_corona  20882 GTATGATGAATGTTGCTAAGTATACTCAATTATGTCAATATTTGAATACT  20931
+
+Human_coronav  20765 ACAACATTAGCTGTACCTGTTAATATGCGAGTTTTGCATTTAGGTGCAGG  20814
+                     |||||||||||.||.||||||||||||||.||||||||||||||||||||
+Rabbit_corona  20932 ACAACATTAGCAGTTCCTGTTAATATGCGTGTTTTGCATTTAGGTGCAGG  20981
+
+Human_coronav  20815 TTCAGAAAAAGGAGTAGCACCGGGTTCTGCAGTTCTTAGGCAGTGGTTGC  20864
+                     |||.|||||||||||.||.||.||||||||||||||||||||||||||.|
+Rabbit_corona  20982 TTCTGAAAAAGGAGTGGCTCCTGGTTCTGCAGTTCTTAGGCAGTGGTTAC  21031
+
+Human_coronav  20865 CTGCTGGTACTATTCTTGTAGATAACGATTTATACCCATTTGTTAGTGAC  20914
+                     |.|||||.|||||.|||.|||||||.||||||||.||||||||.||.|||
+Rabbit_corona  21032 CAGCTGGCACTATCCTTATAGATAATGATTTATATCCATTTGTGAGCGAC  21081
+
+Human_coronav  20915 AGTGTCGCTACATATTTTGGGGATTGTATAACTTTACCCTTTGATTGTCA  20964
+                     ||||||||.|||||||||||.||||||||.||.|||||||||||.|||||
+Rabbit_corona  21082 AGTGTCGCCACATATTTTGGAGATTGTATTACCTTACCCTTTGAATGTCA  21131
+
+Human_coronav  20965 ATGGGATTTGATAATTTCTGATATGTATGACCCTATTACTAAGAACATAG  21014
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  21132 ATGGGATTTGATAATTTCTGATATGTATGACCCTATTACTAAGAACATAG  21181
+
+Human_coronav  21015 GGGAGTACAATGTGAGTAAAGATGGTTTCTTTACATACATTTGTCATATG  21064
+                     |||||||||||||.|||||||||||.||.|||||||||||||||||||||
+Rabbit_corona  21182 GGGAGTACAATGTAAGTAAAGATGGGTTTTTTACATACATTTGTCATATG  21231
+
+Human_coronav  21065 ATTCGAGACAAGTTAGCTCTGGGTGGCAGTGTTGCTATAAAAATAACAGA  21114
+                     |||||.||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  21232 ATTCGCGACAAGTTAGCTCTGGGTGGCAGTGTTGCTATAAAAATAACAGA  21281
+
+Human_coronav  21115 GTTTTCTTGGAATGCAGAATTATATAAGTTAATGGGGTATTTTGCATTTT  21164
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  21282 GTTTTCTTGGAATGCAGAATTATATAAGTTAATGGGGTATTTTGCATTTT  21331
+
+Human_coronav  21165 GGACTGTGTTTTGCACAAATGCAAATGCTTCTTCTAGTGAAGGATTTTTA  21214
+                     ||||.||.||.|||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  21332 GGACGGTTTTCTGCACAAATGCAAATGCTTCTTCTAGTGAAGGATTTTTA  21381
+
+Human_coronav  21215 ATTGGCATAAATTATTTGTGTAAGCCCAAGGTTGAGATAGATGGAAATGT  21264
+                     ||||||||||||||||||.|.||||||||||||||.||.|||||||||||
+Rabbit_corona  21382 ATTGGCATAAATTATTTGGGCAAGCCCAAGGTTGATATTGATGGAAATGT  21431
+
+Human_coronav  21265 TATGCATGCCAATTATTTGTTTTGGAGAAATTCCACAGTTTGGAACGGGG  21314
+                     |||||||||||||||||||||.||||||||||||||||||||||||||||
+Rabbit_corona  21432 TATGCATGCCAATTATTTGTTCTGGAGAAATTCCACAGTTTGGAACGGGG  21481
+
+Human_coronav  21315 GTGCTTATAGCCTGTTTGATATGGCTAAATTCCCGCTTAAGTTGGCTGGT  21364
+                     |||||||||||||||||||||||||.|||||.||||||||||||||||||
+Rabbit_corona  21482 GTGCTTATAGCCTGTTTGATATGGCCAAATTTCCGCTTAAGTTGGCTGGT  21531
+
+Human_coronav  21365 ACTGCCGTAATAAATTTAAGAGCAGACCAGATTAATGATATGGTTTATTC  21414
+                     |||||||||||||||||||.|.||||||||||.|||||||||||||||||
+Rabbit_corona  21532 ACTGCCGTAATAAATTTAAAACCAGACCAGATCAATGATATGGTTTATTC  21581
+
+Human_coronav  21415 CCTTCTTGAAAAGGGTAAACTACTTATTAGAGATACAAATAAAGAAGTTT  21464
+                     |||||||||||||||||||||||||||||||||.||||||||||||||||
+Rabbit_corona  21582 CCTTCTTGAAAAGGGTAAACTACTTATTAGAGACACAAATAAAGAAGTTT  21631
+
+Human_coronav  21465 TCGTTGGTGACAGTTTGGTTAATGTAATCTAAACTTTAAAAATGGCTGTC  21514
+                     |.||||||||.|||||||||||.||||||||||.||||.|||||||||||
+Rabbit_corona  21632 TTGTTGGTGATAGTTTGGTTAACGTAATCTAAATTTTAGAAATGGCTGTC  21681
+
+Human_coronav  21515 GCTTATGCAGACAAGCCTAATCATTTTATCAATTTTCCACTTACCCATTT  21564
+                     ||||||||.||.|.||||||||||||||||||||||.|||||||||||||
+Rabbit_corona  21682 GCTTATGCTGATATGCCTAATCATTTTATCAATTTTTCACTTACCCATTT  21731
+
+Human_coronav  21565 TCAGGGTTTTGTGTTAAATTATAAAGGTTTACAATTTCAAATTCTCGATG  21614
+                     |.|||||||||||||||||||||||||||||||||||||||||||.||||
+Rabbit_corona  21732 TGAGGGTTTTGTGTTAAATTATAAAGGTTTACAATTTCAAATTCTTGATG  21781
+
+Human_coronav  21615 AAGGAGTGGATTGTAAAATACAAACAGCGCCACACATTAGTCTTACTATG  21664
+                     .|||||||||||||||||||.||||||||||||||||||||||||..|||
+Rabbit_corona  21782 TAGGAGTGGATTGTAAAATATAAACAGCGCCACACATTAGTCTTAGCATG  21831
+
+Human_coronav  21665 CTGGACATACAGCCTGAAGACTATAAAAGTGTTGATGTCGCTATTCAAGA  21714
+                     |||||.|||||||||||||||||||.||||||||||||||||||||||||
+Rabbit_corona  21832 CTGGATATACAGCCTGAAGACTATATAAGTGTTGATGTCGCTATTCAAGA  21881
+
+Human_coronav  21715 AGTTATTGATGATATGCATTGGGGTGATGGTTTTCAGATTAAATTTGAGA  21764
+                     ||||||||||||||||||||||.|||||||||||||||||||.|||||||
+Rabbit_corona  21882 AGTTATTGATGATATGCATTGGTGTGATGGTTTTCAGATTAAGTTTGAGA  21931
+
+Human_coronav  21765 ATCCTCACATCCTAGGAAGATGCATAGTTTTAGATGTTAAAGGTGTAGAA  21814
+                     |.|||||||||||||||||||||||||||||||||.||||||||||||||
+Rabbit_corona  21932 ACCCTCACATCCTAGGAAGATGCATAGTTTTAGATATTAAAGGTGTAGAA  21981
+
+Human_coronav  21815 GAATTGCATGACGATTTAGTTAATTACATTCGTGATAAAGGTTGTGTTGC  21864
+                     |||||||||||.||||||||||||||||.||||||..||||.|||||||.
+Rabbit_corona  21982 GAATTGCATGATGATTTAGTTAATTACACTCGTGACTAAGGCTGTGTTGT  22031
+
+Human_coronav  21865 TGACCAATCCAGGAAATGGATTGGCCATTGCACCATAGCTCAACTCACGG  21914
+                     ||||||||||.||||||||||||||||||||||.||||||||||||||||
+Rabbit_corona  22032 TGACCAATCCTGGAAATGGATTGGCCATTGCACTATAGCTCAACTCACGG  22081
+
+Human_coronav  21915 ATGCAGCACTGTCCATTAAGGAAAATGTTGATTTTATAAACAGCATGCAA  21964
+                     ||||||||||.|||||||||||||||||||||||||||||.||||||||.
+Rabbit_corona  22082 ATGCAGCACTTTCCATTAAGGAAAATGTTGATTTTATAAATAGCATGCAT  22131
+
+Human_coronav  21965 TTCAATTATAAAATCACCATCAACCCCTCATCACCGGCTAGACTTGAAAT  22014
+                     |||||||||||||||||.|||||.||||||||||||||||||||||||||
+Rabbit_corona  22132 TTCAATTATAAAATCACTATCAATCCCTCATCACCGGCTAGACTTGAAAT  22181
+
+Human_coronav  22015 AGTTAAGCTCGGTGCTGAAAAGAAAGATGGTTTTTATGAAACCATAGTTA  22064
+                     |||||||||.||||||||.|||||||||||||||||||||||||||||||
+Rabbit_corona  22182 AGTTAAGCTTGGTGCTGAGAAGAAAGATGGTTTTTATGAAACCATAGTTA  22231
+
+Human_coronav  22065 GTCACTGGATGGGAATTCGTTTTGAATACACATCACCCACTGATAAGCTA  22114
+                     |.||||||.|||||||        ||.|.|...|||||||||||||.|||
+Rabbit_corona  22232 GCCACTGGGTGGGAAT--------AACATAATCCACCCACTGATAATCTA  22273
+
+Human_coronav  22115 GCTATGATTATGGGTTATTGTTGTTTAGATGTGGTACGTAAAGAGCTAGA  22164
+                     |||||||||||||||||||||||||||||.|||||.|||||.||||||||
+Rabbit_corona  22274 GCTATGATTATGGGTTATTGTTGTTTAGAAGTGGTGCGTAATGAGCTAGA  22323
+
+Human_coronav  22165 AGAAGGCGATCTTCCCGAGAATGATGATGATGCTTGGTTTAAGCTATCGT  22214
+                     |||||||.|||||||||||||||         ||||.|||||||||||||
+Rabbit_corona  22324 AGAAGGCCATCTTCCCGAGAATG---------CTTGTTTTAAGCTATCGT  22364
+
+Human_coronav  22215 ACCATTATGAAAACAATTCTTGGTTCTTCCGACATGTCTACAGGAAAAGT  22264
+                     ||||||||||||||||||||||||||||.||.||||||||.|||||||||
+Rabbit_corona  22365 ACCATTATGAAAACAATTCTTGGTTCTTTCGGCATGTCTATAGGAAAAGT  22414
+
+Human_coronav  22265 TTTCATTTCCGTAAGGCTTGTCAAAATTTAGATTGTAATTGTTTGGGGTT  22314
+                     |||.||||||||||||||||||||||||||||||||||||||.||.||||
+Rabbit_corona  22415 TTTTATTTCCGTAAGGCTTGTCAAAATTTAGATTGTAATTGTCTGAGGTT  22464
+
+Human_coronav  22315 TTATGAATCTTCAGTTGAAGAATATTAAACTCAGTGAAAATGTTTTTGCT  22364
+                     |||||||||||||.||||||||.|.|||||||||||||||||||||||||
+Rabbit_corona  22465 TTATGAATCTTCATTTGAAGAAGACTAAACTCAGTGAAAATGTTTTTGCT  22514
+
+Human_coronav  22365 TCCTAGATTTATTCTAGTTAGCTGCATAATTGGTAGCTTAGGTTTTTACA  22414
+                     ||||||||.|||||||||||||||||||||||||||||||||||||.|.|
+Rabbit_corona  22515 TCCTAGATATATTCTAGTTAGCTGCATAATTGGTAGCTTAGGTTTTGATA  22564
+
+Human_coronav  22415 ACCCTCCTACCAATGTTGTTTCGCATGTAAATGGAGATTGGTTTTTATTT  22464
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  22565 ACCCTCCTACCAATGTTGTTTCGCATGTAAATGGAGATTGGTTTTTATTT  22614
+
+Human_coronav  22465 GGTGACAGTCGTTCAGATTGTAATCATATTGTTAATATCAACCCCCATAA  22514
+                     |||||||||||||||||||||||||||.|||||||||..||.||.|.|||
+Rabbit_corona  22615 GGTGACAGTCGTTCAGATTGTAATCATGTTGTTAATACTAATCCTCGTAA  22664
+
+Human_coronav  22515 TTATTCTTATATGGACCTTAATCCTGTTCTGTGTGATTCTGGTAAAATAT  22564
+                     |||||||||||||||||||||.||.|..||.||||||||.||||||||.|
+Rabbit_corona  22665 TTATTCTTATATGGACCTTAACCCAGCCCTATGTGATTCAGGTAAAATCT  22714
+
+Human_coronav  22565 CATCTAAAGCTGGCAACTCCATTTTTAGGAGTTTTCACTTTACCGATTTT  22614
+                     |.||.||||||||.|||||..|.|||||||||||.|||||.||.||||||
+Rabbit_corona  22715 CTTCGAAAGCTGGTAACTCTTTGTTTAGGAGTTTCCACTTCACGGATTTT  22764
+
+Human_coronav  22615 TATAATTACACAGGCGAAGGTCAACAAATTATTTTTTATGAGGGTGTTAA  22664
+                     ||||||||||||||.|||||||||||||||||.||.||||||||||||||
+Rabbit_corona  22765 TATAATTACACAGGTGAAGGTCAACAAATTATATTCTATGAGGGTGTTAA  22814
+
+Human_coronav  22665 TTTTACGCCTTATCATGCCTTTAAATGCAACCGTTCTGGTAGTAATGATA  22714
+                     |||||..||||||||.|||||||||||||.|.|||.||||||||||||||
+Rabbit_corona  22815 TTTTAATCCTTATCACGCCTTTAAATGCACCAGTTTTGGTAGTAATGATA  22864
+
+Human_coronav  22715 TTTGGATGCAGAATAAAGGCTTGTTTTATACTCAGGTTTATAAGAATATG  22764
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  22865 TTTGGATGCAGAATAAAGGCTTGTTTTATACTCAGGTTTATAAGAATATG  22914
+
+Human_coronav  22765 GCTGTGTATCGCAGCCTTACTTTTGTTAATGTACCATATGTTTATAATGG  22814
+                     ||||||||||||||||||||||||||||||||||||||||||||.|||||
+Rabbit_corona  22915 GCTGTGTATCGCAGCCTTACTTTTGTTAATGTACCATATGTTTACAATGG  22964
+
+Human_coronav  22815 CTCCGCACAAGCTACAGCTCTTTGTAAATCTGGTAGTTTAGTCCTTAATA  22864
+                     .||.||||||||.|||||||||||||||||||||||||||||||||||||
+Rabbit_corona  22965 TTCTGCACAAGCCACAGCTCTTTGTAAATCTGGTAGTTTAGTCCTTAATA  23014
+
+Human_coronav  22865 ACCCTGCATATATAGCTCCTCAAGCTAACTCTGGGGATTATTATTATAAG  22914
+                     |.|||||.||||||||||.|.|||||||.|..|||||||||||.||||||
+Rabbit_corona  23015 ATCCTGCCTATATAGCTCGTGAAGCTAATTTGGGGGATTATTACTATAAG  23064
+
+Human_coronav  22915 GTTGAAGCTGATTTTTATTTGTCAGGTTGTGACGAGTATATCGTACCACT  22964
+                     |||||||||||.|||.||||||||||||||||||||||||||||||||||
+Rabbit_corona  23065 GTTGAAGCTGACTTTCATTTGTCAGGTTGTGACGAGTATATCGTACCACT  23114
+
+Human_coronav  22965 TTGTATTTTTAACGGCAAGTTTTTGTCGAATACAAAGTATTATGATGATA  23014
+                     ||||||||||||.||.||||||||||||||||||||||||||||||||||
+Rabbit_corona  23115 TTGTATTTTTAATGGTAAGTTTTTGTCGAATACAAAGTATTATGATGATA  23164
+
+Human_coronav  23015 GTCAATATTATTTTAATAAAGACACTGGTGTTATTTATGGTCTCAATTCT  23064
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  23165 GTCAATATTATTTTAATAAAGACACTGGTGTTATTTATGGTCTTAATTCT  23214
+
+Human_coronav  23065 ACAGAAACCATTACCACTGGTTTTGATCTTAATTGTTATTATTTAGTTTT  23114
+                     ||.||.||.||||||||||||||||||.||||||||.|||||||||||||
+Rabbit_corona  23215 ACTGAGACTATTACCACTGGTTTTGATTTTAATTGTCATTATTTAGTTTT  23264
+
+Human_coronav  23115 ACCCTCTGGTAATTATTTAGCCATTTCAAATGAGCTATTGTTAACTGTTC  23164
+                     |||||||||||||||||||||||||||||||||||||||.||||||||||
+Rabbit_corona  23265 ACCCTCTGGTAATTATTTAGCCATTTCAAATGAGCTATTATTAACTGTTC  23314
+
+Human_coronav  23165 CTACGAAAGCAATCTGTCTTAATAAGCGTAAGGATTTTACGCCTGTACAG  23214
+                     |.|||||||||||||||||||.|||||||||||||||||||||||||||.
+Rabbit_corona  23315 CCACGAAAGCAATCTGTCTTAGTAAGCGTAAGGATTTTACGCCTGTACAA  23364
+
+Human_coronav  23215 GTTGTTGATTCGCGGTGGAACAATGCCAGGCAGTCTGATAACATGACGGC  23264
+                     ||.||.|||||.||.||||||||||||||||..|||||||||||||||||
+Rabbit_corona  23365 GTGGTAGATTCTCGTTGGAACAATGCCAGGCCTTCTGATAACATGACGGC  23414
+
+Human_coronav  23265 GGTTGCTTGTCAACCTCCGTACTGTTATTTTCGTAATTCTACTACCAACT  23314
+                     |||||||||||||||.||||||||||||||||||||||||||||||||||
+Rabbit_corona  23415 GGTTGCTTGTCAACCCCCGTACTGTTATTTTCGTAATTCTACTACCAACT  23464
+
+Human_coronav  23315 ATGTTGGTGTTTATGATATTAATCATGGAGATGCTGGTTTTACTAGCATA  23364
+                     |||||||||||||||||||.||||||||.|||||||||||||||||||||
+Rabbit_corona  23465 ATGTTGGTGTTTATGATATCAATCATGGGGATGCTGGTTTTACTAGCATA  23514
+
+Human_coronav  23365 CTTAGTGGTTTGTTATATAATTCACCTTGTTTTTCGCAGCAAGGCGTTTT  23414
+                     ||.|||||||||||||||.||||||||||||||||.||||||||.|||||
+Rabbit_corona  23515 CTCAGTGGTTTGTTATATGATTCACCTTGTTTTTCACAGCAAGGTGTTTT  23564
+
+Human_coronav  23415 TAGGTATGATAATGTTAGCAGTGTCTGGCCTCTCTACCCCTATGGCAGAT  23464
+                     |||||||||||||||||||||||||||||||||.|||||.||.||.||||
+Rabbit_corona  23565 TAGGTATGATAATGTTAGCAGTGTCTGGCCTCTTTACCCTTACGGTAGAT  23614
+
+Human_coronav  23465 GTCCCACTGCTGCTGATATTAATATCCCTGATTTACCCATTTGTGTGTAT  23514
+                     ||||.|||||||||||||||||||..||||||.||||.||||||||||||
+Rabbit_corona  23615 GTCCTACTGCTGCTGATATTAATACTCCTGATGTACCTATTTGTGTGTAT  23664
+
+Human_coronav  23515 GATCCGCTACCAGTTATTTTGCTTGGCATTCTTTTGGGCGTTGCGATTGT  23564
+                     ||||||||||||.|||||||||||||||||||||||.|.||||||.|..|
+Rabbit_corona  23665 GATCCGCTACCACTTATTTTGCTTGGCATTCTTTTGTGTGTTGCGGTCAT  23714
+
+Human_coronav  23565 AATTATTGTAGTTTTGTTGTTATATTTTATGGTGGATAATGTTACTAGGC  23614
+                     |||||||||||||||||||||||||||||||||||||||||.||||||||
+Rabbit_corona  23715 AATTATTGTAGTTTTGTTGTTATATTTTATGGTGGATAATGGTACTAGGC  23764
+
+Human_coronav  23615 TGCATGATGCTTAGACCATAATCTAAACATGTTTTTGATACTTTTAATTT  23664
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  23765 TGCATGATGCTTAGACCATAATCTAAACATGTTTTTGATACTTTTAATTT  23814
+
+Human_coronav  23665 CCTTACCAACGGCTTTTGCTGTTATAGGAGATTTAAAGTGTACTTCAGAT  23714
+                     ||||||||||||||||||||||||||||.|||||||||||||||.|.|.|
+Rabbit_corona  23815 CCTTACCAACGGCTTTTGCTGTTATAGGTGATTTAAAGTGTACTACGGCT  23864
+
+Human_coronav  23715 AATATTAATGATAAAGACACCGGTCCTCCTCCTATAAGTACTGATACTGT  23764
+                     ...|||||||||...|||||||||.|||||.|||||||||||||||||||
+Rabbit_corona  23865 TCCATTAATGATGTTGACACCGGTACTCCTTCTATAAGTACTGATACTGT  23914
+
+Human_coronav  23765 TGATGTTACTAATGGTTTGGGTACTTATTATGTTTTAGATCGTGTGTATT  23814
+                     .||||||||||||||||||||||||||.||||||||||||||||||||||
+Rabbit_corona  23915 CGATGTTACTAATGGTTTGGGTACTTACTATGTTTTAGATCGTGTGTATT  23964
+
+Human_coronav  23815 TAAATACTACGTTGTTTCTTAATGGTTATTACCCTACTTCAGGTTCCACA  23864
+                     |||||||.||||||||.||||||||||||||.||||.|||||||||||||
+Rabbit_corona  23965 TAAATACCACGTTGTTGCTTAATGGTTATTATCCTATTTCAGGTTCCACA  24014
+
+Human_coronav  23865 TATCGTAATATGGCACTGAAGGGAAGTGTACTATTGAGCAGACTATGGTT  23914
+                     |.||||||||||||||||||.||||.|.||||||||||||.|||||||||
+Rabbit_corona  24015 TTTCGTAATATGGCACTGAAAGGAACTCTACTATTGAGCACACTATGGTT  24064
+
+Human_coronav  23915 TAAACCACCATTTCTTTCTGATTTTATTAATGGTATTTTTGCTAAGGTCA  23964
+                     |||||||||||||||.||||||||||.|||||||||||||||||||||||
+Rabbit_corona  24065 TAAACCACCATTTCTCTCTGATTTTAATAATGGTATTTTTGCTAAGGTCA  24114
+
+Human_coronav  23965 AAAATACCAAGGTTATTAAAGATCGTGTAATGTATAGTGAGTTCCCTGCT  24014
+                     ||||||||||||||||||||.||.|||||||||||||||||||.||||||
+Rabbit_corona  24115 AAAATACCAAGGTTATTAAAAATGGTGTAATGTATAGTGAGTTTCCTGCT  24164
+
+Human_coronav  24015 ATAACTATAGGTAGTACTTTTGTAAATACATCCTATAGTGTGGTAGTACA  24064
+                     |||||||||||||||||||||||.||||||||||||||||||||||||||
+Rabbit_corona  24165 ATAACTATAGGTAGTACTTTTGTGAATACATCCTATAGTGTGGTAGTACA  24214
+
+Human_coronav  24065 ACCACGTACAATCAATTCAACACAGGATGGTGATAATAAATTACAAGGTC  24114
+                     |||||.|||||.||.||||.               |||||.|||.|||||
+Rabbit_corona  24215 ACCACATACAACCATTTCAG---------------ATAAAGTACTAGGTC  24249
+
+Human_coronav  24115 TTTTAGAGGTCTCTGTTTGCCAGTATAATATGTGCGAGTACCCACAAACG  24164
+                     ||||||||.||||||||||||||||||.||||||||||||||||||.|||
+Rabbit_corona  24250 TTTTAGAGATCTCTGTTTGCCAGTATACTATGTGCGAGTACCCACATACG  24299
+
+Human_coronav  24165 ATTTGTCATCCTAACCTGGGTAATCATCGCAAAGAACTATGGCATTTGGA  24214
+                     ||||||||||||||.|||||||||.|.||.|.||||.||||||||||.||
+Rabbit_corona  24300 ATTTGTCATCCTAATCTGGGTAATAAGCGTATAGAATTATGGCATTTTGA  24349
+
+Human_coronav  24215 TACAGGTGTTGTTTCCTGTTTATATAAGCGTAATTTCACATATGATGTGA  24264
+                     |||||.|||||||||||||||||||||.||||||||||||||.|||||||
+Rabbit_corona  24350 TACAGATGTTGTTTCCTGTTTATATAAACGTAATTTCACATACGATGTGA  24399
+
+Human_coronav  24265 ATGCTGATTATTTGTATTTTCATTTTTATCAAGAAGGTGGTACTTTTTAT  24314
+                     |||||||||.||||||||||||.|||||||||||||||||||||||||||
+Rabbit_corona  24400 ATGCTGATTTTTTGTATTTTCACTTTTATCAAGAAGGTGGTACTTTTTAT  24449
+
+Human_coronav  24315 GCATATTTTACAGACACTGGTGTTGTTACTAAGTTTTTGTTTAATGTTTA  24364
+                     ||||||||||||||.||||||.||||||||||||||.|||||||||||||
+Rabbit_corona  24450 GCATATTTTACAGATACTGGTTTTGTTACTAAGTTTCTGTTTAATGTTTA  24499
+
+Human_coronav  24365 TTTAGGCATGGCGCTTTCACACTATTATGTCATGCCTCTGACTTGTAATA  24414
+                     ||||||||.||.|||||||||.||||||||.||||||.||||||||.|||
+Rabbit_corona  24500 TTTAGGCACGGTGCTTTCACATTATTATGTTATGCCTTTGACTTGTGATA  24549
+
+Human_coronav  24415 GTAAGCTTACTTTAGAATATTGGGTTACACCTCTCACTTCTAGACAATAT  24464
+                     |||..||..|||||||||||||||||||||||||||||.||||.||||||
+Rabbit_corona  24550 GTACACTGTCTTTAGAATATTGGGTTACACCTCTCACTCCTAGGCAATAT  24599
+
+Human_coronav  24465 TTACTCGCTTTCAATCAAGATGGTATTATTTTTAATGCTGTTGATTGTAT  24514
+                     ||||||||.||.||||||||||||||||||||||||||||.|||||||||
+Rabbit_corona  24600 TTACTCGCCTTTAATCAAGATGGTATTATTTTTAATGCTGCTGATTGTAT  24649
+
+Human_coronav  24515 GAGTGATTTTATGAGTGAGATTAAGTGTAAAACACAATCTATAGCACCAC  24564
+                     |||.|||||||||||||||||||||||||||||||||||||||||||||.
+Rabbit_corona  24650 GAGCGATTTTATGAGTGAGATTAAGTGTAAAACACAATCTATAGCACCAT  24699
+
+Human_coronav  24565 CTACTGGTGTTTATGAATTAAACGGTTACACTGTTCAGCCAATCGCAGAT  24614
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  24700 CTACTGGTGTTTATGAATTAAACGGTTACACTGTTCAGCCAATTGCAGAT  24749
+
+Human_coronav  24615 GTTTACCGACGTAAACCTAATCTTCCCAATTGCAATATAGAAGCTTGGCT  24664
+                     |||||||||||||.|||||||||||||.||||.||||||||.||||||||
+Rabbit_corona  24750 GTTTACCGACGTATACCTAATCTTCCCGATTGTAATATAGAGGCTTGGCT  24799
+
+Human_coronav  24665 TAATGATAAGTCGGTGCCCTCTCCATTAAATTGGGAACGTAAGACATTTT  24714
+                     |||||||||||||||||||||||||||||||||||||||.|||||.||||
+Rabbit_corona  24800 TAATGATAAGTCGGTGCCCTCTCCATTAAATTGGGAACGAAAGACTTTTT  24849
+
+Human_coronav  24715 CAAATTGTAATTTTAATATGAGCAGCCTGATGTCTTTTATTCAGGCAGAC  24764
+                     ||||||||||||||||.|||||||||.|||||||||||||||||||||||
+Rabbit_corona  24850 CAAATTGTAATTTTAACATGAGCAGCTTGATGTCTTTTATTCAGGCAGAC  24899
+
+Human_coronav  24765 TCATTTACTTGTAATAATATTGATGCTGCTAAGATATATGGTATGTGTTT  24814
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  24900 TCATTTACTTGTAATAATATTGATGCTGCTAAGATATATGGTATGTGTTT  24949
+
+Human_coronav  24815 TTCCAGCATAACTATAGATAAGTTTGCTATACCCAATGGCAGGAAGGTTG  24864
+                     |||||||||||||||.||||||||||||||||||||||||||||||||||
+Rabbit_corona  24950 TTCCAGCATAACTATTGATAAGTTTGCTATACCCAATGGCAGGAAGGTTG  24999
+
+Human_coronav  24865 ACCTACAATTGGGTAATTTGGGCTATTTGCAGTCATTTAACTATAGAATT  24914
+                     |.|||||||||||||||||.||.|||||||||||.|||||.||||.||||
+Rabbit_corona  25000 ATCTACAATTGGGTAATTTAGGTTATTTGCAGTCCTTTAATTATAAAATT  25049
+
+Human_coronav  24915 GATACTACTGCAACAAGTTGTCAGTTGTATTATAATTTACCTGCTGCTAA  24964
+                     ||.||||.|||.|||||||||||.||||||||||||||||||||||||||
+Rabbit_corona  25050 GACACTAGTGCTACAAGTTGTCAATTGTATTATAATTTACCTGCTGCTAA  25099
+
+Human_coronav  24965 TGTTTCTGTTAGCAGGTTTAATCCTTCTACTTGGAATAAGAGATTTGGTT  25014
+                     |||||||||||||||.||.|||||||||||.|||||||..||.|||||||
+Rabbit_corona  25100 TGTTTCTGTTAGCAGATTAAATCCTTCTACCTGGAATAGAAGGTTTGGTT  25149
+
+Human_coronav  25015 TTATAGAAGATTCTGTTTTTAAGCCTCGACCTGCAGGTGTTCTTACTAAT  25064
+                     |||.|||..|.||||||||||||||||..||||||||||||.|.|||..|
+Rabbit_corona  25150 TTACAGAGCAATCTGTTTTTAAGCCTCAGCCTGCAGGTGTTTTCACTGCT  25199
+
+Human_coronav  25065 CATGATGTAGTTTATGCACAACACTGTTTCAAAGCTCCTAAAAATTTCTG  25114
+                     ||||||||.||.|||||||||||.|||||.||||||||.|..|.||||||
+Rabbit_corona  25200 CATGATGTTGTCTATGCACAACATTGTTTTAAAGCTCCCACCACTTTCTG  25249
+
+Human_coronav  25115 TCCGTGTAAATTGAATGGTTCG---TGTGTAGGTAGTGGTCCTGGT----  25157
+                     |||.||.||||||.|||||||.   |||||.||||||||..|||||    
+Rabbit_corona  25250 TCCATGCAAATTGGATGGTTCACTTTGTGTTGGTAGTGGCTCTGGTGTTG  25299
+
+Human_coronav  25158 -----------AAAAATAATGGTATAGGCACTTGTCCTGCAGGTACTAAT  25196
+                                |||.|||.|||||||||||||||.|||||||||||||||
+Rabbit_corona  25300 ATGCCGGTTTTAAACATACTGGTATAGGCACTTGCCCTGCAGGTACTAAT  25349
+
+Human_coronav  25197 TATTTAACTTGTGATAATT-TGTGCACT-----------------CCTGA  25228
+                     ||||||||.|||.|||||| |||.||.|                 ||.||
+Rabbit_corona  25350 TATTTAACATGTTATAATTCTGTTCAATGTAACTGTCAATGTACACCAGA  25399
+
+Human_coronav  25229 TCCTATTACATTTACAGGTACT------TATAAGTGCCCCCAAACTAAAT  25272
+                     |||||||..||.||.||.|||.      ||||||||||||||||||||.|
+Rabbit_corona  25400 TCCTATTTTATCTAAAGCTACAGGCCCCTATAAGTGCCCCCAAACTAAGT  25449
+
+Human_coronav  25273 CTTTAGTTGGCATAGGTGAGCACTGTTCGGGTCTTGCTGTTAAAAGTGAT  25322
+                     .|||||||||..||||||||||.|||||||||||||||.|||||||||||
+Rabbit_corona  25450 ATTTAGTTGGTGTAGGTGAGCATTGTTCGGGTCTTGCTATTAAAAGTGAT  25499
+
+Human_coronav  25323 TATTGTGGAGGCAATTCTTGTACTTGCCGACCACAAGCATTTTTGGGTTG  25372
+                     |||||||||||||||.||||||||||||.|||||||||.|||||||||||
+Rabbit_corona  25500 TATTGTGGAGGCAATCCTTGTACTTGCCAACCACAAGCTTTTTTGGGTTG  25549
+
+Human_coronav  25373 GTCTGCAGACTCTTGTTTACAAGGAGACAAGTGTAATATTTTTGCTAATT  25422
+                     |||||..||.|||||||||||||||||||.||||||||||||||||||||
+Rabbit_corona  25550 GTCTGTGGATTCTTGTTTACAAGGAGACAGGTGTAATATTTTTGCTAATT  25599
+
+Human_coronav  25423 TTATTTTGCATGATGTTAATAGTGGTCTTACTTGTTCTACTGATTTACAA  25472
+                     |.||||||||||.|||||||||||||..||||||||||||||||||||||
+Rabbit_corona  25600 TAATTTTGCATGGTGTTAATAGTGGTACTACTTGTTCTACTGATTTACAA  25649
+
+Human_coronav  25473 AAAGCTAACACAGACATAATTCTTGGTGTTTGTGTTAATTATGACCTCTA  25522
+                     ||||||||||||||.||||||.||||||||||||||||||||||.|||||
+Rabbit_corona  25650 AAAGCTAACACAGATATAATTGTTGGTGTTTGTGTTAATTATGATCTCTA  25699
+
+Human_coronav  25523 TGGTATTTTAGGCCAAGGCATTTTTGTTGAGGTTAATGCGACTTATTATA  25572
+                     |||.||.|.||||||||||||||||||.||||||||||||||||||||||
+Rabbit_corona  25700 TGGCATCTCAGGCCAAGGCATTTTTGTCGAGGTTAATGCGACTTATTATA  25749
+
+Human_coronav  25573 ATAGTTGGCAGAACCTTTTATATGATTCTAATGGTAATCTCTACGGTTTT  25622
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  25750 ATAGTTGGCAGAACCTTTTATATGATTCTAATGGTAATCTCTATGGTTTT  25799
+
+Human_coronav  25623 AGAGACTACATAACAAACAGAACTTTTATGATTCGTAGTTGCTATAGCGG  25672
+                     |||||||||.|||||||.||||||||||||||||||||||||||||||||
+Rabbit_corona  25800 AGAGACTACTTAACAAATAGAACTTTTATGATTCGTAGTTGCTATAGCGG  25849
+
+Human_coronav  25673 TCGTGTTTCTGCGGCCTTTCACGCTAACTCTTCCGAACCAGCATTGCTAT  25722
+                     |||||||||.|||||||||||||||||.||||||||||||||||||||||
+Rabbit_corona  25850 TCGTGTTTCAGCGGCCTTTCACGCTAATTCTTCCGAACCAGCATTGCTAT  25899
+
+Human_coronav  25723 TTCGGAATATTAAATGCAACTACGTTTTTAATAATAGTCTTACACGACAG  25772
+                     ||||||||||||||||||||||||||||||||||||.|.||.||.|||||
+Rabbit_corona  25900 TTCGGAATATTAAATGCAACTACGTTTTTAATAATACTTTTGCAAGACAG  25949
+
+Human_coronav  25773 CTGCAACCCATTAACTATTTTGATAGTTATCTTGGTTGTGTTGTCAATGC  25822
+                     ||||||||||||||||||||||||||||||||.|||||.||.||||||||
+Rabbit_corona  25950 CTGCAACCCATTAACTATTTTGATAGTTATCTCGGTTGCGTCGTCAATGC  25999
+
+Human_coronav  25823 TTATAATAGTACTGCTATTTCTGTTCAAACATGTGATCTCACAGTAGGTA  25872
+                     |.||||||||||.|||....||||||||||||||||||||||||||||||
+Rabbit_corona  26000 TGATAATAGTACCGCTTCCACTGTTCAAACATGTGATCTCACAGTAGGTA  26049
+
+Human_coronav  25873 GTGGTTACTGTGTGGATTACTCTAAAAACAGACGAAGTCGTGGAGCGATT  25922
+                     ||||||||||||||||||||||.|.|.|...|||.||||||.||||||||
+Rabbit_corona  26050 GTGGTTACTGTGTGGATTACTCCACACAATTACGGAGTCGTAGAGCGATT  26099
+
+Human_coronav  25923 ACCACTGGTTATCGGTTTACTAATTTTGAGCCATTTACTGTTAATTCAGT  25972
+                     |||||||||||||||||||||||||||||||||||||||||||||.||||
+Rabbit_corona  26100 ACCACTGGTTATCGGTTTACTAATTTTGAGCCATTTACTGTTAATGCAGT  26149
+
+Human_coronav  25973 AAACGATAGTTTAGAACCTGTAGGTGGTTTGTATGAAATTCAAATACCTT  26022
+                     |||.||.||||||.|||||||.||||||||||||||||||||||||||||
+Rabbit_corona  26150 AAATGACAGTTTACAACCTGTGGGTGGTTTGTATGAAATTCAAATACCTT  26199
+
+Human_coronav  26023 CAGAGTTTACTATAGGTAATATGGTGGAGTTTATTCAAACAAGCTCTCCT  26072
+                     ||||||||||||||||||||||||.|||||||||||||||||||.|||||
+Rabbit_corona  26200 CAGAGTTTACTATAGGTAATATGGAGGAGTTTATTCAAACAAGCGCTCCT  26249
+
+Human_coronav  26073 AAAGTTACTATTGATTGTGCTGCATTTGTCTGTGGTGATTATGCAGCATG  26122
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  26250 AAAGTTACTATTGATTGTGCTGCATTTGTCTGTGGTGATTATGCAGCATG  26299
+
+Human_coronav  26123 TAAATCACAGTTGGTTGAATATGGTAGTTTCTGTGATAACATTAATGCCA  26172
+                     ||||||||||||.|||||.|||||||||||||||||||||||||||||||
+Rabbit_corona  26300 TAAATCACAGTTAGTTGAGTATGGTAGTTTCTGTGATAACATTAATGCCA  26349
+
+Human_coronav  26173 TACTCACAGAAGTAAATGAACTACTTGACACTACACAGTTGCAAGTAGCT  26222
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  26350 TACTCACAGAAGTAAATGAACTACTTGACACTACACAGTTGCAAGTAGCT  26399
+
+Human_coronav  26223 AATAGTTTAATGAATGGTGTTACTCTTAGCACTAAGCTTAAAGATGGCGT  26272
+                     |||||||||||||||||.||.||||||||.||||||||.|||||||||||
+Rabbit_corona  26400 AATAGTTTAATGAATGGCGTCACTCTTAGTACTAAGCTCAAAGATGGCGT  26449
+
+Human_coronav  26273 TAATTTCAATGTAGACGACATCAATTTTTCCCCTGTATTAGGTTGTCTAG  26322
+                     ||||||||||||||||||||||||||||||||||||||||||||||||.|
+Rabbit_corona  26450 TAATTTCAATGTAGACGACATCAATTTTTCCCCTGTATTAGGTTGTCTGG  26499
+
+Human_coronav  26323 GCAGCGAATGTAGTAAAGCTTCCAGTAGATCTGCTATAGAGGATTTACTT  26372
+                     ||||.||.||||.||||||.||||||||||||||||||||||||||||||
+Rabbit_corona  26500 GCAGTGATTGTAATAAAGCGTCCAGTAGATCTGCTATAGAGGATTTACTT  26549
+
+Human_coronav  26373 TTTGATAAAGTAAAGTTATCTGATGTCGGTTTTGTTGAGGCTTATAATAA  26422
+                     ||.|||||||||||.|||.||||||||||||||||||||||.||||||||
+Rabbit_corona  26550 TTCGATAAAGTAAAATTAGCTGATGTCGGTTTTGTTGAGGCCTATAATAA  26599
+
+Human_coronav  26423 TTGTACAGGAGGTGCCGAAATTAGGGACCTCATTTGTGTGCAAAGTTATA  26472
+                     |||.||.||||||||||||||||||||.||||||||||||||||||||||
+Rabbit_corona  26600 TTGCACTGGAGGTGCCGAAATTAGGGATCTCATTTGTGTGCAAAGTTATA  26649
+
+Human_coronav  26473 AAGGCATCAAAGTGTTGCCTCCACTGCTCTCAGAAAATCAGATCAGTGGA  26522
+                     |.||.||||||||.|||||.|||||.|||||||||||||||||.|||||.
+Rabbit_corona  26650 ATGGTATCAAAGTTTTGCCGCCACTACTCTCAGAAAATCAGATTAGTGGC  26699
+
+Human_coronav  26523 TACACTTTGGCTGCCACCTCTGCTAGTCTATTTCCTCCTTGGACAGCAGC  26572
+                     |||||||||||||||||||||||||||.|.||.|||||||||||||||||
+Rabbit_corona  26700 TACACTTTGGCTGCCACCTCTGCTAGTTTGTTCCCTCCTTGGACAGCAGC  26749
+
+Human_coronav  26573 AGCAGGTGTACCATTTTATTTAAATGTTCAGTATCGCATTAATGGGCTTG  26622
+                     ||||||||||||||||||||||||||||||||.|||.|||||||||||||
+Rabbit_corona  26750 AGCAGGTGTACCATTTTATTTAAATGTTCAGTTTCGTATTAATGGGCTTG  26799
+
+Human_coronav  26623 GTGTCACCATGGATGTGCTAAGTCAAAATCAAAAGCTTATTGCTAATGCA  26672
+                     ||||||||||||||||||||||||||||.|||||||||||||||||||||
+Rabbit_corona  26800 GTGTCACCATGGATGTGCTAAGTCAAAACCAAAAGCTTATTGCTAATGCA  26849
+
+Human_coronav  26673 TTTAACAATGCCCTTTATGCTATTCAGGAAGGGTTCGATGCAACTAATTC  26722
+                     |||||||||||||||.|||||||||||||.|||||.||||||||.|||||
+Rabbit_corona  26850 TTTAACAATGCCCTTGATGCTATTCAGGAGGGGTTTGATGCAACCAATTC  26899
+
+Human_coronav  26723 TGCTTTAGTTAAAATTCAAGCTGTTGTTAATGCAAATGCTGAAGCTCTTA  26772
+                     ||||||||.|||||||||.||.||||||||||||||||||||||||||||
+Rabbit_corona  26900 TGCTTTAGCTAAAATTCAGGCCGTTGTTAATGCAAATGCTGAAGCTCTTA  26949
+
+Human_coronav  26773 ATAACTTATTGCAACAACTCTCTAATAGATTTGGTGCTATAAGTGCTTCT  26822
+                     ||||.||||||||||||.|.|||||||||||||||||.||||||.|||||
+Rabbit_corona  26950 ATAATTTATTGCAACAATTATCTAATAGATTTGGTGCCATAAGTTCTTCT  26999
+
+Human_coronav  26823 TTACAAGAAATTCTATCTAGACTTGATGCTCTTGAAGCGGAAGCTCAGAT  26872
+                     ||||||||||||||||||||.||.||||||||||||||.|..||.|||||
+Rabbit_corona  27000 TTACAAGAAATTCTATCTAGGCTCGATGCTCTTGAAGCAGCTGCCCAGAT  27049
+
+Human_coronav  26873 AGATAGACTTATTAATGGTCGTCTTACCGCTCTTAATGCTTATGTTTCTC  26922
+                     |||.||||||||||||||.|||||||||||||||||||||||||||||.|
+Rabbit_corona  27050 AGACAGACTTATTAATGGGCGTCTTACCGCTCTTAATGCTTATGTTTCCC  27099
+
+Human_coronav  26923 AACAGCTTAGTGATTCTACACTGGTAAAATTTAGTGCAGCACAAGCTATG  26972
+                     ||||||||||||||||||||||.||.||||||||||||||||||||||||
+Rabbit_corona  27100 AACAGCTTAGTGATTCTACACTAGTGAAATTTAGTGCAGCACAAGCTATG  27149
+
+Human_coronav  26973 GAGAAGGTTAATGAATGTGTCAAAAGCCAATCATCTAGGATAAATTTCTG  27022
+                     ||.|||||||||||||||||.|||||||||||||||||||||||||||||
+Rabbit_corona  27150 GAAAAGGTTAATGAATGTGTTAAAAGCCAATCATCTAGGATAAATTTCTG  27199
+
+Human_coronav  27023 TGGTAATGGTAATCATATTATATCATTAGTGCAGAATGCTCCATATGGTT  27072
+                     |||||||||||||||||||||||||||||||||||||||.||||||||||
+Rabbit_corona  27200 TGGTAATGGTAATCATATTATATCATTAGTGCAGAATGCGCCATATGGTT  27249
+
+Human_coronav  27073 TGTATTTTATCCACTTTAGTTATGTCCCTACTAAGTATGTCACAGCGAGG  27122
+                     |||||||||||||||||||.||||||||||||||.|||||||||||||.|
+Rabbit_corona  27250 TGTATTTTATCCACTTTAGCTATGTCCCTACTAAATATGTCACAGCGAAG  27299
+
+Human_coronav  27123 GTTAGTCCTGGTCTGTGCATTGCTGGTGATAGAGGTATAGCTCCTAAGAG  27172
+                     ||||||||.||||||||||||||||||||||||||||||||.||||||||
+Rabbit_corona  27300 GTTAGTCCCGGTCTGTGCATTGCTGGTGATAGAGGTATAGCGCCTAAGAG  27349
+
+Human_coronav  27173 TGGTTATTTTGTTAATGTAAATAATACTTGGATGTACACTGGTAGTGGTT  27222
+                     |||.|||||||||||||||||.|||||||||||||.||||||||||||||
+Rabbit_corona  27350 TGGCTATTTTGTTAATGTAAACAATACTTGGATGTTCACTGGTAGTGGTT  27399
+
+Human_coronav  27223 ACTACTACCCTGAACCTATAACTGAAAATAATGTTGTTGTTATGAGTACC  27272
+                     |.||||||||||||||||||||||||||||||||||.|||||||||||||
+Rabbit_corona  27400 ATTACTACCCTGAACCTATAACTGAAAATAATGTTGCTGTTATGAGTACC  27449
+
+Human_coronav  27273 TGCGCTGTTAATTATACTAAAGCGCCGTATGTAATGCTGAACACTTCAAT  27322
+                     ||||||||.|||||.||||||||||||.|||||||||||||||.|||||.
+Rabbit_corona  27450 TGCGCTGTAAATTACACTAAAGCGCCGGATGTAATGCTGAACATTTCAAC  27499
+
+Human_coronav  27323 ACCCAACCTTCCTGATTTTAAGGAAGAGTTGGATCAATGGTTTAAAAATC  27372
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  27500 ACCCAACCTTCCTGATTTTAAGGAAGAGTTGGATCAATGGTTTAAAAATC  27549
+
+Human_coronav  27373 AAACATCAGTGGCACCAGATTTGTCACTTGATTATATAAATGTTACATTC  27422
+                     ||||.|||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  27550 AAACTTCAGTGGCACCAGATTTGTCACTTGATTATATAAATGTTACATTC  27599
+
+Human_coronav  27423 TTGGACCTACAAGTTGAAATGAATAGGTTACAGGAGGCAATAAAAGTCTT  27472
+                     |||||||||||||.|||||||||||||||||||||||||||||||||.||
+Rabbit_corona  27600 TTGGACCTACAAGATGAAATGAATAGGTTACAGGAGGCAATAAAAGTTTT  27649
+
+Human_coronav  27473 AAATCAGAGCTACATCAATCTCAAGGACATTGGTACATATGAATATTATG  27522
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  27650 AAATCAGAGCTACATCAATCTCAAGGACATTGGTACATATGAATATTATG  27699
+
+Human_coronav  27523 TAAAATGGCCTTGGTATGTATGGCTTTTAATCTGCCTTGCTGGTGTAGCT  27572
+                     ||||||||||||||||||||||||||||||||.|||||||||||||||||
+Rabbit_corona  27700 TAAAATGGCCTTGGTATGTATGGCTTTTAATCGGCCTTGCTGGTGTAGCT  27749
+
+Human_coronav  27573 ATGCTTGTTTTACTATTCTTCATATGCTGTTGTACAGGATGTGGGACTAG  27622
+                     .|||||||||||||||||||||||||||||||.|||||||||||||||||
+Rabbit_corona  27750 GTGCTTGTTTTACTATTCTTCATATGCTGTTGCACAGGATGTGGGACTAG  27799
+
+Human_coronav  27623 TTGTTTTAAGAAATGTGGTGGTTGTTGTGATGATTATACTGGATACCAGG  27672
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  27800 TTGTTTTAAGAAATGTGGTGGTTGTTGTGATGATTATACTGGACACCAGG  27849
+
+Human_coronav  27673 AGTTAGTAATCAAAACTTCACATGACGACTAAGTTCGTCTTTGATTCATT  27722
+                     ||||||||||||||||||||||||||||||||||||||||||||||.|||
+Rabbit_corona  27850 AGTTAGTAATCAAAACTTCACATGACGACTAAGTTCGTCTTTGATTTATT  27899
+
+Human_coronav  27723 G-------------------------------------------------  27723
+                     |                                                 
+Rabbit_corona  27900 GACTCTTGATGATATAGTACATCCCTTCAACCATTTGTAGTTATTTATGG  27949
+
+Human_coronav  27724 -------------CACTGATCTC-----------------------TTGT  27737
+                                  ||.|||..||                       ||||
+Rabbit_corona  27950 CTGATTTAAGACCCATTGAGGTCGAGCACATTGGATTACCACACATTTGT  27999
+
+Human_coronav  27738 T-----AGAT-----------CTTTTTGCA--------------------  27751
+                     |     |.||           ||.|||.||                    
+Rabbit_corona  28000 TTATTAATATTAAGCCTACTACTGTTTTCATAACAGTTTTCGTAGGCGGT  28049
+
+Human_coronav  27752 --------AT-----CTAG-------------------------------  27757
+                             ||     ||||                               
+Rabbit_corona  28050 TTTAAGGTATTGACACTAGTACAACTGGTTTTAGTTCAGTATTAGTACTA  28099
+
+Human_coronav  27758 --------------------------------------------CATTTG  27763
+                                                                 |||||.
+Rabbit_corona  28100 GTTCCAAACCATATTATAATTCGGGTAGACCTTATAACTTTAATCATTTA  28149
+
+Human_coronav  27764 TTAAAGTTCTTAAGGCCACGCCCTATTAATGGACATTTGGAGACCTGAGA  27813
+                     ..||||||.|||||||||..||||||||||||||.|.|||||||||||||
+Rabbit_corona  28150 CCAAAGTTTTTAAGGCCATTCCCTATTAATGGACGTCTGGAGACCTGAGA  28199
+
+Human_coronav  27814 AGAAATATCTCCGTTATATTAACGGTTTTAATGTCTCAGAATTAGAAGAT  27863
+                     |||||||.||||||||.|.|||.||.|||||||||||||||.||||||||
+Rabbit_corona  28200 AGAAATACCTCCGTTACACTAATGGATTTAATGTCTCAGAACTAGAAGAT  28249
+
+Human_coronav  27864 GCTTGTTTTAAATTTAACTATCAATTTCCTAAAGTAGGATATTGTAGAGT  27913
+                     |.|||||||||||.|||.|||||||||||.||||||||.|||||||||||
+Rabbit_corona  28250 GTTTGTTTTAAATATAATTATCAATTTCCCAAAGTAGGCTATTGTAGAGT  28299
+
+Human_coronav  27914 TCCTAGTCATGCTTGGTGCCGTAATCAAGGTAGATTTTGTGCTACATTCA  27963
+                     |||||.|.|.||||||||.|||||.||||||||.|||||.||||||||.|
+Rabbit_corona  28300 TCCTAATTACGCTTGGTGTCGTAACCAAGGTAGCTTTTGCGCTACATTTA  28349
+
+Human_coronav  27964 CTCTTTATGGTAAATCCAAACATTATGATAAATATTTTGGAGTAATAAAT  28013
+                     |||||||.||.||||||||||.|||||||||.||||||||..||||||.|
+Rabbit_corona  28350 CTCTTTACGGCAAATCCAAACGTTATGATAAGTATTTTGGGATAATAACT  28399
+
+Human_coronav  28014 GGTTTCACAGCATTCGCTAATACTGTAGAGGATGCTGTTAACAAACTGGT  28063
+                     .|||||||||||||||||||.|||||||||||.|||||||||||||||||
+Rabbit_corona  28400 AGTTTCACAGCATTCGCTAACACTGTAGAGGAGGCTGTTAACAAACTGGT  28449
+
+Human_coronav  28064 TTTCTTAGCTGTTGACTTTATTACCTGGCGCAGACAGGAGTTAAATGTTT  28113
+                     |||.||||||||||||||||||||||||||.|||||||||||||||||||
+Rabbit_corona  28450 TTTTTTAGCTGTTGACTTTATTACCTGGCGGAGACAGGAGTTAAATGTTT  28499
+
+Human_coronav  28114 ATGGCTGATGCTTATCTTGCAGACACTGTGTGGTATGTGGGGCAAATAAT  28163
+                     |||||||||||||||||||||||||||||||||||||||||.||||||||
+Rabbit_corona  28500 ATGGCTGATGCTTATCTTGCAGACACTGTGTGGTATGTGGGTCAAATAAT  28549
+
+Human_coronav  28164 TTTTATAGTTGCCATTTGTTTATTGGTTACAATAGTTGTAGTGGCATTTT  28213
+                     |||||||||||||||.|||||||||||||.||||||||||||||||||.|
+Rabbit_corona  28550 TTTTATAGTTGCCATCTGTTTATTGGTTATAATAGTTGTAGTGGCATTAT  28599
+
+Human_coronav  28214 TGGCAACTTTTAAATTGTGTATTCAACTTTGCGGTATGTGTAATACCTTA  28263
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  28600 TGGCAACTTTTAAATTGTGTATTCAACTTTGCGGTATGTGTAATACCTTA  28649
+
+Human_coronav  28264 GTACTGTCCCCTTCTATTTATGTGTTTAATAGAGGTAGGCAGTTTTATGA  28313
+                     ||||||||||||||||||||||||||||||||||||||||||||.|||||
+Rabbit_corona  28650 GTACTGTCCCCTTCTATTTATGTGTTTAATAGAGGTAGGCAGTTGTATGA  28699
+
+Human_coronav  28314 GTTTTACAATGATGTAAAACCACCAGTCCTTGATGTGGATGACGTTTAGG  28363
+                     |||||||||||||||||||||||||||||||||||||||||||||.|   
+Rabbit_corona  28700 GTTTTACAATGATGTAAAACCACCAGTCCTTGATGTGGATGACGTCT---  28746
+
+Human_coronav  28364 TAATCCAAACATTATGAGTAGTAAAACTACACCAGCACCAGTTTATATCT  28413
+                     |||||||||||||||||||||||.|||||||||||||||||||||.||||
+Rabbit_corona  28747 TAATCCAAACATTATGAGTAGTACAACTACACCAGCACCAGTTTACATCT  28796
+
+Human_coronav  28414 GGACTGCTGATGAAGCTATTAAATTCCTAAAGGAATGGAATTTTTCTTTG  28463
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  28797 GGACTGCTGATGAAGCTATTAAATTCCTAAAGGAATGGAATTTCTCTTTG  28846
+
+Human_coronav  28464 GGTATTATACTACTTTTTATTACAATCATATTGCAATTTGGATATACAAG  28513
+                     ||||||||||||||||||||||||||||||.|||||||||||||||||||
+Rabbit_corona  28847 GGTATTATACTACTTTTTATTACAATCATACTGCAATTTGGATATACAAG  28896
+
+Human_coronav  28514 TCGCAGTATGTTTGTTTATGTTATTAAGATGATTATTTTGTGGCTTATGT  28563
+                     .||||||||||||||||||||.||||||||||||||||||||||||||||
+Rabbit_corona  28897 CCGCAGTATGTTTGTTTATGTCATTAAGATGATTATTTTGTGGCTTATGT  28946
+
+Human_coronav  28564 GGCCCCTTACTATAATCTTAACTATTTTCAATTGCGTATACGCATTGAAT  28613
+                     ||||.||||||||.|||||||||||||||||.|||||||||||.||||||
+Rabbit_corona  28947 GGCCACTTACTATCATCTTAACTATTTTCAACTGCGTATACGCGTTGAAT  28996
+
+Human_coronav  28614 AATGTGTATCTTGGCCTTTCTATAGTTTTTACCATAGTGGCCATTATTAT  28663
+                     ||||||||||||||..||||||||||||||||||||||||||||||||||
+Rabbit_corona  28997 AATGTGTATCTTGGTTTTTCTATAGTTTTTACCATAGTGGCCATTATTAT  29046
+
+Human_coronav  28664 GTGGATTGTGTATTTTGTGAATAGTATCAGGTTGTTTATTAGAACTGGAA  28713
+                     ||||||||||||||||||||||||||||||||||||||||||||||||.|
+Rabbit_corona  29047 GTGGATTGTGTATTTTGTGAATAGTATCAGGTTGTTTATTAGAACTGGCA  29096
+
+Human_coronav  28714 GTTTTTGGAGTTTCAACCCAGAAACAAACAACTTGATGTGTATAGATATG  28763
+                     |||..|||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  29097 GTTGGTGGAGTTTCAACCCAGAAACAAACAACTTGATGTGTATAGATATG  29146
+
+Human_coronav  28764 AAAGGAACAATGTATGTTAGGCCGATAATTGAGGACTATCATACTCTGAC  28813
+                     ||.||||.||||||||||||||||||.|||||||||||.|||||.|||||
+Rabbit_corona  29147 AAGGGAAGAATGTATGTTAGGCCGATTATTGAGGACTACCATACCCTGAC  29196
+
+Human_coronav  28814 GGTCACAATAATACGCGGCCATCTTTACATTCAAGGTATAAAACTAGGTA  28863
+                     |||||||||||||||.||||||||.|||||||||||||||||||||||||
+Rabbit_corona  29197 GGTCACAATAATACGTGGCCATCTCTACATTCAAGGTATAAAACTAGGTA  29246
+
+Human_coronav  28864 CTGGCTATTCTTTGGCAGATTTGCCAGCTTATATGACTGTTGCTAAGGTT  28913
+                     ||||||||||||||.|.|||||||||||||||.|||||||||||||||||
+Rabbit_corona  29247 CTGGCTATTCTTTGTCGGATTTGCCAGCTTATGTGACTGTTGCTAAGGTT  29296
+
+Human_coronav  28914 ACACACCTGTGCACATATAAGCGTGGTTTTCTTGACAGGATAAGCGATAC  28963
+                     |||||.||.|||||.|||||||||||||||||||||||||||.|||||||
+Rabbit_corona  29297 ACACATCTTTGCACGTATAAGCGTGGTTTTCTTGACAGGATAGGCGATAC  29346
+
+Human_coronav  28964 TAGTGGTTTTGCTGTTTATGTTAAGTCCAAAGTCGGTAATTACCGACTGC  29013
+                     ||||||||||||||||||||||||||||||||||||||||||.|||||||
+Rabbit_corona  29347 TAGTGGTTTTGCTGTTTATGTTAAGTCCAAAGTCGGTAATTATCGACTGC  29396
+
+Human_coronav  29014 CATCAACCCAAAAGGGTTCTGGCATGGACACCGCATTGTTGAGAAATAAT  29063
+                     |||||||.|||||||||.||||||||||||||||||||||||||||||||
+Rabbit_corona  29397 CATCAACTCAAAAGGGTACTGGCATGGACACCGCATTGTTGAGAAATAAT  29446
+
+Human_coronav  29064 ATCTAAATTTTAAGGATGTCTTTTACTCCTGGTAAGCAATCCAGTAGTAG  29113
+                     |||||||.||||||||||||.||||||||||||||||||.||||.|||||
+Rabbit_corona  29447 ATCTAAACTTTAAGGATGTCCTTTACTCCTGGTAAGCAACCCAGCAGTAG  29496
+
+Human_coronav  29114 AGCGTCCTCTGGAAATCGTTCTGGTAATGGCATCCTCAAGTGGGCCGATC  29163
+                     |||||||||||||||||||.||||||||||||||||.|||||||||||||
+Rabbit_corona  29497 AGCGTCCTCTGGAAATCGTGCTGGTAATGGCATCCTTAAGTGGGCCGATC  29546
+
+Human_coronav  29164 AGTCCGACCAGTTTAGAAATGTTCAAACCAGGGGTAGAAGAGCTCAACCC  29213
+                     |||||||.||||.|||||||.|||||||||||||||||||||||||||||
+Rabbit_corona  29547 AGTCCGAACAGTCTAGAAATATTCAAACCAGGGGTAGAAGAGCTCAACCC  29596
+
+Human_coronav  29214 AAGCAAACTGCTACCTCTCAGCAACCATCAGGAGGGAATGTTGTACCCTA  29263
+                     ||||||||||.|||.||||||||||||.|.||||||||.|||||||||||
+Rabbit_corona  29597 AAGCAAACTGTTACTTCTCAGCAACCAACGGGAGGGAACGTTGTACCCTA  29646
+
+Human_coronav  29264 CTATTCTTGGTTCTCTGGAATTACTCAGTTTCAAAAGGGAAAGGAGTTTG  29313
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  29647 CTATTCTTGGTTCTCTGGAATTACTCAGTTTCAAAAGGGAAAGGAGTTTG  29696
+
+Human_coronav  29314 AGTTTGTAGAAGGACAAGGTGTGCCTATTGCACCAGGAGTCCCAGCTACT  29363
+                     |.||||.|||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  29697 AATTTGCAGAAGGACAAGGTGTGCCTATTGCACCAGGAGTCCCAGCTACT  29746
+
+Human_coronav  29364 GAAGCTAAGGGGTACTGGTACAGACACAACAGACGTTCTTTTAAAACAGC  29413
+                     ||||||||||||||.|||||||||||||.|||||||||||||||||||||
+Rabbit_corona  29747 GAAGCTAAGGGGTATTGGTACAGACACAGCAGACGTTCTTTTAAAACAGC  29796
+
+Human_coronav  29414 CGATGGCAACCAGCGTCAACTGCTGCCACGATGGTATTTTTACTATCTGG  29463
+                     |||.|||||.|||||||||.|||||||||||||||||||.||||||||||
+Rabbit_corona  29797 CGACGGCAATCAGCGTCAATTGCTGCCACGATGGTATTTCTACTATCTGG  29846
+
+Human_coronav  29464 GAACAGGACCGCATGCTAAAGACCAGTACGGCACCGATATTGACGGAGTC  29513
+                     ||||||||||||||||||||||||||||.||||||||.||||||||||||
+Rabbit_corona  29847 GAACAGGACCGCATGCTAAAGACCAGTATGGCACCGACATTGACGGAGTC  29896
+
+Human_coronav  29514 TACTGGGTCGCTAGCAACCAGGCTGATGTCAATACCCCGGCTGACATTGT  29563
+                     |.|||||||||||||||||||||||||||.||||||||||||||||||.|
+Rabbit_corona  29897 TTCTGGGTCGCTAGCAACCAGGCTGATGTTAATACCCCGGCTGACATTCT  29946
+
+Human_coronav  29564 CGATCGGGACCCAAGTAGCGATGAGGCTATTCCGACTAGGTTTCCGCCTG  29613
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Rabbit_corona  29947 CGATCGGGACCCAAGTAGCGATGAGGCTATTCCGACTAGGTTTCCGCCTG  29996
+
+Human_coronav  29614 GCACGGTACTCCCTCAGGGTTACTATATTGAAGGCTCAGGAAGGTCTGCT  29663
+                     ||||||||||||||||.||.||||||||||||||||||||||||||||||
+Rabbit_corona  29997 GCACGGTACTCCCTCAAGGCTACTATATTGAAGGCTCAGGAAGGTCTGCT  30046
+
+Human_coronav  29664 CCTAATTCCAGATCTACTTCGCGCACATCCAGCAGAGCCTCTAGTGCAGG  29713
+                     ||||||||||||||||||||.|||.|||||||||||||||||||||||||
+Rabbit_corona  30047 CCTAATTCCAGATCTACTTCTCGCGCATCCAGCAGAGCCTCTAGTGCAGG  30096
+
+Human_coronav  29714 ATCGCGTAGTAGAGCCAATTCTGGCAATAGAACCCCTACCTCTGGTGTAA  29763
+                     |||||||||||||||||||||.||.|.|||||||||||||||||||||||
+Rabbit_corona  30097 ATCGCGTAGTAGAGCCAATTCAGGTACTAGAACCCCTACCTCTGGTGTAA  30146
+
+Human_coronav  29764 CACCTGACATGGCTGATCAAATTGCTAGTCTTGTTCTGGCAAAACTTGGC  29813
+                     |||||||||||||||||||||||||||||||||||||||||||.||||||
+Rabbit_corona  30147 CACCTGACATGGCTGATCAAATTGCTAGTCTTGTTCTGGCAAAGCTTGGC  30196
+
+Human_coronav  29814 AAGGATGCCACTAAACCTCAGCAAGTAACTAAGCATACTGCCAAAGAAGT  29863
+                     |||||||||||.||.|||||.||||||||||||||.||.|||||||||||
+Rabbit_corona  30197 AAGGATGCCACAAAGCCTCAACAAGTAACTAAGCAGACAGCCAAAGAAGT  30246
+
+Human_coronav  29864 CAGACAGAAAATTTTGAATAAGCCCCGCCAGAAGAGGAGCCCCAATAAAC  29913
+                     ||||||||||||||||||.||.||||||||.|||||||||||||||||||
+Rabbit_corona  30247 CAGACAGAAAATTTTGAACAAACCCCGCCAAAAGAGGAGCCCCAATAAAC  30296
+
+Human_coronav  29914 AATGCACTGTTCAGCAGTGTTTTGGTAAGAGAGGCCCTAATCAGAATTTT  29963
+                     |||||||||||||||||||||||||.|||||||||||.||||||||||||
+Rabbit_corona  30297 AATGCACTGTTCAGCAGTGTTTTGGGAAGAGAGGCCCCAATCAGAATTTT  30346
+
+Human_coronav  29964 GGTGGTGGAGAAATGTTAAAACTTGGAACTAGTGACCCACAGTTCCCCAT  30013
+                     |||||||||||||||||||||||||||||||||||.||||||||||||||
+Rabbit_corona  30347 GGTGGTGGAGAAATGTTAAAACTTGGAACTAGTGATCCACAGTTCCCCAT  30396
+
+Human_coronav  30014 TCTTGCAGAACTCGCACCCACAGCTGGTGCGTTTTTCTTTGGATCAAGAT  30063
+                     ||||||||||||||||||||||||.|||||||||||||||||||||||||
+Rabbit_corona  30397 TCTTGCAGAACTCGCACCCACAGCAGGTGCGTTTTTCTTTGGATCAAGAT  30446
+
+Human_coronav  30064 TAGAGTTGGCCAAAGTGCAGAATTTATCTGGGAATCCTGACGAGCCCCAG  30113
+                     |||||||||||||||||||||||||.|||||||||.||||.||.||||||
+Rabbit_corona  30447 TAGAGTTGGCCAAAGTGCAGAATTTGTCTGGGAATGCTGATGAACCCCAG  30496
+
+Human_coronav  30114 AAGGATGTTTATGAATTGCGCTATAACGGCGCAATTAGGTTTGACAGTAC  30163
+                     |||||||||||||||||||||||||..|||||.|||||.|||||.|||||
+Rabbit_corona  30497 AAGGATGTTTATGAATTGCGCTATAGTGGCGCGATTAGATTTGATAGTAC  30546
+
+Human_coronav  30164 ACTTTCAGGTTTTGAGACCATAATGAAGGTGCTGAATGAGAATTTGAATG  30213
+                     |||||||||||||||.||.||||||||||||.|.||||||||||||||||
+Rabbit_corona  30547 ACTTTCAGGTTTTGAAACTATAATGAAGGTGTTAAATGAGAATTTGAATG  30596
+
+Human_coronav  30214 CCTATCAACAACAAGATGGTATGATGAATATGAGTCCAAAACCACAGCGT  30263
+                     |||||||.|||||.||||.|..||||      |||||.||||||||||||
+Rabbit_corona  30597 CCTATCAGCAACAGGATGATGGGATG------AGTCCTAAACCACAGCGT  30640
+
+Human_coronav  30264 CAGCGTGGTCATAAGAATGGACAAGGAGAAAATGATAATATAAGTGTTGC  30313
+                     |||||||||||.|.|||.|||      |||||||||||||||||||||||
+Rabbit_corona  30641 CAGCGTGGTCAAAGGAAGGGA------GAAAATGATAATATAAGTGTTGC  30684
+
+Human_coronav  30314 AGTGCCCAAAAGCCGCGTGCAGCAAAATAAGAGTAGAGAGTTGACTGCAG  30363
+                     |||||||||||||||||||||||||||||||||.|||||||||||.||||
+Rabbit_corona  30685 AGTGCCCAAAAGCCGCGTGCAGCAAAATAAGAGCAGAGAGTTGACAGCAG  30734
+
+Human_coronav  30364 AGGACATCAGCCTTCTTAAGAAGATGGATGAGCCCTATACTGAAGACACC  30413
+                     ||||||||||||||||||||||||||||||||||.|||||||||||||||
+Rabbit_corona  30735 AGGACATCAGCCTTCTTAAGAAGATGGATGAGCCTTATACTGAAGACACC  30784
+
+Human_coronav  30414 TCAGAAATATAAGAGAATGAACCTTATGTCGGCATCTGGTGGTAACCCCT  30463
+                     ||||||||||||||||||||||||||||||||||.|||||||||||||||
+Rabbit_corona  30785 TCAGAAATATAAGAGAATGAACCTTATGTCGGCACCTGGTGGTAACCCCT  30834
+
+Human_coronav  30464 CGCAGAAAAGTCGAGATAAGGCACTCTCTATCAGAATGGATGTCTTGCTG  30513
+                     |||||.|||||||.||||||||||||||||||||||||||||||||||||
+Rabbit_corona  30835 CGCAGGAAAGTCGGGATAAGGCACTCTCTATCAGAATGGATGTCTTGCTG  30884
+
+Human_coronav  30514 CTATAATAGATAGAGAAGGTTATAGCAGACTATAGATTAATTAGTTGAAA  30563
+                     |||||||||||||||.||||||||||||||.|||||||||||||||||||
+Rabbit_corona  30885 CTATAATAGATAGAGTAGGTTATAGCAGACCATAGATTAATTAGTTGAAA  30934
+
+Human_coronav  30564 GTTTTGTGTTGTAATGTATAGTGTTGGAGAAAGTGAAAGACTTGCGGAAG  30613
+                     |||||||||.|||||||||||||||||||||||||||||||||||||||.
+Rabbit_corona  30935 GTTTTGTGTGGTAATGTATAGTGTTGGAGAAAGTGAAAGACTTGCGGAAT  30984
+
+Human_coronav  30614 TAATTGCCGACAAGTGCCCAAGGGAAGAGCCAGCATGTTAAGTTACCACC  30663
+                     |||||||||||||||||||..||||.||||||||||||||||||||||||
+Rabbit_corona  30985 TAATTGCCGACAAGTGCCCCCGGGAGGAGCCAGCATGTTAAGTTACCACC  31034
+
+Human_coronav  30664 CAGTAATTAGTAAATGAATGAAGTTAATTATGGCCAATTGGAAGAATCAC  30713
+                     ||||||||||||||||||||||||||||.|||||||||||||||||||||
+Rabbit_corona  31035 CAGTAATTAGTAAATGAATGAAGTTAATCATGGCCAATTGGAAGAATCAC  31084
+
+Human_coronav  30714 AAAAAAAAAAAAAAAAAAAAAAAAAAAA  30741
+                     ||||||||||||||||            
+Rabbit_corona  31085 AAAAAAAAAAAAAAAA------------  31100
+
+
+#---------------------------------------
+#---------------------------------------
